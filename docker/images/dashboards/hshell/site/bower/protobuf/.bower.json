@@ -1,0 +1,36 @@
+{
+  "name": "protobuf",
+  "description": "Protocol Buffers for JavaScript. Finally.",
+  "version": "3.6.0",
+  "main": "dist/ProtoBuf.js",
+  "license": "Apache-2.0",
+  "homepage": "http://dcode.io/",
+  "dependencies": {
+    "bytebuffer": "~3"
+  },
+  "keywords": [
+    "net",
+    "buffer",
+    "protobuf",
+    "serialization",
+    "bytebuffer",
+    "websocket",
+    "webrtc"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "3.6.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "3.6.0",
+    "commit": "1387e9c57e39d7ad4ee352c711a9f44e87579f9d"
+  },
+  "_source": "git://github.com/dcodeIO/ProtoBuf.js.git",
+  "_target": "~3.6.0",
+  "_originalSource": "protobuf"
+}

@@ -1,0 +1,66 @@
+.h-tabs-container {
+  overflow: hidden;
+  margin-top: 1em;
+
+  .h-tabs-navigation, .h-tabs-contents {
+    padding: 0;
+    margin: 0;
+  }
+
+  .h-tab, .h-tab-content {
+    list-style: none;
+  }
+
+  .h-tabs-navigation {
+    border-bottom: 2px solid #ddd;
+
+    .h-tab {
+      float: left;
+      margin-right: 1em;
+      position: relative;
+
+      a {
+        color: #333;
+        float: left;
+        padding: .5em 1em;
+        font-size: 1.5em;
+      }
+
+      a:hover {
+        text-decoration: none;
+      }
+
+      &.selected a {
+        color: #1881C5;
+      }
+
+      a:hover, &.selected a {
+        &:after {
+          position: absolute;
+          bottom: 0;
+          left: 1em;
+          content: "";
+          border-style: solid;
+          border-width: 0 8px 8px 8px;
+          border-color: transparent transparent #ddd transparent;
+        }
+      }
+    }
+  }
+  .h-tabs-contents {
+    clear: both;
+    position: relative;
+
+    .h-tab-content {
+      visibility: hidden;
+      height: 0;
+      display: none;
+
+      &:first-child {
+        visibility: visible;
+        height: auto;
+        display: block;
+      }
+    }
+  }
+}

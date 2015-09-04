@@ -1,0 +1,81 @@
+/* SIDEBAR */
+
+.h-sidebar-nav {
+    background-color: #404e66;
+    height: 100%;
+    padding-top: $h-portal_headerHeight;
+    -webkit-box-shadow: inset -20px 0px 20px -20px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: inset -20px 0px 20px -20px rgba(0, 0, 0, 0.4);
+    box-shadow: inset -20px 0px 20px -20px rgba(0, 0, 0, 0.4);
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            position: relative;
+            @include transition(background-color, 0.3s, ease-in-out);
+            font-size: 2rem;
+            width: 100%;
+            a {
+                color: #cccccc;
+
+                display: block;
+                width: 100%;
+                height: 100%;
+                padding: 1.2rem 2rem;
+                outline: none;
+                i {
+                    @include transition(color, 0.5s, ease-in-out);
+                    width: 1.5rem;
+                    color: #000;
+                    opacity: 0.2;
+                    margin-right: 10px;
+                }
+                &:hover {
+                    text-decoration: none;
+                    i {
+                        color: #666;
+                    }
+                }
+            }
+            &:hover {
+                background-color: #2f3641;
+            }
+            &.selected {
+                a {
+                    background-color: #2f3641;
+                }
+                &:after {
+                    position: absolute;
+                    border-top: 2px solid #999;
+                    border-right: 2px solid #999;
+                    width: 10px;
+                    height: 10px;
+                    margin-top: -7px;
+                    content: "";
+                    right: 3rem;
+                    top: 50%;
+                    @include transform(rotate(45deg));
+                }
+            }
+        }
+    }
+    @include mq(mq-md) {
+        background-color: transparent;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        ul li {
+            &.selected, &:hover {
+                background-color: transparent;
+            }
+            a {
+                color: $link;
+            }
+            &.selected a {
+                color: #000000;
+                background-color: transparent;
+            }
+        }
+    }
+}

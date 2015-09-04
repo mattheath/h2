@@ -1,0 +1,32 @@
+.pure-button.hailo-orange {
+    background: rgb(223, 117, 20);
+    border: thin solid rgb(200, 100, 0);
+    color: #fff;
+}
+
+.pure-button.hailo-red {
+    background: rgb(255, 0, 0);
+    border: thin solid rgb(200, 100, 0);
+    color: #fff;
+}
+
+form.hailo-form {
+    input {
+        &.error {
+            border-color: red;
+        }
+    }
+    button[type="submit"] {
+        @extend .pure-button.hailo-orange;
+    }
+}
+/*
+This doesnt work... #FAIL
+
+form.hailo-form.hailo-form-danger {
+    @extend form.hailo-form
+    button[type="submit"] {
+        background: red;
+    }
+}
+*/

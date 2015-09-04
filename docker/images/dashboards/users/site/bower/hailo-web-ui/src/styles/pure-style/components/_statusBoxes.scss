@@ -1,0 +1,95 @@
+.h-status-box {
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: 75%;
+  font-weight: bold;
+  line-height: 1;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+}
+
+.h-status-box[href]:hover,
+.h-status-box[href]:focus {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.h-status-box:empty {
+  display: none;
+}
+
+.h-status-box-default {
+  background-color: #999999;
+}
+
+.h-status-box-default[href]:hover,
+.h-status-box-default[href]:focus {
+  background-color: #808080;
+}
+
+.h-status-box-primary {
+  background-color: #428bca;
+}
+
+.h-status-box-primary[href]:hover,
+.h-status-box-primary[href]:focus {
+  background-color: #3071a9;
+}
+
+.h-status-box-success {
+  background-color: #5cb85c;
+}
+
+.h-status-box-success[href]:hover,
+.h-status-box-success[href]:focus {
+  background-color: #449d44;
+}
+
+.h-status-box-info {
+  background-color: #5bc0de;
+}
+
+.h-status-box-info[href]:hover,
+.h-status-box-info[href]:focus {
+  background-color: #31b0d5;
+}
+
+.h-status-box-warning {
+  background-color: #f0ad4e;
+}
+
+.h-status-box-warning[href]:hover,
+.h-status-box-warning[href]:focus {
+  background-color: #ec971f;
+}
+
+.h-status-box-important {
+  background-color: #b94a48;
+}
+
+.h-status-box-important[href]:hover,
+.h-status-box-important[href]:focus {
+  background-color: #b94a48;
+}
+
+.h-status-box-danger {
+  background-color: #d9534f;
+}
+
+.h-status-box-danger[href]:hover,
+.h-status-box-danger[href]:focus {
+  background-color: #c9302c;
+}
+
+.h-status-box-inverse {
+  background-color: #333;
+}
+
+.h-status-box-inverse[href]:hover,
+.h-status-box-inverse[href]:focus {
+  background-color: #333;
+}

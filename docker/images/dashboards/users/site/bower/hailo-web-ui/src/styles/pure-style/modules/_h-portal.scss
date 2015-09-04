@@ -1,0 +1,371 @@
+// H-Portal style
+// Now with mobile-first design!
+
+$responsive-design-debug-mode: false !default;
+
+// Variables
+$h-portal_headerHeight: 50px !default;
+$h-portal_headerHeight_lg: 65px;
+
+// Globals -- TODO move these
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+
+// The styles
+body.h-portal {
+    background-color: $bodyGrey;
+
+    #page {
+        position: relative;
+        height: 100%;
+    }
+
+    #container > header {
+        border-bottom: 1px solid $headerBorder;
+        background-color: white;
+        @if ($responsive-design-debug-mode) {
+            @include mq(mq-xs) {
+                background-color: green;
+            }
+            @include mq(mq-sm) {
+                background-color: yellow;
+            }
+            @include mq(mq-md) {
+                background-color: orange;
+            }
+            @include mq(mq-lg) {
+                background-color: red;
+            }
+        }
+
+        position: relative;
+        z-index: 1001;
+
+        .content {
+            margin: 0;
+            padding: 0;
+            height: $h-portal_headerHeight;
+            @include mq(mq-md) {
+                margin: 0 20px;
+                padding: 0 0 0 20px;
+                border-left: 1px solid $headerBorder;
+                border-right: 1px solid $headerBorder;
+                height: $h-portal_headerHeight_lg;
+            }
+        }
+
+        .toolbar {
+            float: right;
+            width: auto;
+            height: 100%;
+            .h-search {
+                float: left;
+                form {
+                    @include mq(mq-sm) {
+                        position: relative;
+                    }
+                    input[type="search"] {
+                        width: 0;
+                        padding: 0 30px  0 25px;
+                        @include mq(mq-sm) {
+                            width: auto;
+                            padding-left: 55px;
+                        }
+
+                        &:focus {
+                            position: absolute;
+                            left: 0;
+                            width: 100%;
+                            z-index: 2;
+                            padding-left: 55px;
+                            @include mq(mq-sm) {
+                                position: relative;
+                                width: auto;
+                                z-index: 1;
+                            }
+                        }
+
+                        font-size: 1em;
+                        margin-bottom: 0;
+                        box-shadow: none;
+                        background-image: url('/img/search.svg');
+                        @include mq(mq-sm) {
+                            background-image: url('/img/search-light.svg');
+                        }
+
+                        background-color: white;
+                        background-repeat: no-repeat;
+                        background-position: left 10px top 50%;
+                        background-size: 2.4em;
+                        color: #999;
+                        &:focus {
+                            color: #333;
+                            background-image: url('/img/search.svg');
+                            outline: 0;
+                        }
+
+                        height: $h-portal_headerHeight;
+                        @include mq(mq-md) {
+                            height: $h-portal_headerHeight_lg;
+                        }
+                        border-left: 1px solid $headerBorder;
+                        border-right: 1px solid $headerBorder;
+                        border-top: none;
+                        border-bottom: none;
+                        border-radius: 0;
+                    }
+
+                    .clear-input {
+                        position: absolute;
+                        line-height: $h-portal_headerHeight;
+                        @include mq(mq-md) {
+                            line-height: $h-portal_headerHeight_lg;
+                        }
+                        right: 15px;
+                        z-index: 3;
+                        font-size: 2em;
+                        color: $link;
+                        cursor: pointer;
+                    }
+                }
+
+                .results {
+                    position: absolute;
+                    left: 0;
+                    width: 80%;
+                    top: $h-portal_headerHeight;
+                    @include mq(mq-md) {
+                        top: $h-portal_headerHeight_lg;
+                    }
+                    @include mq(mq-sm) {
+                        position: relative;
+                        top: 0;
+                        width: auto;
+                    }
+                    
+                    min-width: 240px;
+                    z-index: 20;
+                    border: 1px solid $headerBorder;
+                    border-top: none;
+                    margin-top: 1px;
+                    padding-top: 20px;
+                    -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+                    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+
+                    background: white;
+                    .error {
+                        color: #B94A48;
+                        font-size: 0.9em;
+                        margin: 10px 0;
+                    }
+                    .results-count {
+                        padding-top: 5px;
+                        font-size: .9em;
+                    }
+                    .results-list {
+                        padding-top: 20px;
+                    }
+                    .result {
+                        color: $link;
+                        outline: 0;
+                        cursor: pointer;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        padding: 10px 15px;
+                        .primary {
+                            display: block;
+                            font-size: 1.1em;
+                        }
+                        .secondary {
+                            display: block;
+                            font-size: 0.9em;
+                        }
+                    }
+                    .result:hover, .result.selected {
+                        background: #D8EFFF;
+                    }
+
+                    // Down Triangle
+                    &:before, &:after {
+                        content: "";
+                        position: absolute;
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-color: transparent;
+                        border-bottom: 0;
+                    }
+                    // Stroke
+                    &:before {
+                        top: 0;
+                        left: 21px;
+                        border-top-color: $headerBorder;
+                        border-width: 16px;
+                    }
+                    // Fill
+                    &:after {
+                        top: -1px;
+                        left: 22px;
+                        border-top-color: white;
+                        border-width: 15px;
+                    }
+                }
+            }
+
+            .menu {
+                float: left;
+                ul {
+                    padding: 0;
+                    margin: 0;
+                    li {
+                        padding: 0;
+                        &:not(:only-child) {
+                            border-left: 1px solid $headerBorder;
+                        }
+                        display: inline-block;
+                        &.dropit-open a {
+                            background: #eee;
+                        }
+                        a {
+                            display: block;
+                            padding: 0 12px;
+                            @include mq(mq-sm) {
+                                padding: 0 20px;
+                            }
+ 
+                            height: $h-portal_headerHeight;
+                            line-height: $h-portal_headerHeight;
+                            @include mq(mq-md) {
+                                height: $h-portal_headerHeight_lg;
+                                line-height: $h-portal_headerHeight_lg;
+                            }
+
+                            color: $link;
+                            -o-transition:none;
+                            -ms-transition:none;
+                            -moz-transition:none;
+                            -webkit-transition:none;
+                            transition:none;
+
+                            i {
+                                color: $link;
+                                vertical-align: middle;
+                                padding-right: 5px;
+                                &.icon-angle-down {
+                                    padding-right: 0;
+                                    font-size: 1em;
+                                }
+                            }
+                            &:hover {
+                                text-decoration: none;
+                                background: $linkBlock;
+                                color: white;
+                                i {
+                                    color: white;
+                                }
+                            }
+                        }
+                        > ul {
+                            background: #eee;
+                            -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+                            box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+                            li {
+                                width: 100%;
+                                a {
+                                    height: 35px;
+                                    line-height: 35px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .hailo-logo {
+            float: left;
+            padding:  0 0 0 50px;
+            background: url($hImagesBaseUrl + '/hailo-transparent-bg.svg') no-repeat transparent;
+            background-size: auto round($h-portal_headerHeight / 1.8);
+            background-position: 15px 50%;
+            @include mq(mq-md) {
+                background-size: auto round($h-portal_headerHeight_lg / 1.8);
+                background-position: left 50%;
+            }
+
+            font-size: 1.4em;
+            @include mq(mq-md) {
+                font-size: 1.5em;
+            }
+            outline: none;
+            color: #333;
+            height: $h-portal_headerHeight;
+            line-height: $h-portal_headerHeight;
+            @include mq(mq-md) {
+                height: $h-portal_headerHeight_lg;
+                line-height: $h-portal_headerHeight_lg;
+            }
+
+            span {
+                @include mq(mq-xs) {
+                    display: none;
+                }
+                &.h2 {
+                    font-weight: bold;
+                }
+                &.subtitle {
+                    font-style: italic;
+                    padding-left: 3px;
+                }
+            }
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    } // HEADER END
+
+    #container {
+        background-color: $bodyGrey;
+        > #main {
+            padding: 0;
+            > #content {
+                padding: 10px 10px 20px 10px;
+                @include mq(mq-md) {
+                    padding: 10px 20px 50px 20px;
+                }
+            }
+        }
+    }
+
+    #overlay {
+        position: absolute;
+        display: none;
+        overflow: auto;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        background-color:rgba(0, 0, 50, 0.5);
+        background: url(data:;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAABl0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuNUmK/OAAAAATSURBVBhXY2RgYNgHxGAAYuwDAA78AjwwRoQYAAAAAElFTkSuQmCC) repeat scroll transparent\9; /* ie fallback png background image */
+        z-index: 1000;
+        color:white;
+    }
+
+    #container > footer {
+        background: none repeat scroll 0 0 $footerGrey;
+        border-top: 1px solid $headerBorder;
+        p {
+            font-size: 0.9em;
+            padding: 20px;
+            color: #666;
+            text-align: right;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "hailo-web-ui",
+  "version": "0.1.0",
+  "dependencies": {
+    "jquery": "~2.0.3",
+    "web-toolkit": "git@github.com:hailocab/web-toolkit.git#3",
+    "q": "~0.9.7",
+    "uri.js": "~1.11.2",
+    "underscore": "~1.6.0",
+    "requirejs": "~2.1.10",
+    "leaflet-dist": "0.7.1"
+  }
+}

@@ -1,0 +1,87 @@
+<p><a href="/app/<%- application.toLowerCase() %>" class="back"><i class="ion-ios7-arrow-left"></i> Back</a></p>
+<h2>Create a new <%- application %> user</h2>
+<div class="messages"></div>
+<form class="create h-form h-form-aligned">
+
+    <fieldset>
+        <div class="h-control-group">
+            <p>
+                To keep usernames consistent, a username will be generated from
+                the first and last names.
+                <p id="uid_suggestion_wrapper" class="hidden">
+                    The username for this user will be
+                    <b id="uid_suggestion">firstname.lastname</b>
+                </p>
+            </p>
+            <input id="uid" name="uid" type="hidden" value="">
+        </div>
+
+        <div class="h-control-group">
+            <label for="firstname">First name</label>
+
+            <input id="firstname"
+                name="firstname"
+                placeholder="First name"
+                type="text">
+
+            <p class="help-inline">Required</p>
+        </div>
+
+        <div class="h-control-group">
+            <label for="lastname">Last name</label>
+
+            <input id="lastname"
+                name="lastname"
+                placeholder="Last name"
+                type="text">
+
+            <p class="help-inline">Required</p>
+        </div>
+    </fieldset>
+    <fieldset>
+        <div class="h-control-group">
+            <label for="ids">Alternate names</label>
+            <input id="ids"
+                name="ids"
+                placeholder="Alternate names"
+                type="text">
+            <p class="help-inline">Optional, comma separated list</p>
+            <p class="help-block">
+                For example: Email adresses or phone numbers that this user
+                can also log in with
+            </p>
+        </div>
+        <div class="h-control-group">
+            <label for="roles">Roles</label>
+            <input id="roles"
+                name="roles"
+                placeholder="Roles"
+                type="text">
+            <p class="help-inline">Required, comma separated list</p>
+        </div>
+    </fieldset>
+    <fieldset>
+        <div class="h-control-group">
+            <label for="password">Password</label>
+            <input id="password"
+                name="password"
+                placeholder="Password"
+                type="password">
+        </div>
+        <div class="h-control-group">
+            <label for="repeat-password">Repeat password</label>
+            <input id="repeat-password"
+                name="repeat-password"
+                placeholder="Repeat password"
+                type="password">
+        </div>
+    </fieldset>
+    <fieldset>
+        <div class="h-controls">
+            <button
+                type="submit"
+                class="h-button hb-accept"
+            >Create</button>
+        </div>
+    </fieldset>
+</form>

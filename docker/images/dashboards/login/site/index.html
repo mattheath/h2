@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Sign in to Hailo</title>
+    <link href="production.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+</head>
+<body class="h-login" style="display:none;">
+<div class="container">
+    <header>
+        <div class="content">
+            <a class="hailo-logo" href="/#"></a>
+        </div>
+    </header>
+    <article class="login-box">
+        <header>
+            <h2>Welcome to Hailo</h2>
+            <h3>Log in below to access your account</h3>
+        </header>
+        <section>
+            <div id="alert-placeholder"></div>
+            <form id="login-form" class="pure-form pure-form-stacked h-clear-fix">
+                <input id="username" type="text" placeholder="Username" class="pure-input-1" required autofocus>
+                <input id="password" type="password" placeholder="Password" class="pure-input-1" required>
+                <label for="showChangePassword">
+                    <input type="checkbox" name="showChangePassword" id="showChangePassword" />
+                    Change password?
+                </label>
+                <input style="display: none;" id="newPassword" type="password" placeholder="New Password" class="pure-input-1">
+                <div class="pull-right">
+                    <button class="h-button hb-enabled">Log in</button>
+                </div>
+            </form>
+        </section>
+        <footer>
+            <a href="mailto:helpdesk@hailocab.com">Problem? Contact support</a>
+        </footer>
+    </article>
+</div>
+<script src="production.js"></script>
+</body>
+</html>

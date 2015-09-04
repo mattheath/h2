@@ -1,0 +1,35 @@
+.h-city-widget {
+  padding-top: 2em;
+  position: relative;
+
+  .city {
+    width: 10em;
+    color: #333;
+    height: 1em;
+    line-height: 1em;
+    padding: .5em 1em;
+    border: 1px solid #ddd;
+    border-radius: .5em;
+  }
+
+  .city-list {
+    visibility: hidden;
+    display: none;
+    position: absolute;
+    width: 12em;
+    top: 4em;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: .5em;
+    z-index: 9999;
+
+    li {
+      list-style: none;
+      display: block;
+      padding: .5em 1em;
+    }
+  }
+}

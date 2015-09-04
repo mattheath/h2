@@ -1,0 +1,68 @@
+<style>
+    #h-container {
+        border-left: 1px solid #eee;
+    }
+
+    pre.prettyprint {
+        border: none;
+        font-size: 1.4rem;
+        background-color: #333;
+        padding: 10px;
+    }
+</style>
+
+<div class="h-box-demo">
+    <div class="h-box-header">
+        <div class="h-box-demo-header">
+            H Box Header
+        </div>
+    </div>
+    <div class="h-box-content">
+        <div class="h-box-demo-content">
+            <p>Sass mixin that provides a container with absolutely positioned header and footer.</p>
+            <p style="color:red;">Don't add any padding and margin to .h-box-header, .h-box-content, .h-box-footer as this will break the layout.</p>
+<pre class="prettyprint scss">
+// in your sass file
+// params:
+//   - $headerHeight - the height of the header on the desktop
+//   - $mobileHeaderTop - on the mobile layout header has position:fixed
+//                        and needs to be pushed down by this value
+//   - $footerHeight - the height of the footer
+//   - $mobileHeaderHeight - the height of the header on the mobile
+
+.your-box {
+    @include h-box($headerHeight: 40px, $mobileHeaderTop: 40px, $footerHeight: 50px, $mobileHeaderHeight: 50px);
+}
+</pre>
+<pre class="prettyprint">
+<div class="your-box">
+    <div class="h-box-header">
+        <div class="your-box-header">H Box Header</div>
+    </div>
+    <div class="h-box-content">
+        <div class="your-box-content">
+            The main content of a box. This will have overflow-y set auto.
+        </div>
+    </div>
+    <div class="h-box-footer">
+        <div class="your-box-header">H Box Footer</div>
+    </div>
+</div></pre>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <!-- end of .h-box-content -->
+        </div>
+    </div>
+    <div class="h-box-footer">
+        <div class="h-box-demo-footer">
+            H Box Footer
+        </div>
+    </div>
+</div>

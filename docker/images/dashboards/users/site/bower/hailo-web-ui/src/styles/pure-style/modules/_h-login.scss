@@ -1,0 +1,143 @@
+// H-Login style
+// Now with mobile-first design!
+
+// Variables
+$h-portal_headerHeight: 50px !default;
+$h-portal_headerHeight_lg: 65px;
+
+body.h-login {
+    background-color: $bodyGrey;
+    color: #333;
+
+    .container > header {
+        border-bottom: 1px solid $headerBorder;
+        background-color: $white;
+        position: relative;
+        z-index: 10001;
+
+        .content {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            height: $h-portal_headerHeight;
+            @include mq(mq-md) {
+                margin: 0 20px;
+                padding: 0 0 0 20px;
+                border-left: 1px solid $headerBorder;
+                border-right: 1px solid $headerBorder;
+                height: $h-portal_headerHeight_lg;
+            }
+        }
+
+        a {
+            &.hailo-logo {
+                float: left;
+                padding:  0 0 0 50px;
+                background: url($hImagesBaseUrl + '/hailo-transparent-bg.svg') no-repeat transparent;
+                background-size: auto round($h-portal_headerHeight / 1.8);
+                background-position: 15px 50%;
+                @include mq(mq-md) {
+                    background-size: auto round($h-portal_headerHeight_lg / 1.8);
+                    background-position: left 50%;
+                }
+
+                font-size: 1.4em;
+                @include mq(mq-md) {
+                    font-size: 1.5em;
+                }
+                outline: none;
+                color: #333;
+                height: $h-portal_headerHeight;
+                line-height: $h-portal_headerHeight;
+                @include mq(mq-md) {
+                    height: $h-portal_headerHeight_lg;
+                    line-height: $h-portal_headerHeight_lg;
+                }
+
+                span {
+                    @include mq(mq-xs) {
+                        display: none;
+                    }
+                }
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    } // HEADER END
+
+    .login-box {
+        margin: 10px;
+        background: white;
+        -moz-box-shadow:    1px 1px 2px 3px #f5f5f5;
+        -webkit-box-shadow: 1px 1px 2px 3px #f5f5f5;
+        box-shadow:         1px 1px 2px 3px #f5f5f5;
+
+        @include mq(mq-sm) {
+            max-width: 600px;
+            margin: 25px auto 0 auto;
+            position: absolute;
+            top: 18%;
+            @media (min-width: 600px) {
+                left: 50%;
+                width: 600px;
+                margin-left: -300px;
+            }
+        }
+
+        header {
+            text-align: center;
+            padding-top: 15px;
+            @include mq(mq-sm) {
+                padding-top: 30px;
+
+            }
+
+            h2 {
+                margin: 0;
+                color: text;
+                font-size: 1.6em;
+                @include mq(mq-md) {
+                    font-size: 2em;
+                }
+            }
+            h3 {
+                margin: 0;
+                color: #ccc;
+                font-size: 1.2em;
+                @include mq(mq-md) {
+                    font-size: 1.5em;
+                }
+            }
+        }
+
+        section {
+            padding: 15px;
+            @include mq(mq-sm) {
+                padding-top: 30px;
+                max-width: 25em;
+                margin: 0 auto;
+            }
+            form {
+                padding-bottom: 15px;
+                @include mq(mq-sm) {
+                    padding-bottom: 30px;
+                }
+                button, input {
+                    font-size: 1.2em;
+                }
+                .error {
+                    text-align: center;
+                }
+            }
+        }
+
+        footer {
+            border-top: 1px solid $headerBorder;
+            padding: 15px;
+        }
+    }
+}

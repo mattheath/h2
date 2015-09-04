@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Hailo Web UI</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" media="screen" href="/compiled/styles/main2.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="/bower/leaflet-dist/leaflet.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.0/styles/monokai_sublime.min.css">
+        <style>
+            .grid-demo div {
+                border: 1px solid #e0e0e0;
+                background-color: #f4f4f4;
+                padding: 10px;
+            }
+
+            .content {
+                padding: 0 20px 20px 20px;
+            }
+
+            #hailo-map {
+                height: 450px;
+            }
+        </style>
+    </head>
+
+    <body class="h-has-sidebar">
+        <header id="h-header">
+            <div class="h-header-inner">
+                <span class="h-header-nav-button">
+                    <i class="ion-navicon-round">=</i>
+                </span>
+                <span class="h-header-hailo-logo">
+                    <a href="#">Hailo Web UI</a>
+                </span>
+                <div class="h-header-toolbar">
+                    <div class="menu">
+                        <ul>
+                            <li><a href="https://github.com/hailocab/hailo-web-ui">GitHub</a></li><li><a href="http://hailocab.com">Hailo</a></li>
+                        </ul>
+                    </div>
+                    <div class="h-header-toolbar-item">
+                        <i class="h-header-toolbar-item-center header-menu-toggle">▼</i>
+                        <div class="h-dropdown-menu header-menu h-tip h-tip-p-right h-dd-right hide">
+                            <ul class="large no-padding">
+                                <li><a class="padding" href="https://github.com/hailocab/hailo-web-ui">GitHub</a></li>
+                                <li><a class="padding" href="http://hailocab.com">Hailo</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section id="h-sidebar">
+            <div class="h-sidebar-nav">
+                <ul>
+                    <li class="home"><a href="/#/">Home</a></li>
+                    <li class="maps"><a href="/#/maps">Maps</a></li>
+                    <li class="layout"><a href="/#/layout">Layout</a></li>
+                    <li class="h-box"><a href="/#/h-box">H-Box</a></li>
+                    <li class="dropdown"><a href="/#/dropdown">Dropdown</a></li>
+                </ul>
+            </div>
+        </section>
+        <div id="h-container">
+
+        </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="bower/underscore/underscore.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.0/backbone-min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.0/highlight.min.js"></script>
+        <script>
+
+            $(function() {
+                // for code highlighting in docs
+                function htmlEntities(str) {
+                    return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+                }
+
+                // trigger code highlighting
+                function prettyPrint() {
+                    $('.prettyprint').each(function(i, item) {
+                        var encoded = htmlEntities($(item).html());
+                        $(item).html(encoded);
+                        hljs.highlightBlock(item);
+                    });
+                }
+
+                function closeSidebar() {
+                    $('body').removeClass('h-sidebar-open');
+                }
+                // Deep inside you know there's a better way of doing this
+                // This one is just the easiest
+                $('.h-header-nav-button').on('click', function() {
+                    $('body').toggleClass('h-sidebar-open');
+                });
+
+                $('#h-sidebar a').on('click', function() {
+                    closeSidebar();
+                });
+
+                // header menu toggler
+                $('.header-menu-toggle')
+                    .css({
+                        cursor: 'pointer'
+                    })
+                    .click(function(e) {
+                        $('.header-menu').toggleClass('hide');
+                        e.stopPropagation();
+                    });
+
+                var $container = $('#h-container');
+                var Router = Backbone.Router.extend({
+                    routes: {
+                        "": "index",
+                        "maps": "maps",
+                        "layout": "layout",
+                        "h-box": "hBox",
+                        "dropdown": "dropdown"
+                    },
+
+                    index: function() {
+                        $container.load('docs/partials/home.html');
+                    },
+
+                    maps: function() {
+                        $container.load('docs/partials/maps.html', function() {
+                            require(["/scripts/maps/map.js"], function(Map) {
+                                var map = new Map({
+                                    id: "hailo-map"
+                                });
+                                map.showWorld();
+
+                                // Let's create a marker
+                                var marker = {
+                                    id: "DRIVER123",
+                                    type: "driver",
+                                    content: "",
+                                    iconType: "driver-empty",
+                                    markerId: "DRIVER123-driver",
+                                    lat: 51.511433,
+                                    lng: -0.117513
+                                }
+                                map.addMarkers([marker], { fitBounds: true })
+                            });
+                        });
+                    },
+
+                    layout: function() {
+                        $container.load('docs/partials/layout.html', function() {
+                            prettyPrint();
+                        });
+                    },
+
+                    hBox: function() {
+                        $container.load('docs/partials/h-box.html', function() {
+                            prettyPrint();
+                        });
+                    },
+
+                    dropdown: function() {
+                        $container.load('docs/partials/dropdown.html', function() {
+
+                            $('.h-dropdown-toggle').bind('click', function(e) {
+                                $(this).next().toggleClass('hide');
+                                e.stopPropagation();
+                            });
+
+                            $('body').bind('click', function() {
+                                $('.h-dropdown-menu').addClass('hide');
+                            });
+                        });
+                    }
+                });
+
+                var router = new Router();
+                Backbone.history.start()
+            });
+
+        </script>
+        <script data-main="/docs/scripts/maps.js" src="/bower/requirejs/require.js"></script>
+    </body>
+</html>

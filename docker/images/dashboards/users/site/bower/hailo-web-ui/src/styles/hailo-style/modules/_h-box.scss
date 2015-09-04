@@ -1,0 +1,59 @@
+/*
+  The box. Make a box with header and footer.
+  params:   headerHeight - the height of the header
+            footerHeight - the height of the footer
+            mobileHeaderTop  (optional) top offset of the header. On the mobile layout header becomes fixed, but you probably
+                             already have a main header in place so you can push this down with this value.
+            mobileHeaderHeight (optional) - if you wish to have different height of the mobile header
+
+*/
+
+@mixin h-box($headerHeight: 0, $mobileHeaderTop: 0, $footerHeight :0, $mobileHeaderHeight: 0) {
+    display: block;
+    height: 100%;
+    @include mq(mq-md) {
+        position: relative;
+    }
+
+    & > .h-box-header,
+    & > * > .h-box-header {
+        position: fixed;
+        left: 0;
+        right: 0;
+        height: $mobileHeaderHeight;
+        top: $mobileHeaderTop;
+        @include mq(mq-md) {
+            height: $headerHeight;
+            top: 0;
+            position: absolute;
+        }
+    }
+
+    & > .h-box-content,
+    & > * > .h-box-content {
+        padding-top: $mobileHeaderHeight;
+        padding-bottom: $footerHeight;
+        @include mq(mq-md) {
+            top: $headerHeight;
+            bottom: $footerHeight;
+            padding-top: 0;
+            padding-bottom: 0;
+            position: absolute;
+            left: 0;
+            right: 0;
+            overflow-y: auto;
+        }
+    }
+
+    & > .h-box-footer,
+    & > * > .h-box-footer {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: $footerHeight;
+        @include mq(mq-md) {
+            position: absolute;
+        }
+    }
+}

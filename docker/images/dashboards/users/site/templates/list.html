@@ -1,0 +1,27 @@
+<table class="h-table">
+    <thead>
+        <tr>
+            <th>Username</th>
+            <th>Roles</th>
+            <th>Created</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% if (users.length > 0) {
+            _.each(users, function(u) { %>
+                <tr data-uid="<%- u.uid %>">
+                    <td><%- u.uid %></td>
+                    <td class="roles"><% if (u.roles) { print(u.roles.join(', ')) } %></td>
+                    <td><%- moment.unix(u.createdTimestamp).format('YYYY/MM/DD HH:mm') %></td>
+                </tr>
+        <%  }) } else { %>
+                <tr>
+                    <td>-</td>
+                </tr>
+        <% } %>
+    </tbody>
+</table>
+<ul class="paginator">
+    <li><a class="h-button hb-small prev" href="#"><i class="icon ion-chevron-left"></i></a></li>
+    <li><a class="h-button hb-small next" href="#"><i class="icon ion-chevron-right"></i></a></li>
+</ul>

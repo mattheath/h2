@@ -1,0 +1,5 @@
+Build date: Mon Aug 10 14:17:08 UTC 2015
+Branch: hlabs
+Commit: 114db9998de2980df8e791da64e2479fe90fe976
+Commiter: Janos Dobronszki <dobronszki@gmail.com>
+Date: Mon Aug 10 15:16:15 2015 +0100

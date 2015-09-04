@@ -1,0 +1,22 @@
+{
+  "name": "web-toolkit",
+  "dependencies": {
+    "requirejs": "~2.1.8",
+    "jquery": ">=1.7 <2.1",
+    "q": "~0.9.7",
+    "uri.js": "~1.11.2"
+  },
+  "devDependencies": {
+    "qunit": "~1.12.0"
+  },
+  "homepage": "https://github.com/hailocab/web-toolkit",
+  "_release": "f55647fee2",
+  "_resolution": {
+    "type": "branch",
+    "branch": "4hlabs",
+    "commit": "f55647fee2e0a94273995caf9f399ba75c0c9c1b"
+  },
+  "_source": "git@github.com:hailocab/web-toolkit.git",
+  "_target": "4hlabs",
+  "_originalSource": "git@github.com:hailocab/web-toolkit.git"
+}

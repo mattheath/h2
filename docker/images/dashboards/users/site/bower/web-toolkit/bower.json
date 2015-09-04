@@ -1,0 +1,13 @@
+{
+  "name": "web-toolkit",
+  "version": "0.0.2",
+  "dependencies": {
+    "requirejs": "~2.1.8",
+    "jquery": ">=1.7 <2.1",
+    "q": "~0.9.7",
+    "uri.js": "~1.11.2"
+  },
+  "devDependencies": {
+    "qunit": "~1.12.0"
+  }
+}

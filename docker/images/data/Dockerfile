@@ -1,0 +1,4 @@
+FROM ubuntu
+
+RUN mkdir /data
+VOLUME /data

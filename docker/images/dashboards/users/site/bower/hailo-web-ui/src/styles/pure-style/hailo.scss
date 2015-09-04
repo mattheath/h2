@@ -1,0 +1,35 @@
+// Hailo pure-style SCSS
+
+$hImagesBaseUrl: "/img/hailo-web-ui" !default;
+
+// The base of all bases,
+// The one to rule them all
+@import "base/__pure";
+
+// Base systems, active [base]
+@import "base/_mixins";
+@import "base/_colors";
+@import "base/_base";
+@import "base/_typography";
+
+// Weapons on the ready! [components]
+@import "components/_alerts";
+@import "components/_buttons";
+@import "components/_cards";
+@import "components/_lists";
+@import "components/_tables";
+@import "components/_tabs";
+@import "components/_statusBoxes";
+@import "components/_modal";
+@import "components/_sidebar";
+
+// Widgets [widgets]
+@import "widgets/_city";
+
+// Time to call in the infantry [modules]
+@import "modules/_h-login";
+@import "modules/_h-portal";
+
+// Houston, do you copy? [vendors]
+@import "vendors/_typeahead";
+@import "vendors/_dropit";

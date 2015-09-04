@@ -1,0 +1,82 @@
+<header>
+<a href="/app/<%- user.application.toLowerCase() %>/user/<%- user.uid %>" class="edit h-button hb-active"><i class="ion-checkmark"></i> Finish editing</a>
+    <h2>Edit <%- user.uid %></h2>
+</header>
+
+<div class="messages"></div>
+
+<div class="toolbar hb-group">
+    <button class="expire-password h-button">Expire password</button>
+</div>
+
+<div class="roles h-panel">
+    <header>
+        <h2>Roles</h2>
+    </header>
+    <div class="content">
+        <form class="update-roles h-form">
+            <textarea name="roles"><%= user.roles.join('\n') %></textarea>
+            <div class="h-controls">
+                <button type="submit" class="h-button hb-accept">Update roles</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="ids h-panel">
+    <header>
+        <h2>IDs</h2>
+    </header>
+    <div class="content">
+        <form class="edit-ids h-form h-form-aligned">
+            <fieldset>
+                <div class="h-control-group">
+                    <label for="ids">Alternate names</label>
+                    <input id="ids" name="ids" type="text" value="<%= commaSepList(user.ids) %>">
+                    <p class="help-inline">Optional, comma separated list</p>
+                    <p class="help-block">Eg. email address or phone number</p>
+                </div>
+                <div class="h-controls">
+                    <button
+                        type="submit"
+                        class="h-button hb-accept">
+                        Update alternate names
+                    </button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
+
+<div class="password h-panel">
+    <header>
+        <h2>Change password</h2>
+    </header>
+    <div class="content">
+        <form class="change-password h-form h-form-aligned">
+            <fieldset>
+                <div class="h-control-group">
+                    <label for="new-password">New password</label>
+                    <input id="new-password"
+                        name="new-password"
+                        placeholder="New password"
+                        type="password">
+                </div>
+                <div class="h-control-group">
+                    <label for="repeat-new-password">Confirm new password</label>
+                    <input id="repeat-new-password"
+                        name="repeat-new-password"
+                        placeholder="Confirm new password"
+                        type="password">
+                </div>
+                <div class="h-controls">
+                    <button
+                        type="submit"
+                        class="h-button hb-accept">
+                        Change password
+                    </button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>

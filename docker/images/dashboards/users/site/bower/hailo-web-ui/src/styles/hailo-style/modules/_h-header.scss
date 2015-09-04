@@ -1,0 +1,197 @@
+/*
+    #h-header visual styles and sub-components
+
+    Layout specific styles are located in _h-portal.scss
+*/
+
+$borderColor: #eee !default;
+
+#h-header {
+    background-color: #fff;
+    border-bottom: 1px solid $borderColor;
+    @include mq(mq-md) {
+        .h-header-inner {
+            border-left: 1px solid $borderColor;
+            border-right: 1px solid $borderColor;
+        }
+    }
+}
+
+.h-header-nav-button {
+    display: none;
+    float: left;
+    height: 100%;
+    cursor: pointer;
+    font-size: 3rem;
+    line-height: $h-portal_headerHeight;
+    margin-left: 1rem;
+    color: #888;
+}
+
+.h-has-sidebar .h-header-nav-button {
+    display: block;
+    @include mq(mq-md) {
+        display: none;
+    }
+}
+
+.h-header-hailo-logo {
+    float: left;
+    height: 100%;
+    padding: 0 0 0 50px;
+    background: url($hImagesBaseUrl + '/hailo-transparent-bg.svg') no-repeat transparent;
+    background-size: auto round($h-portal_headerHeight / 1.8);
+    background-position: 15px 50%;
+    height: $h-portal_headerHeight;
+    line-height: $h-portal_headerHeight;
+    a {
+        font-size: 2rem;
+        outline: none;
+        text-decoration: none;
+        color: #333;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    @include mq(mq-md) {
+        height: $h-portal_headerHeight_lg;
+        line-height: $h-portal_headerHeight_lg;
+        background-size: auto round($h-portal_headerHeight_lg / 1.8);
+        padding: 0 0 0 60px;
+        a {
+            font-size: 2.5rem;
+        }
+    }
+
+    @include mq(mq-xs) {
+        a {
+            display: none;
+        }
+    }
+}
+
+/* Worth moving to its own file */
+
+.h-header-toolbar {
+    float: right;
+    width: auto;
+    height: 100%;
+
+    /* This should be getting obsolete */
+    .menu {
+        float: left;
+        border-left: 1px solid $borderColor;
+        ul {
+            padding: 0;
+            margin: 0;
+            li {
+                padding: 0;
+                &:not(:only-child) {
+                    border-left: 1px solid $headerBorder;
+                }
+                display: inline-block;
+                &.dropit-open a {
+                    background: #eee;
+                }
+                a {
+                    display: block;
+                    padding: 0 12px;
+                    @include mq(mq-sm) {
+                        padding: 0 20px;
+                    }
+
+                    height: $h-portal_headerHeight;
+                    line-height: $h-portal_headerHeight;
+                    @include mq(mq-md) {
+                        height: $h-portal_headerHeight_lg;
+                        line-height: $h-portal_headerHeight_lg;
+                    }
+
+                    color: $link;
+                    -o-transition:none;
+                    -ms-transition:none;
+                    -moz-transition:none;
+                    -webkit-transition:none;
+                    transition:none;
+
+                    i {
+                        color: $link;
+                        vertical-align: middle;
+                        padding-right: 5px;
+                        &.icon-angle-down {
+                            padding-right: 0;
+                            font-size: 1em;
+                        }
+                    }
+                    &:hover {
+                        text-decoration: none;
+                        background: $linkBlock;
+                        color: white;
+                        i {
+                            color: white;
+                        }
+                    }
+                }
+                > ul {
+                    background: #eee;
+                    li {
+                        width: 100%;
+                        a {
+                            height: 35px;
+                            line-height: 35px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .h-header-toolbar-item {
+        position: relative;
+        height:100%;
+        float: left;
+        border-left: 1px solid $borderColor;
+
+        i.icon {
+            margin-right: 1rem;
+            color: #ccc;
+        }
+    }
+
+    .h-header-toolbar-item-center {
+        display: block;
+        height: 100%;
+        padding: 0 1.5rem;
+        line-height: $h-portal_headerHeight;
+
+        @include mq(mq-md) {
+            line-height: $h-portal_headerHeight_lg;
+        }
+    }
+}
+
+/* I dropped it here for now */
+
+.dropit {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+.dropit .dropit-trigger {
+   position: relative;
+}
+.dropit .dropit-submenu {
+   position: absolute;
+   top: 100%;
+   left: -100%;
+   z-index: 10000;
+   display: none;
+   min-width: 150px;
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   background-color: white;
+}
+.dropit .dropit-open .dropit-submenu {
+    display: block;
+}

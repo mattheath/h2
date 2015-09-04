@@ -1,0 +1,67 @@
+<style>
+    .container-content {
+        padding: 2rem;
+        background-color: white;
+    }
+
+    pre.prettyprint {
+        border: none;
+        font-size: 1.4rem;
+        background-color: #333;
+        padding: 10px;
+    }
+</style>
+
+<div class="container-content">
+    <h3>Basic usage</h3>
+<pre class="prettyprint">
+<div class="h-has-sidebar">
+    <header id="h-header">Header</header>
+    <nav id="h-sidebar">Sidebar</nav>
+    <section id="h-container">Container</section>
+</div>
+
+<!-- The order of main components doesn't matter so these are all valid and won't break the layout -->
+<div class="h-has-sidebar">
+    <nav id="h-sidebar">Sidebar</nav>
+    <header id="h-header">Header</header>
+    <section id="h-container">Container</section>
+</div>
+
+<!-- You can even wrap main components in another elements if you feel like. -->
+<div class="h-has-sidebar">
+    <header id="h-header">Header</header>
+    <div class="my-app-wrap">
+        <nav id="h-sidebar">Sidebar</nav>
+        <section id="h-container">Container</section>
+    </div>
+</div></pre>
+    <h3>Opened sidebar</h3>
+    <p>To open a sidebar add class h-sidebar-open either to #h-header &amp; #h-container or to the wrapper element</p>
+<pre class="prettyprint">
+<div class="h-has-sidebar h-sidebar-open">
+    <header id="h-header">Header</header>
+    <nav id="h-sidebar">Sidebar</nav>
+    <section id="h-container">Container</section>
+</div>
+
+<!-- is an equivalent of: -->
+<div class="h-has-sidebar">
+    <header id="h-header" class="h-sidebar-open">Header</header>
+    <nav id="h-sidebar" class="h-sidebar-open">Sidebar</nav>
+    <section id="h-container" class="h-sidebar-open">Container</section>
+</div></pre>
+<h3>Hailo header with a logo and sidebar toggle button</h3>
+<p>.h-header-nav-button &amp; .h-header-hailo-logo are responsive and will adjust to the layout.</p>
+<pre class="prettyprint">
+<header id="h-header">
+    <div class="h-header-inner">
+        <span class="h-header-nav-button">
+            <i>=</i>
+        </span>
+        <span class="h-header-hailo-logo">
+            <a href="#">Hailo Web UI</a>
+        </span>
+    </div>
+</header></pre>
+</div>

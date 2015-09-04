@@ -1,0 +1,6 @@
+pkg github.com/hailocab/h2/go/internal/l/multierror, func New() *MultiError
+pkg github.com/hailocab/h2/go/internal/l/multierror, method (*MultiError) Add(error)
+pkg github.com/hailocab/h2/go/internal/l/multierror, method (*MultiError) AnyErrors() bool
+pkg github.com/hailocab/h2/go/internal/l/multierror, method (*MultiError) Count() int
+pkg github.com/hailocab/h2/go/internal/l/multierror, method (*MultiError) Error() string
+pkg github.com/hailocab/h2/go/internal/l/multierror, type MultiError []error

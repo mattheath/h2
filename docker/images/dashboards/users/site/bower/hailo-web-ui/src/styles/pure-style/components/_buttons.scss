@@ -1,0 +1,159 @@
+.h-button {
+  @extend .pure-button;
+}
+
+.pure-button,
+.h-button {
+  color: $black;
+
+  /**
+   * Children
+   */
+  &:hover {
+    color: $black;
+    // this was cheating... box-shadow: inset 0 0 1000px 0 rgba(0,0,0,0.5);
+    text-decoration: none;
+  }
+  i {
+    color: #777;
+  }
+
+  /**
+   *  SIZES - it's what matters most.
+   */
+  &.hb-stuffed {
+    //oh yeah..!
+    width: 100%;
+    height: 100%;
+  }
+
+  &.hb-xxx-large {
+    width: 300px;
+    height: 60px;
+    font-size: 30px;
+    line-height: 20px;
+  }
+
+  /**
+   * STYLES
+   */
+  &.hb-flat {
+    border-radius: 0px !important;
+  }
+
+  /**
+   *  ADDITIONAL THEMES
+   */
+
+  &.hb-primary {
+    background: $hc-primary;
+    border: thin solid darken($hc-primary, 10);
+    color: #fff;
+
+    i {
+      color: #fff;
+    }
+
+    &:hover {
+      background: darken($hc-primary, 5);
+    }
+  }
+
+  &.hb-accept {
+    background: $hc-accept;
+    border: thin solid darken($hc-accept, 10);
+    color: #fff;
+
+    i {
+      color: #fff;
+    }
+
+    &:hover {
+      background: darken($hc-accept, 5);
+    }
+  }
+
+  &.hb-danger {
+    background: $hc-danger;
+    border: thin solid darken($hc-danger, 14);
+    color: #fff;
+
+    i {
+      color: #fff;
+    }
+
+    &:hover {
+      background: darken($hc-danger, 5);
+    }
+
+    &.hb-iconify:before {
+      content: "<i class=\"icon-ok\"></i>";
+    }
+  }
+
+  &.hb-hailo {
+    background: $hailo;
+    border: thin solid darken($hailo, 10);
+    color: #000;
+
+    i {
+      color: #000;
+    }
+
+    &:hover {
+      background: darken($hailo, 5);
+    }
+  }
+
+  &.hb-enabled {
+    background: $hc-enabled;
+    border: thin solid darken($hc-enabled, 10);
+    color: #fff;
+
+    i {
+      color: #fff;
+    }
+
+    &:hover {
+      background: darken($hc-enabled, 5);
+    }
+  }
+
+  &.hb-drained {
+    background: $hc-drained;
+    border: thin solid darken($hc-drained, 10);
+    color: #333;
+
+    i {
+      color: #333;
+    }
+
+    &:hover {
+      background: darken($hc-drained, 5);
+    }
+  }
+
+  &.hb-inactive {
+    @extend .hb-drained;
+    &:hover {
+      background: darken($hc-drained, 0);
+    }
+    cursor: default;
+  }
+
+  &.hb-xsmall {
+    font-size: 70%;
+  }
+
+  &.hb-small {
+    font-size: 85%;
+  }
+
+  &.hb-large {
+    font-size: 110%;
+  }
+
+  &.hb-xlarge {
+    font-size: 125%;
+  }
+}

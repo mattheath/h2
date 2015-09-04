@@ -1,0 +1,38 @@
+.h-tip {
+    &:before {
+        width: 8px;
+        height: 8px;
+        background-color: white;
+        display: block;
+        position: absolute;
+        top: -5px;
+        right: 50%;
+        margin-left: -4px;
+        content: "";
+        border-left: 1px solid #ddd;
+        border-top: 1px solid #ddd;
+        @include transform(translateX(4.59638590186px) rotate(45deg));
+    }
+}
+
+.h-tip-bottom {
+    &:before {
+        @extend .h-tip;
+        top: auto;
+        bottom: -5px;
+        @include transform(translateX(4.59638590186px) rotate(225deg));
+    }
+}
+
+.h-tip.h-tip-p-right {
+    &:before {
+        right: 22px;
+    }
+}
+
+.h-tip.h-tip-p-left {
+    &:before {
+        right: auto;
+        left: 22px;
+    }
+}

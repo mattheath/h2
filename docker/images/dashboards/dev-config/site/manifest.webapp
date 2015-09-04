@@ -1,0 +1,20 @@
+{
+    "name": "Dev Config",
+    "description": "Service configuration",
+    "developer": {
+        "name": "Hailo",
+        "url": "https://www.hailocab.com"
+    },
+    "default_locale": "en",
+    "icons": {
+        "60": "/img/app-icon-60.png"
+    },
+    "hailo": {
+        "roles": [
+            "ADMIN"
+        ],
+        "tags": [
+            "tech"
+        ]
+    }
+}

@@ -1,0 +1,205 @@
+@mixin colorize-button($buttonColor, $textColor: #fff) {
+    background: $buttonColor;
+    $textColor: rgba($textColor, 0.8);
+    color: $textColor;
+
+    i {
+        color: $textColor;
+    }
+
+    &:hover {
+      background: darken($buttonColor, 5);
+    }
+    border-color: darken($buttonColor, 8);
+}
+
+/* stolen from pure css */
+
+.h-button-base {
+    /* Structure */
+    display: inline-block;
+    *display: inline; /*IE 6/7*/
+    zoom: 1;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: baseline;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    font-family: inherit;
+    font-size: 100%;
+    *font-size: 90%; /*IE 6/7 - To reduce IE's oversized button text*/
+    *overflow: visible; /*IE 6/7 - Because of IE's overly large left/right padding on buttons */
+    padding: 0.5em 1em;
+    color: #444; /* rgba not supported (IE 8) */
+    color: rgba(0, 0, 0, 0.80); /* rgba supported */
+    *color: #444; /* IE 6 & 7 */
+    border: 1px solid #999;  /*IE 6/7/8*/
+    border: none rgba(0, 0, 0, 0);  /*IE9 + everything else*/
+    background-color: #E6E6E6;
+    text-decoration: none;
+}
+
+/* Firefox: Get rid of the inner focus border */
+.h-button-base::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+.h-button-hover,
+.h-button-base:hover,
+.h-button-base:focus {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000',GradientType=0);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(40%, rgba(0,0,0, 0.05)), to(rgba(0,0,0, 0.10)));
+    background-image: -webkit-linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+    background-image: -moz-linear-gradient(top, rgba(0,0,0, 0.05) 0%, rgba(0,0,0, 0.10));
+    background-image: -o-linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+    background-image: linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+}
+.h-button-base:focus {
+    outline: 0;
+}
+.h-button-active,
+.h-button-base:active {
+    box-shadow: 0 0 0 1px rgba(0,0,0, 0.15) inset, 0 0 6px rgba(0,0,0, 0.20) inset;
+}
+
+.h-button-base[disabled],
+.h-button-disabled,
+.h-button-disabled:hover,
+.h-button-disabled:focus,
+.h-button-disabled:active {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    filter: alpha(opacity=40);
+    -khtml-opacity: 0.40;
+    -moz-opacity: 0.40;
+    opacity: 0.40;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.h-button-round {
+    @extend .h-button-base;
+    border-radius: 2px;
+}
+
+.h-button-border {
+    @extend .h-button-base;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.h-button {
+    @extend .h-button-round;
+    @extend .h-button-border;
+
+    // default white button
+    background: white;
+    $textColor: rgba(#000, 0.7);
+    color: $textColor;
+
+    i {
+        color: $textColor;
+    }
+
+    &:hover {
+      background: #eee;
+    }
+
+    border-color: #ddd;
+}
+
+.h-button-pimped {
+    @extend .h-button;
+    @include box-shadow(0, 2px, 0, -1px, rgba(255, 255, 255, 0.4), true);
+}
+
+/* COLORS */
+
+.hb-primary {
+    @include colorize-button($hc-primary);
+}
+
+.hb-accept {
+    @include colorize-button($hc-accept);
+}
+
+.hb-danger {
+    @include colorize-button($hc-danger);
+}
+
+.hb-hailo {
+    @include colorize-button($hailo, #000);
+}
+
+.hb-enabled {
+    @include colorize-button($hc-enabled);
+}
+
+.hb-drained {
+    @include colorize-button($hc-drained, #000);
+}
+
+.hb-inactive {
+    @extend .hb-drained;
+    &:hover {
+      background: darken($hc-drained, 0);
+    }
+    cursor: default;
+}
+
+.hb-xsmall {
+    font-size: 70%;
+}
+
+.hb-small {
+    font-size: 85%;
+}
+
+.hb-large {
+    font-size: 110%;
+}
+
+.hb-xlarge {
+    font-size: 125%;
+}
+
+.hb-xxx-large {
+    width: 300px;
+    height: 60px;
+    font-size: 30px;
+    line-height: 20px;
+}
+
+.hb-stuffed {
+    width: 100%;
+    height: 100%;
+}
+
+.hb-group {
+    position: relative;
+    display: inline-block;
+    .h-button-pimped,
+    .h-button-round,
+    .h-button {
+        float: left;
+        &:first-child:not(:last-of-type) {
+            @include border-right-radius(0);
+        }
+        &:last-of-type:not(:first-child) {
+            @include border-left-radius(0);
+        }
+        &:not(:first-child):not(:last-of-type) {
+            border-radius: 0;
+        }
+        &:not(:first-child) {
+            margin-left: -1px;
+        }
+    }
+}

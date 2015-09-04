@@ -1,0 +1,240 @@
+<style>
+    .buttons div {
+        margin-bottom: 2rem;
+    }
+</style>
+
+<div class="content">
+    <h1>Hailo style guide</h1>
+    <p>This is the documentation for the Hailo Web UI project.</p>
+    <ul>
+        <li>Use the CSS in your own web project</li>
+        <li>Help out with your own styles, mockups or suggestions</li>
+    </ul>
+    <p>Contribute: <a href="https://github.com/hailocab/hailo-web-ui">github.com/hailocab/hailo-web-ui</a></p>
+    <h2>The Hailo web guild</h2>
+    <ul>
+        <li>#Web in HipChat</li>
+        <li><a href="mailto:web@hailocab.com">web@hailocab.com</a></li>
+    </ul>
+</div>
+
+<!-- BUTTONS -->
+<div class="content buttons">
+    <h2>Buttons</h2>
+    <div>
+         <button class="h-button-base hb-enabled hb-small">Base</button>
+         <button class="h-button-round hb-enabled hb-small">Round</button>
+         <button class="h-button-border hb-enabled hb-small">Bordered</button>
+         <button class="h-button hb-enabled hb-small">Both</button>
+         <button class="h-button-pimped hb-enabled hb-small">Pimped</button>
+    </div>
+    <div>
+        <button class="h-button hb-small">Naked</button>
+        <button class="h-button hb-primary hb-small">Good Idea</button>
+        <button class="h-button hb-drained hb-small">Cancel</button>
+        <button class="h-button hb-danger hb-small">Danger</button>
+        <button class="h-button hb-accept hb-small">Accept</button>
+        <button class="h-button hb-hailo hb-small">Marketing!</button>
+        <button class="h-button hb-enabled hb-small">Unique</button>
+        <button class="h-button hb-inactive hb-small">Uhrg</button>
+    </div>
+    <div class="hb-group">
+        <button class="h-button hb-enabled hb-small">Left</button>
+        <button class="h-button hb-enabled hb-small">Middle</button>
+        <button class="h-button hb-enabled hb-small">Right</button>
+    </div>
+    <div class="hb-group">
+        <button class="h-button hb-enabled hb-small">Left</button>
+        <button class="h-button hb-enabled hb-small">Right</button>
+    </div>
+    <div class="hb-group">
+        <button class="h-button hb-enabled hb-small">One in group</button>
+    </div>
+    <div class="hb-group">
+        <button class="h-button hb-small">Left</button>
+        <button class="h-button hb-small">Middle</button>
+        <button class="h-button hb-small">Right</button>
+    </div>
+</div>
+
+<!-- GRIDS -->
+<div class="content">
+    <h2>Grids</h2>
+    <div class="grid-demo h-g">
+        <div class="h-u-1">.h-u-1</div>
+    </div>
+    <div class="grid-demo h-g">
+        <div class="h-u-1-2">.h-u-1-2</div>
+        <div class="h-u-1-2">.h-u-1-2</div>
+    </div>
+    <div class="grid-demo h-g">
+        <div class="h-u-1-3">.h-u-1-3</div>
+        <div class="h-u-2-3">.h-u-2-3</div>
+    </div>
+    <div class="grid-demo h-g">
+        <div class="h-u-1-4">.h-u-1-4</div>
+        <div class="h-u-3-4">.h-u-3-4</div>
+    </div>
+    <div class="grid-demo h-g">
+        <div class="h-u-1-6">.h-u-1-6</div>
+        <div class="h-u-1-3">.h-u-1-3</div>
+        <div class="h-u-1-2">.h-u-1-2</div>
+    </div>
+    <h2>Responsive Grids</h2>
+    <div class="grid-demo h-g-r">
+        <div class="h-u-1">.h-u-1</div>
+    </div>
+    <div class="grid-demo h-g-r">
+        <div class="h-u-1-2">.h-u-1-2</div>
+        <div class="h-u-1-2">.h-u-1-2</div>
+    </div>
+    <div class="grid-demo h-g-r">
+        <div class="h-u-1-3">.h-u-1-3</div>
+        <div class="h-u-2-3">.h-u-2-3</div>
+    </div>
+    <div class="grid-demo h-g-r">
+        <div class="h-u-1-4">.h-u-1-4</div>
+        <div class="h-u-3-4">.h-u-3-4</div>
+    </div>
+    <div class="grid-demo h-g-r">
+        <div class="h-u-1-6">.h-u-1-6</div>
+        <div class="h-u-1-3">.h-u-1-3</div>
+        <div class="h-u-1-2">.h-u-1-2</div>
+    </div>
+</div>
+
+<!-- ALERTS -->
+<div class="content">
+    <h2>Alerts</h2>
+    <div class="alert">alert-warning</div>
+    <div class="alert alert-success">alert-success</div>
+    <div class="alert alert-info">alert-info</div>
+    <div class="alert alert-error">alert-error</div>
+</div>
+
+<!-- LOGIN BOX -->
+<div class="content">
+    <h2>Login Box</h2>
+    <header class="h-login-header">
+        <h2>Welcome to Hailo</h2>
+        <h3>Log in below to access your account</h3>
+    </header>
+    <section class="h-login-body">
+        <div class="alert alert-error">The is the error placeholder</div>
+        <form class="h-form h-clear-fix">
+            <input type="text"
+                   placeholder="Administrator Email">
+            <input type="password"
+                   placeholder="Password"
+                   field-required>
+            <div class="pull-right button-login">
+                <button class="h-button hb-enabled">Log in</button>
+            </div>
+        </form>
+    </section>
+    <footer class="h-login-footer">
+        <a href="#" onclick="alert('dumbass');">Forgot password?</a>
+    </footer>
+</div>
+
+<!-- STATUS BOXES -->
+<div class="content">
+    <h2>Status Boxes</h2>
+    <span class="h-status-box h-status-box-default">Default</span>
+    <span class="h-status-box h-status-box-success">Success</span>
+    <span class="h-status-box h-status-box-warning">Warning</span>
+    <span class="h-status-box h-status-box-important">Important</span>
+    <span class="h-status-box h-status-box-info">Info</span>
+    <span class="h-status-box h-status-box-inverse">Inverse</span>
+</div>
+
+<!-- TABLES -->
+
+<div class="content">
+    <h2>Tables</h2>
+
+    <h3>Plain Table</h3>
+    <p><code>class="h-table"</code></p>
+    <table class="h-table">
+        <thead>
+            <tr>
+                <th>Header</th>
+                <th>Header</th>
+                <th>Header</th>
+            </tr>
+        </head>
+        <tbody>
+            <tr>
+                <td>Content</td>
+                <td>Content</td>
+                <td>Content</td>
+            </tr>
+            <tr>
+                <td>Content</td>
+                <td>Content</td>
+                <td>Content</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Horizontal Table</h3>
+    <p><code>class="h-table h-table-horizontal"</code></p>
+    <table class="h-table h-table-horizontal">
+        <thead>
+            <tr>
+                <th>Header</th>
+                <th>Header</th>
+                <th>Header</th>
+            </tr>
+        </head>
+        <tbody>
+            <tr>
+                <td>Content</td>
+                <td>Content</td>
+                <td>Content</td>
+            </tr>
+            <tr>
+                <td>Content</td>
+                <td>Content</td>
+                <td>Content</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Striped Table</h3>
+    <p><code>class="h-table h-table-striped"</code></p>
+    <table class="h-table h-table-striped">
+        <thead>
+            <tr>
+                <th>Header</th>
+                <th>Header</th>
+                <th>Header</th>
+            </tr>
+        </head>
+        <tbody>
+            <tr>
+                <td>Content</td>
+                <td>Content</td>
+                <td>Content</td>
+            </tr>
+            <tr>
+                <td>Content</td>
+                <td>Content</td>
+                <td>Content</td>
+            </tr>
+            <tr>
+                <td>Content</td>
+                <td>Content</td>
+                <td>Content</td>
+            </tr>
+            <tr>
+                <td>Content</td>
+                <td>Content</td>
+                <td>Content</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+

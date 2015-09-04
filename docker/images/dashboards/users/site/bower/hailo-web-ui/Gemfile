@@ -1,0 +1,4 @@
+# h2o-dashboard Gemfile
+source "https://rubygems.org"
+
+gem "sass"

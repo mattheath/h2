@@ -1,0 +1,24 @@
+#!/bin/bash
+
+set -e
+
+if [ "$JANKY_BRANCH" == "" ]; then 
+    echo "\$JANKY_BRANCH is not defined"
+    exit 1
+fi
+
+DIST_DIR=$(mktemp -d /tmp/web-toolkit-dist-XXXXXX)
+
+mkdir -p $DIST_DIR
+(
+    git clone git@github.com:hailocab/web-toolkit.git $DIST_DIR
+    cd $DIST_DIR
+    git checkout dist
+)
+node_modules/.bin/grunt build-standalone --dest=$DIST_DIR/$JANKY_BRANCH/toolkit.js
+(
+    cd $DIST_DIR
+    git add .
+    git diff --cached --quiet || git commit -qm "Build dist" --author="CI <web+ci@hailocab.com>"
+    git push
+)

@@ -1,0 +1,87 @@
+// H-Login style
+
+.h-login-container {
+    margin: 10px;
+    background: white;
+    -moz-box-shadow:    1px 1px 2px 3px #f5f5f5;
+    -webkit-box-shadow: 1px 1px 2px 3px #f5f5f5;
+    box-shadow:         1px 1px 2px 3px #f5f5f5;
+
+    @include mq(mq-sm) {
+        max-width: 600px;
+        margin: 25px auto 0 auto;
+        position: absolute;
+        top: 18%;
+        @media (min-width: 600px) {
+            left: 50%;
+            width: 600px;
+            margin-left: -300px;
+        }
+    }
+}
+
+.h-login-header {
+    text-align: center;
+    padding-top: 15px;
+    @include mq(mq-sm) {
+        padding-top: 30px;
+
+    }
+
+    h2 {
+        margin: 0;
+        color: text;
+        font-size: 1.6em;
+        @include mq(mq-md) {
+            font-size: 2em;
+        }
+    }
+    h3 {
+        margin: 0;
+        color: #ccc;
+        font-size: 1.2em;
+        @include mq(mq-md) {
+            font-size: 1.5em;
+        }
+    }
+}
+
+.h-login-body {
+    padding: 15px;
+    @include mq(mq-sm) {
+        padding-top: 30px;
+        max-width: 25em;
+        margin: 0 auto;
+    }
+    .alert.alert-error {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    form {
+        input {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        padding-bottom: 15px;
+        @include mq(mq-sm) {
+            padding-bottom: 30px;
+        }
+        button, input {
+            font-size: 1.2em;
+        }
+        .button-login {
+            @include mq(mq-xs) {
+                width: 100%;
+                float: none;
+                button {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.h-login-footer {
+    border-top: 1px solid $headerBorder;
+    padding: 15px;
+}

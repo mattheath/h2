@@ -1,0 +1,45 @@
+.h-card {
+    width: 400px;
+    background-color: rgb( 255, 255, 255 );
+    box-shadow: 0px 0px 1px 0 rgba( 0, 0, 0, 0.3 );
+    padding-bottom: 10px;
+    .hc-title {
+        background-color: rgb( 245, 245, 245 );
+        border-bottom: thin solid rgb( 225, 225, 225 );
+        padding: 12px;
+        font-size: 16px;
+        color: rgb( 51, 51, 51 );
+        text-align: left;
+        i {
+            color: rgb( 151, 151, 151 );
+            padding-right: 8px;
+        }
+    }
+
+    .hc-section {
+        border-bottom: thin solid rgb( 225, 225, 225 );
+        &:last-child {
+            border-bottom: none;
+        }
+        .hc-c-row {
+            display: block;
+            letter-spacing: -4px;
+            .hc-c-c,
+            .hc-c-l,
+            .hc-c-r  {
+                width: 50%;
+                padding: 10px 15px;
+                color: rgb( 51, 51, 51 );
+                letter-spacing: normal;
+            }
+            .hc-c-l,
+            .hc-c-r {
+                box-sizing:border-box;
+                -moz-box-sizing:border-box;
+                -webkit-box-sizing:border-box;
+                display: inline-block;
+                width: 50%;
+            }
+        }
+    }
+}

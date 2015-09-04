@@ -1,0 +1,233 @@
+// users-web app styles SCSS
+
+// ionicons
+$ionicons-font-path: "../../bower/ionicons/fonts";
+@import "../bower/ionicons/scss/ionicons";
+
+// import hailo-web-ui
+$hImagesBaseUrl: "/bower/hailo-web-ui/src/img";
+@import "../bower/hailo-web-ui/src/styles/hailo-style/application";
+
+@import "../bower/toastr/toastr";
+
+#toast-container.toast-top-full-width {
+    > div {
+        opacity: 1;
+        margin-top: 10px;
+    }
+}
+
+a, button {
+    i {
+        font-size: 125%;
+        vertical-align: middle;
+        color: #333;
+    }
+}
+
+// page layout
+#h-container > #page {
+    min-height: 450px;
+    padding-bottom: 25px;
+    padding-left:  15px;
+    padding-right: 15px;
+    @include mq(mq-md) {
+        padding-left:  20px;
+        padding-right: 20px;
+    }
+
+    &.loading {
+        text-align: center;
+        i {
+            color: #ccc;
+            font-size: 3em;
+            margin-top: 200px;
+        }
+    }
+}
+
+// List users page
+#page.list {
+    button i {
+        color: #333;
+        font-size: 125%;
+        vertical-align: middle;
+    }
+
+    .applications {
+        margin: 15px 0;
+        form {
+            float: right;
+        }
+        .toolbar {
+
+        }
+    }
+
+    .options  {
+        form {
+            background: rgb(124,124,124);
+            p {
+                display: inline-block;
+                padding: 10px 15px;
+                vertical-align: middle;
+                margin: 0;
+                color: white;
+                font-size: 125%;
+            }
+            fieldset {
+                display: inline-block;
+                padding: 10px 15px;
+                label {
+                    color: white;
+                    font-weight: bold;
+                }
+                input {
+                    margin-right: 10px;
+                    padding: 5px 8px;
+                    background: rgb(238, 238, 238);
+                    width: 12em;
+                    &.small {
+                        width: 6em;
+                    }
+                }
+                button {
+                    padding: 5px 12px;
+                }
+            }
+        }
+    }
+
+    table {
+        &.loading {
+            opacity: 0.4;
+        }
+        tbody {
+            tr:hover, td:hover {
+                cursor: pointer;
+                background-color: #F7F7F7;
+            }
+            
+            td.roles {
+                font-family: monospace;
+            }
+        }
+    }
+
+    ul.paginator {
+        float: right;
+        list-style: none;
+        li {
+            display: inline-block;
+        }
+    }
+}
+
+#page.user {
+
+    .edit {
+        float: right;
+    }
+
+    .h-panel.roles,
+    .h-panel.ids,
+    .h-panel.password {
+        margin-bottom: 10px;
+        .content {
+            margin-left: 15px;
+            margin-right: 15px;
+            padding-bottom: 15px;
+        }
+    }
+}
+
+// form styles
+form {
+    // help blocks -- move to hailo-web-ui ?
+    p.help-block,
+    p.help-inline {
+        font-size: 90%;
+        font-style: italic;
+        margin: 0;
+    }
+    p.help-inline {
+        display: inline-block;
+        padding-left: 10px;
+    }
+    p.help-block {
+        margin-top: 0.5em;
+        margin-bottom: 1em;
+        @include mq(mq-sm) {
+            margin-left: 13em;
+        }
+    }
+    
+    &.update-roles {
+        textarea {
+            font-family: monospace;
+            width: 100%;
+            min-height: 150px;
+        }
+    }
+}
+
+// h-panel
+.h-panel {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: $white;
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+
+    > header {
+        padding: 15px;
+        display: block;
+        clear: both;
+        line-height: 1.5em;
+        h2 {
+            margin: 0;
+            font-size: 1.1em;
+        }
+        .toolbar {
+            float: right;
+            a {
+                vertical-align: middle;
+                &:hover {
+                    text-decoration: none;
+                }
+                &.roll-up i {
+                    font-size: 18px;
+                    color: #BBB;
+                }
+            }
+            i {
+                font-size: 28px;
+                &.loading {
+                    color: #ccc;
+                }
+            }
+        }
+    }
+
+    > .content {
+        overflow: hidden;
+        &.disabled {
+            opacity: 0.4;
+        }
+        clear: both;
+    }
+
+    > footer {
+        padding: 8px;
+        text-align: right;
+        font-size: 0.9em;
+        a:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.hidden {
+    display: none;
+}

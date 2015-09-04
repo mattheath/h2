@@ -1,0 +1,263 @@
+// H-Sidebar style
+
+// Needs body.h-sidebar and specific layout (eg., see drivers-portal)
+// Uses a checkbox and label to toggle sidebar state (CSS only)
+// Mobile first design
+// Sidebar will go into 'slideout' state < 992px width
+// In 'slideout' state, header is fixed and footer is hidden
+
+// Colours
+$sidebarBg_slideout: #404E66 !default;
+$sidebarFg_slideout: #ccc !default;
+$sidebarHighlight_slideout: #2F3641 !default;
+$sidebarHighlight: #EEEEEE !default;
+
+// Sizes
+$sidebarWidth_slideout: 260px !default;
+$sidebarWidth: 180px !default;
+$sidebarWidth_lg: 240px !default;
+// these values match h-portal vars
+$h-portal_headerHeight: 50px !default;
+$h-portal_headerHeight_lg: 65px !default;
+
+body.h-sidebar {
+    position: relative;
+    overflow: hidden;
+
+    #sidebar-toggle {
+        display: none;
+    }
+
+    #page {
+        @include mq(mq-md) {
+            overflow-y: scroll;
+            -webkit-overflow-scrolling: touch;
+        }
+    }
+
+    #main {
+        height: calc(100% - #{$h-portal_headerHeight});
+        width: 100%;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        background: $footerGrey;
+        @include mq(mq-md) {
+            position: relative;
+            width: auto;
+            top: 0;
+            height: auto;
+            overflow-y: auto;
+            background: $bodyGrey;
+            padding-left: 20px;
+        }
+        > #content {
+            background: $bodyGrey;
+            margin: 0 auto;
+        }
+    }
+
+    #container > header {
+        #sidebar-button + a.hailo-logo {
+            display: none; // hide normal logo
+            @include mq(mq-md) {
+                display: inline-block;
+            }
+        }
+
+        // shadow when main div is scrolling
+        @include transition(box-shadow, 0.5s);
+        &.scroll {
+            @include box-shadow(0, 2px, 5px, 0, rgba(0, 0, 0, 0.1));
+        }
+    }
+
+    // show menu button in header (replaces normal logo)
+    #sidebar-button {
+        display: inline-block;
+        @include mq(mq-md) {
+            display: none;
+        }
+        outline: none;
+        cursor: pointer;
+        span {
+            padding: 0 0 0 45px;
+        }
+        i {
+            margin-left: 5px;
+            color: #BBB;
+        }
+        &.hailo-logo {
+            background-position: 30px 50% !important;
+            padding: 0 50px 0 0 !important;
+        }
+    }
+
+    #page > #sidebar {
+        @include box-shadow(-20px, 0px, 20px, -20px, rgba(0, 0, 0, 0.4), true);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: $sidebarWidth_slideout;
+        height: 100%;
+        margin: 0 auto;
+        padding: $h-portal_headerHeight 0 0 0;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+        background: $sidebarBg_slideout;
+
+        // display sidebar normally at side
+        @include mq(mq-md) {
+            position: absolute;
+            width: $sidebarWidth;
+            height: 100%;
+            top: $h-portal_headerHeight;
+            background: $bodyGrey;
+            @include box-shadow-none;
+            @include mq(mq-md) {
+                top: $h-portal_headerHeight_lg;
+            }
+            padding: 20px 0 0 20px;
+        }
+
+        @include mq(mq-lg) {
+            width: $sidebarWidth_lg;
+        }
+
+        // nav links style
+        .pure-menu.pure-menu-open {
+            ul {
+                z-index: auto;
+            }
+            border: none;
+            background-color: transparent;
+            a {
+                color: $sidebarFg_slideout;
+                &:hover {
+                    background-color: $sidebarHighlight_slideout;
+                    @include mq(mq-md) {
+                        color: $link;
+                        background-color: $sidebarHighlight;
+                    }
+                }
+                padding: 7px 10px;
+                font-size: 1.4em;
+
+                @include mq(mq-md) {
+                    color: #1881C5;
+                }
+            }
+        }
+
+        .pure-menu-selected {
+            position: relative;
+            a {
+                font-weight: normal;
+                color: $sidebarFg_slideout !important;
+                background-color: $sidebarHighlight_slideout;
+                @include transition(none);
+                @include mq(mq-md) {
+                    color: #000000 !important;
+                    background-color: transparent;
+                }
+                &:after{
+                    position: absolute;
+                    border-top: 2px solid #999;
+                    border-right: 2px solid #999;
+                    width: 10px;
+                    height: 10px;
+                    margin-top: -7px;
+                    content: "";
+                    right: 10px;
+                    top: 50%;
+                    @include transform(rotate(45deg));
+                    
+                }
+            }
+        }
+
+        // special style for error-log in sidebar
+        #app-errors {
+            margin-left: 15px;
+            margin-right: 15px;
+            @include mq(mq-md) {
+                margin: 25px auto 0 auto;
+            }
+            .errors {
+                max-height: 250px;
+                position: relative;
+                overflow-y: scroll;
+            }
+            .error {
+                padding: 5px;
+                color: #b94a48;
+                background-color: #f2dede;
+                overflow: hidden;
+                border: 1px solid #eed3d7;
+                border-top: none;
+                &:first-child {
+                    border-top: 1px;
+                }
+                h4 {
+                    margin: 0 0 5px 0;
+                    font-size: 0.9em;
+                }
+                p {
+                    margin: 5px 0 0 0;
+                    font-size: 0.8em;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+            a.clear {
+                font-size: 0.9em;
+                padding: 0.3em 0.6em;
+            }
+        }
+    }
+
+    // when slide out navigation is active
+    #sidebar-toggle:checked ~ #sidebar {
+        opacity: 1;
+        @include transition(opacity, 0);
+        @include mq(mq-md) {
+            @include transition(none);
+        }
+    }
+
+    #container {
+        display: block;
+        position: relative;
+        height: 100%;
+        transition: -moz-transform .25s ease-in-out;
+        -moz-transition: -moz-transform .25s ease-in-out;
+        -webkit-transition: -webkit-transform .25s ease-in-out;
+        @include transform(translate3D(0,0,0));
+        @include mq(mq-md) {
+            margin-left: $sidebarWidth;
+        }
+        @include mq(mq-lg) {
+            margin-left: $sidebarWidth_lg;
+        }
+    }
+
+    #container .h-map.fullscreen,
+    #container > header,
+    #container > footer,
+    #container > #overlay {
+        @include mq(mq-md) {
+            margin-left: (-$sidebarWidth);
+        }
+        @include mq(mq-lg) {
+            margin-left: (-$sidebarWidth_lg);
+        }
+    }
+ 
+    // translate main container when nav handler is checked
+    #sidebar-toggle:checked ~ #container,
+    #container.open {
+        @include transform(translate3D($sidebarWidth_slideout,0,0));
+        @include mq(mq-md) {
+            @include transform(none);
+        }
+    }
+}

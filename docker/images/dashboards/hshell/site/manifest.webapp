@@ -1,0 +1,19 @@
+{
+    "name": "HShell",
+    "description": "Web HShell",
+    "developer": {
+        "name": "Hailo",
+        "url": "https://www.hailocab.com"
+    },
+    "icons": {
+        "60": "/static/img/app-icon-60.png"
+    },
+    "hailo": {
+        "roles": [
+            "ADMIN"
+        ],
+        "tags": [
+            "tech"
+        ]
+    }
+}

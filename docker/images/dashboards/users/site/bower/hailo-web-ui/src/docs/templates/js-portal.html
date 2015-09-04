@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            WebFontConfig = {
+                google: { families: [ 'Lato:300,900,300italic:latin','Inconsolata::latin' ] }
+            };
+            (function() {
+                var wf = document.createElement('script');
+                wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+                wf.type = 'text/javascript';
+                wf.async = 'true';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(wf, s);
+            })();
+        </script>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>HWU - Portalisation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.2.1/pure-min.css">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../pure-hailo.css">
+    </head>
+    <body class="h-portal">
+    <div class="container">
+
+        <header class="pure-g-r">
+            <div class="pure-u-1">
+                <div class="content">
+                    <div class="pure-menu pure-menu-open pure-menu-horizontal">
+                        <a class="pure-menu-heading hailo-logo" href="/#"><span class="h2">Hailo</span><span>Portal</span></a>
+                        <ul class="user-options">
+                            <li><a class="settings pure-button" href="# "><i class="icon-cog"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="pure-g-r">
+                <div class="sidebar pure-u-1-2">
+                    <div id="sidebar"> 
+                        <div id="side-nav"> 
+                            <div class="pure-menu pure-menu-open">
+                                <ul>
+                                    <li class="pure-menu-selected"><a class="home" href="#">Home</a></li>
+                                    <li><a class="services" href="#">Services</a></li>
+                                    <li><a class="builds" href="#">Builds</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main pure-u-1-2">
+                    <div id="main"> 
+                        <div class="alert alert-error alert-block hide" style="display: block;">
+                            <h3><i class="icon-exclamation-sign"></i> Error</h3>
+                            <p>You've not set this project up :(</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="pure-g-r">
+            <div class="pure-u-1">
+                <div class="content">
+                    <p>&copy; Hailo 2013</p>
+                </div>
+            </div>
+        </footer>
+
+        <script data-main="js/main.js" src="js/libs/require/require.js"></script>
+    </div>
+    </body>
+</html>

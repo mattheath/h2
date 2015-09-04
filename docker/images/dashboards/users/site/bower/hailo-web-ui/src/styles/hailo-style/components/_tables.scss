@@ -1,0 +1,43 @@
+.h-table {
+    border: 1px solid #eee;
+    background-color: white;
+    width: 100%;
+    thead {
+        background-color:#f4f4f4;
+    }
+    th {
+        text-align: left;
+        color: #555;
+    }
+    th, td {
+        border: 1px solid #eee;
+        padding: 1rem;
+    }
+
+    caption {
+        color: #000;
+        font: italic 85%/1 arial, sans-serif;
+        padding: 1em 0;
+        text-align: center;
+    }
+
+    &.h-table-striped tr:nth-child(2n-1) td {
+        background-color: #fafafa;
+    }
+
+    &.h-table-horizontal td,
+    &.h-table-horizontal th {
+        border-width: 0 0 1px 0;
+        border-bottom: 1px solid #eee;
+    }
+    &.h-table-horizontal tbody > tr:last-child td {
+        border-bottom-width: 0;
+    }
+
+    tbody {
+        &:not(:last-child) {
+            border-bottom: 1px solid #eee;
+        }
+    }
+}
+

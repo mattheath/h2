@@ -1,0 +1,138 @@
+# Data containers
+data:
+  build: ./images/data
+  volumes:
+    - /data/cassandra:/opt/cassandra/data
+    - /data/elasticsearch:/var/lib/elasticsearch
+    - /data/rabbitmq/log:/data/log
+    - /data/mnesia:/data/mnesia
+  command: /bin/true
+
+# Service containers
+discovery:
+  build: ./images/discovery
+  links:
+    - rabbitmq
+    - zookeeper
+    - config
+
+config:
+  build: ./images/config
+  container_name: config
+  links:
+    - rabbitmq
+    - zookeeper
+    - cassandra
+    - nsqd
+  ports:
+    - "8097:8097"
+
+login:
+  build: ./images/login
+  links:
+    - rabbitmq
+    - zookeeper
+    - cassandra
+    - config
+    - nsqd
+
+binding:
+  build: ./images/binding
+  links:
+    - cassandra
+    - rabbitmq
+    - zookeeper
+    - config
+
+http2rpc:
+  build: ./images/http2rpc
+  links:
+    - rabbitmq
+    - zookeeper
+    - config
+  ports:
+    - "8080:8080"
+    - "443:443"
+
+gateway:
+  build: ./images/gateway
+  links:
+    - config
+    - rabbitmq
+    - zookeeper
+    - nsqd
+
+webdiscovery:
+  build: ./images/web-discovery
+  links:
+    - config
+    - rabbitmq
+    - zookeeper
+
+# Web dashboard(s)
+dashboards:
+  build: ./images/dashboards
+  links:
+    - http2rpc
+  ports:
+    - "80:80"
+
+# Infrastructure containers
+cassandra:
+  build: ./images/cassandra
+  container_name: cassandra
+  ports:
+    - "7199:7199"
+    - "9160:9160"
+    - "9042:9042"
+  volumes_from:
+    - data
+  privileged: true
+  environment:
+    CASSANDRA_LISTEN_ADDRESS: 127.0.0.1
+
+memcached:
+  image: memcached:latest
+  ports:
+    - "11211:11211"
+
+nsqd:
+  image: nsqio/nsqd
+  ports:
+    - "4150:4150"
+    - "4151:4151"
+  links:
+    - nsqlookupd
+  command: --lookupd-tcp-address=nsqlookupd:4160
+
+nsqlookupd:
+  image: nsqio/nsqlookupd
+  ports:
+    - "4160:4160"
+    - "4161:4161"
+
+rabbitmq:
+  build: images/rabbitmq
+  container_name: rabbitmq
+  ports:
+    - "15672:15672"
+    - "5672:5672"
+  volumes_from:
+    - data
+
+zookeeper:
+  image: mesoscloud/zookeeper
+  container_name: zookeeper
+  ports:
+    - "2181:2181"
+    - "2888:2888"
+    - "3888:3888"
+
+# Admin tools
+nsqadmin:
+  image: nsqio/nsqadmin
+  ports:
+    - "4171:4171"
+  links:
+    - nsqlookupd
+  command: lookupd-http-address=nsqlookupd:4160

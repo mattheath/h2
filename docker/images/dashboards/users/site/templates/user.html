@@ -1,0 +1,33 @@
+<header>
+    <a href="/app/<%- user.application.toLowerCase() %>/user/<%- user.uid %>?edit=true" class="edit h-button"><i class="ion-edit"></i> Edit</a>
+    <h2><%- user.uid %></h2>
+</header>
+
+<div class="messages"></div>
+
+<table class="h-table">
+    <tr>
+        <th>UID</th>
+        <td><%- user.uid %></td>
+    </tr>
+
+    <tr>
+        <th>Application</th>
+        <td><%- user.application %></td>
+    </tr>
+
+    <tr>
+        <th>Created</th>
+        <td><%- formatTime(user.createdTimestamp) %></td>
+    </tr>
+
+    <tr>
+        <th>Roles</th>
+        <td><% if (user.roles) { print(user.roles.join(', ')) } %></td>
+    </tr>
+
+    <tr>
+        <th>Alternate IDs</th>
+        <td><% if (user.ids) { print(user.ids.join(', ')) } else { print('-') } %></td>
+    </tr>
+</dl>

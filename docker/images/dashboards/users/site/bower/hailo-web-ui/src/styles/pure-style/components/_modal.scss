@@ -1,0 +1,71 @@
+.h-modal-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+
+  .h-modal-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    background: black;
+    opacity: 0.5;
+  }
+
+  .h-modal-main {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+    background: white;
+    border: 1px solid #eee;
+
+    /* Safari 3-4, iOS 1-3.2, Android 1.6- */
+    -webkit-border-radius: 4px;
+    /* Firefox 1-3.6 */
+    -moz-border-radius: 4px;
+    /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+    border-radius: 4px;
+
+    -moz-box-shadow:    0 0 10px #000000;
+    -webkit-box-shadow: 0 0 10px #000000;
+    box-shadow:         0 0 10px #000000;
+
+    .h-modal-inner {
+      position: relative;
+
+      .h-modal-header {
+        padding: 1em;
+        border-bottom: 1px solid #eee;
+
+        h2, h3 {
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+      }
+
+      .h-modal-body {
+        padding: 0 1em;
+
+        .h-modal-table {
+          width: 100%;
+          margin: .5em 0;
+
+          td {
+            padding: .5em 0;
+          }
+        }
+      }
+
+      .h-modal-footer {
+        padding: 1em;
+        border-top: 1px solid #eee;
+      }
+
+    }
+  }
+}

@@ -1,0 +1,98 @@
+$h-portal_headerHeight: 50px !default;
+$h-portal_headerHeight_lg: 65px !default;
+$sidebarWidth: 200px !default;
+
+/*
+
+  PORTAL - Scaffolding to assemble basic responsive header, sidebar, container
+  The main difference is that it doesn't require classes on body
+  and components (header, sidebar, container) order in markup doesn't matter.
+  Also:
+    Portal components can be wrapped in other elements.
+    Header is always fixed.
+    Container is absolute and has overflow-y set to auto.
+
+  TODO: This definitions should not contain any visual styles (eg. borders, colors, font-sizes)
+*/
+
+#h-header {
+    @include transformTransition(.25s, ease-out);
+    z-index: 30;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: $h-portal_headerHeight;
+
+    .h-header-inner {
+        height: 100%;
+    }
+
+    .h-sidebar-open &,
+    &.h-sidebar-open {
+        @include transform(translate($sidebarWidth, 0));
+    }
+
+    @include mq(mq-md) {
+        height: $h-portal_headerHeight_lg;
+        .h-header-inner {
+            margin: 0 20px;
+        }
+        // make sure to everride opened as well (there shouldn't be opened state on desktop)
+        .h-has-sidebar &,
+        .h-has-sidebar &.h-sidebar-open,
+        &.h-has-sidebar,
+        &.h-has-sidebar.h-sidebar-open {
+            @include transform(translate(0, 0));
+        }
+    }
+}
+
+#h-container {
+    @include transformTransition(.25s, ease-out);
+    padding-top: $h-portal_headerHeight;
+    .h-sidebar-open &,
+    &.h-sidebar-open {
+        @include transform(translate($sidebarWidth, 0));
+    }
+    @include mq(mq-md) {
+        // make sure to everride opened as well
+        // 
+        & {
+            padding-top: $h-portal_headerHeight_lg;
+        }
+        .h-has-sidebar &,
+        .h-has-sidebar &.h-sidebar-open,
+        &.h-has-sidebar,
+        &.h-has-sidebar.h-sidebar-open {
+            @include transform(translate(0, 0));
+            padding-top: 0;
+            position: absolute;
+            top:  $h-portal_headerHeight_lg;
+            right: 0;
+            bottom: 0;
+            left: $sidebarWidth;
+            overflow-y: auto;
+        }
+    }
+}
+
+#h-sidebar {
+    @include transformTransition(.25s, ease-out);
+    z-index: 1;
+    width: $sidebarWidth;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    @include transform(translate(-$sidebarWidth, 0));
+    .h-sidebar-open &,
+    &.h-sidebar-open {
+        @include transform(translate(0, 0));
+    }
+    // Desktop overrides - stick sidebar to the left
+    @include mq(mq-md) {
+        @include transform(translate(0, 0));
+        top: $h-portal_headerHeight_lg;
+    }
+}

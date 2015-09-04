@@ -1,0 +1,14 @@
+{
+    "name": "Hailo Web UI",
+    "description": "UI styling for Hailo web apps",
+    "developer": {
+        "name": "Hailo",
+        "url": "https://www.hailocab.com"
+    },
+    "default_locale": "en",
+    "hailo": {
+        "tags": [
+            "public"
+        ]
+    }
+}

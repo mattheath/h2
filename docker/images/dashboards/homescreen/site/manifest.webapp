@@ -1,0 +1,14 @@
+{
+    "name": "Homescreen",
+    "description": "Hailo homescreen",
+    "developer": {
+        "name": "Hailo",
+        "url": "https://www.hailocab.com"
+    },
+    "default_locale": "en",
+    "hailo": {
+        "tags": [
+            "public"
+        ]
+    }
+}

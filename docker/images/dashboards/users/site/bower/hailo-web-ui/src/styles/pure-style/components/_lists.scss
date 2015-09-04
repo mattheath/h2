@@ -1,0 +1,18 @@
+// Lists
+
+ul.pure-list {
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+ul.pure-list li { 
+    padding-left: 1em; 
+    text-indent: -.7em;
+}
+ul.pure-list li:before {
+    content: "•";
+    padding-right: 7px;
+    color: #999;
+    vertical-align: top;
+}
+

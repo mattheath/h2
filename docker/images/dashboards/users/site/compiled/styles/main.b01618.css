@@ -1,0 +1,4523 @@
+@charset "UTF-8";
+/*!
+  Ionicons, v1.4.1
+  Created by Ben Sperry for the Ionic Framework, http://ionicons.com/
+  https://twitter.com/helloimben  https://twitter.com/ionicframework
+  MIT License: https://github.com/driftyco/ionicons
+*/
+@font-face {
+  font-family: "Ionicons";
+  src: url("../../bower/ionicons/fonts/ionicons.eot?v=1.4.1");
+  src: url("../../bower/ionicons/fonts/ionicons.eot?v=1.4.1#iefix") format("embedded-opentype"), url("../../bower/ionicons/fonts/ionicons.ttf?v=1.4.1") format("truetype"), url("../../bower/ionicons/fonts/ionicons.woff?v=1.4.1") format("woff"), url("../../bower/ionicons/fonts/ionicons.svg?v=1.4.1#Ionicons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+.ion, .ion-loading-a,
+.ion-loading-b,
+.ion-loading-c,
+.ion-loading-d,
+.ion-looping,
+.ion-refreshing,
+.ion-ios7-reloading, .ionicons,
+.ion-alert,
+.ion-alert-circled,
+.ion-android-add,
+.ion-android-add-contact,
+.ion-android-alarm,
+.ion-android-archive,
+.ion-android-arrow-back,
+.ion-android-arrow-down-left,
+.ion-android-arrow-down-right,
+.ion-android-arrow-up-left,
+.ion-android-arrow-up-right,
+.ion-android-battery,
+.ion-android-book,
+.ion-android-calendar,
+.ion-android-call,
+.ion-android-camera,
+.ion-android-chat,
+.ion-android-checkmark,
+.ion-android-clock,
+.ion-android-close,
+.ion-android-contact,
+.ion-android-contacts,
+.ion-android-data,
+.ion-android-developer,
+.ion-android-display,
+.ion-android-download,
+.ion-android-dropdown,
+.ion-android-earth,
+.ion-android-folder,
+.ion-android-forums,
+.ion-android-friends,
+.ion-android-hand,
+.ion-android-image,
+.ion-android-inbox,
+.ion-android-information,
+.ion-android-keypad,
+.ion-android-lightbulb,
+.ion-android-locate,
+.ion-android-location,
+.ion-android-mail,
+.ion-android-microphone,
+.ion-android-mixer,
+.ion-android-more,
+.ion-android-note,
+.ion-android-playstore,
+.ion-android-printer,
+.ion-android-promotion,
+.ion-android-reminder,
+.ion-android-remove,
+.ion-android-search,
+.ion-android-send,
+.ion-android-settings,
+.ion-android-share,
+.ion-android-social,
+.ion-android-social-user,
+.ion-android-sort,
+.ion-android-star,
+.ion-android-stopwatch,
+.ion-android-storage,
+.ion-android-system-back,
+.ion-android-system-home,
+.ion-android-system-windows,
+.ion-android-timer,
+.ion-android-trash,
+.ion-android-volume,
+.ion-android-wifi,
+.ion-archive,
+.ion-arrow-down-a,
+.ion-arrow-down-b,
+.ion-arrow-down-c,
+.ion-arrow-expand,
+.ion-arrow-graph-down-left,
+.ion-arrow-graph-down-right,
+.ion-arrow-graph-up-left,
+.ion-arrow-graph-up-right,
+.ion-arrow-left-a,
+.ion-arrow-left-b,
+.ion-arrow-left-c,
+.ion-arrow-move,
+.ion-arrow-resize,
+.ion-arrow-return-left,
+.ion-arrow-return-right,
+.ion-arrow-right-a,
+.ion-arrow-right-b,
+.ion-arrow-right-c,
+.ion-arrow-shrink,
+.ion-arrow-swap,
+.ion-arrow-up-a,
+.ion-arrow-up-b,
+.ion-arrow-up-c,
+.ion-at,
+.ion-bag,
+.ion-battery-charging,
+.ion-battery-empty,
+.ion-battery-full,
+.ion-battery-half,
+.ion-battery-low,
+.ion-beaker,
+.ion-beer,
+.ion-bluetooth,
+.ion-bookmark,
+.ion-briefcase,
+.ion-bug,
+.ion-calculator,
+.ion-calendar,
+.ion-camera,
+.ion-card,
+.ion-chatbox,
+.ion-chatbox-working,
+.ion-chatboxes,
+.ion-chatbubble,
+.ion-chatbubble-working,
+.ion-chatbubbles,
+.ion-checkmark,
+.ion-checkmark-circled,
+.ion-checkmark-round,
+.ion-chevron-down,
+.ion-chevron-left,
+.ion-chevron-right,
+.ion-chevron-up,
+.ion-clipboard,
+.ion-clock,
+.ion-close,
+.ion-close-circled,
+.ion-close-round,
+.ion-cloud,
+.ion-code,
+.ion-code-download,
+.ion-code-working,
+.ion-coffee,
+.ion-compass,
+.ion-compose,
+.ion-connection-bars,
+.ion-contrast,
+.ion-disc,
+.ion-document,
+.ion-document-text,
+.ion-drag,
+.ion-earth,
+.ion-edit,
+.ion-egg,
+.ion-eject,
+.ion-email,
+.ion-eye,
+.ion-eye-disabled,
+.ion-female,
+.ion-filing,
+.ion-film-marker,
+.ion-flag,
+.ion-flash,
+.ion-flash-off,
+.ion-flask,
+.ion-folder,
+.ion-fork,
+.ion-fork-repo,
+.ion-forward,
+.ion-game-controller-a,
+.ion-game-controller-b,
+.ion-gear-a,
+.ion-gear-b,
+.ion-grid,
+.ion-hammer,
+.ion-headphone,
+.ion-heart,
+.ion-help,
+.ion-help-buoy,
+.ion-help-circled,
+.ion-home,
+.ion-icecream,
+.ion-icon-social-google-plus,
+.ion-icon-social-google-plus-outline,
+.ion-image,
+.ion-images,
+.ion-information,
+.ion-information-circled,
+.ion-ionic,
+.ion-ios7-alarm,
+.ion-ios7-alarm-outline,
+.ion-ios7-albums,
+.ion-ios7-albums-outline,
+.ion-ios7-arrow-back,
+.ion-ios7-arrow-down,
+.ion-ios7-arrow-forward,
+.ion-ios7-arrow-left,
+.ion-ios7-arrow-right,
+.ion-ios7-arrow-thin-down,
+.ion-ios7-arrow-thin-left,
+.ion-ios7-arrow-thin-right,
+.ion-ios7-arrow-thin-up,
+.ion-ios7-arrow-up,
+.ion-ios7-at,
+.ion-ios7-at-outline,
+.ion-ios7-bell,
+.ion-ios7-bell-outline,
+.ion-ios7-bolt,
+.ion-ios7-bolt-outline,
+.ion-ios7-bookmarks,
+.ion-ios7-bookmarks-outline,
+.ion-ios7-box,
+.ion-ios7-box-outline,
+.ion-ios7-briefcase,
+.ion-ios7-briefcase-outline,
+.ion-ios7-browsers,
+.ion-ios7-browsers-outline,
+.ion-ios7-calculator,
+.ion-ios7-calculator-outline,
+.ion-ios7-calendar,
+.ion-ios7-calendar-outline,
+.ion-ios7-camera,
+.ion-ios7-camera-outline,
+.ion-ios7-cart,
+.ion-ios7-cart-outline,
+.ion-ios7-chatboxes,
+.ion-ios7-chatboxes-outline,
+.ion-ios7-chatbubble,
+.ion-ios7-chatbubble-outline,
+.ion-ios7-checkmark,
+.ion-ios7-checkmark-empty,
+.ion-ios7-checkmark-outline,
+.ion-ios7-circle-filled,
+.ion-ios7-circle-outline,
+.ion-ios7-clock,
+.ion-ios7-clock-outline,
+.ion-ios7-close,
+.ion-ios7-close-empty,
+.ion-ios7-close-outline,
+.ion-ios7-cloud,
+.ion-ios7-cloud-download,
+.ion-ios7-cloud-download-outline,
+.ion-ios7-cloud-outline,
+.ion-ios7-cloud-upload,
+.ion-ios7-cloud-upload-outline,
+.ion-ios7-cloudy,
+.ion-ios7-cloudy-night,
+.ion-ios7-cloudy-night-outline,
+.ion-ios7-cloudy-outline,
+.ion-ios7-cog,
+.ion-ios7-cog-outline,
+.ion-ios7-compose,
+.ion-ios7-compose-outline,
+.ion-ios7-contact,
+.ion-ios7-contact-outline,
+.ion-ios7-copy,
+.ion-ios7-copy-outline,
+.ion-ios7-download,
+.ion-ios7-download-outline,
+.ion-ios7-drag,
+.ion-ios7-email,
+.ion-ios7-email-outline,
+.ion-ios7-eye,
+.ion-ios7-eye-outline,
+.ion-ios7-fastforward,
+.ion-ios7-fastforward-outline,
+.ion-ios7-filing,
+.ion-ios7-filing-outline,
+.ion-ios7-film,
+.ion-ios7-film-outline,
+.ion-ios7-flag,
+.ion-ios7-flag-outline,
+.ion-ios7-folder,
+.ion-ios7-folder-outline,
+.ion-ios7-gear,
+.ion-ios7-gear-outline,
+.ion-ios7-glasses,
+.ion-ios7-glasses-outline,
+.ion-ios7-heart,
+.ion-ios7-heart-outline,
+.ion-ios7-help,
+.ion-ios7-help-empty,
+.ion-ios7-help-outline,
+.ion-ios7-infinite,
+.ion-ios7-infinite-outline,
+.ion-ios7-information,
+.ion-ios7-information-empty,
+.ion-ios7-information-outline,
+.ion-ios7-ionic-outline,
+.ion-ios7-keypad,
+.ion-ios7-keypad-outline,
+.ion-ios7-lightbulb,
+.ion-ios7-lightbulb-outline,
+.ion-ios7-location,
+.ion-ios7-location-outline,
+.ion-ios7-locked,
+.ion-ios7-locked-outline,
+.ion-ios7-medkit,
+.ion-ios7-medkit-outline,
+.ion-ios7-mic,
+.ion-ios7-mic-off,
+.ion-ios7-mic-outline,
+.ion-ios7-minus,
+.ion-ios7-minus-empty,
+.ion-ios7-minus-outline,
+.ion-ios7-monitor,
+.ion-ios7-monitor-outline,
+.ion-ios7-moon,
+.ion-ios7-moon-outline,
+.ion-ios7-more,
+.ion-ios7-more-outline,
+.ion-ios7-musical-note,
+.ion-ios7-musical-notes,
+.ion-ios7-navigate,
+.ion-ios7-navigate-outline,
+.ion-ios7-paperplane,
+.ion-ios7-paperplane-outline,
+.ion-ios7-partlysunny,
+.ion-ios7-partlysunny-outline,
+.ion-ios7-pause,
+.ion-ios7-pause-outline,
+.ion-ios7-people,
+.ion-ios7-people-outline,
+.ion-ios7-person,
+.ion-ios7-person-outline,
+.ion-ios7-personadd,
+.ion-ios7-personadd-outline,
+.ion-ios7-photos,
+.ion-ios7-photos-outline,
+.ion-ios7-pie,
+.ion-ios7-pie-outline,
+.ion-ios7-play,
+.ion-ios7-play-outline,
+.ion-ios7-plus,
+.ion-ios7-plus-empty,
+.ion-ios7-plus-outline,
+.ion-ios7-pricetag,
+.ion-ios7-pricetag-outline,
+.ion-ios7-printer,
+.ion-ios7-printer-outline,
+.ion-ios7-rainy,
+.ion-ios7-rainy-outline,
+.ion-ios7-recording,
+.ion-ios7-recording-outline,
+.ion-ios7-redo,
+.ion-ios7-redo-outline,
+.ion-ios7-refresh,
+.ion-ios7-refresh-empty,
+.ion-ios7-refresh-outline,
+.ion-ios7-reload,
+.ion-ios7-rewind,
+.ion-ios7-rewind-outline,
+.ion-ios7-search,
+.ion-ios7-search-strong,
+.ion-ios7-skipbackward,
+.ion-ios7-skipbackward-outline,
+.ion-ios7-skipforward,
+.ion-ios7-skipforward-outline,
+.ion-ios7-snowy,
+.ion-ios7-speedometer,
+.ion-ios7-speedometer-outline,
+.ion-ios7-star,
+.ion-ios7-star-outline,
+.ion-ios7-stopwatch,
+.ion-ios7-stopwatch-outline,
+.ion-ios7-sunny,
+.ion-ios7-sunny-outline,
+.ion-ios7-telephone,
+.ion-ios7-telephone-outline,
+.ion-ios7-thunderstorm,
+.ion-ios7-thunderstorm-outline,
+.ion-ios7-time,
+.ion-ios7-time-outline,
+.ion-ios7-timer,
+.ion-ios7-timer-outline,
+.ion-ios7-trash,
+.ion-ios7-trash-outline,
+.ion-ios7-undo,
+.ion-ios7-undo-outline,
+.ion-ios7-unlocked,
+.ion-ios7-unlocked-outline,
+.ion-ios7-upload,
+.ion-ios7-upload-outline,
+.ion-ios7-videocam,
+.ion-ios7-videocam-outline,
+.ion-ios7-volume-high,
+.ion-ios7-volume-low,
+.ion-ios7-wineglass,
+.ion-ios7-wineglass-outline,
+.ion-ios7-world,
+.ion-ios7-world-outline,
+.ion-ipad,
+.ion-iphone,
+.ion-ipod,
+.ion-jet,
+.ion-key,
+.ion-knife,
+.ion-laptop,
+.ion-leaf,
+.ion-levels,
+.ion-lightbulb,
+.ion-link,
+.ion-load-a,
+.ion-load-b,
+.ion-load-c,
+.ion-load-d,
+.ion-location,
+.ion-locked,
+.ion-log-in,
+.ion-log-out,
+.ion-loop,
+.ion-magnet,
+.ion-male,
+.ion-man,
+.ion-map,
+.ion-medkit,
+.ion-mic-a,
+.ion-mic-b,
+.ion-mic-c,
+.ion-minus,
+.ion-minus-circled,
+.ion-minus-round,
+.ion-model-s,
+.ion-monitor,
+.ion-more,
+.ion-music-note,
+.ion-navicon,
+.ion-navicon-round,
+.ion-navigate,
+.ion-no-smoking,
+.ion-nuclear,
+.ion-paper-airplane,
+.ion-paperclip,
+.ion-pause,
+.ion-person,
+.ion-person-add,
+.ion-person-stalker,
+.ion-pie-graph,
+.ion-pin,
+.ion-pinpoint,
+.ion-pizza,
+.ion-plane,
+.ion-play,
+.ion-playstation,
+.ion-plus,
+.ion-plus-circled,
+.ion-plus-round,
+.ion-pound,
+.ion-power,
+.ion-pricetag,
+.ion-pricetags,
+.ion-printer,
+.ion-radio-waves,
+.ion-record,
+.ion-refresh,
+.ion-reply,
+.ion-reply-all,
+.ion-search,
+.ion-settings,
+.ion-share,
+.ion-shuffle,
+.ion-skip-backward,
+.ion-skip-forward,
+.ion-social-android,
+.ion-social-android-outline,
+.ion-social-apple,
+.ion-social-apple-outline,
+.ion-social-bitcoin,
+.ion-social-bitcoin-outline,
+.ion-social-buffer,
+.ion-social-buffer-outline,
+.ion-social-designernews,
+.ion-social-designernews-outline,
+.ion-social-dribbble,
+.ion-social-dribbble-outline,
+.ion-social-dropbox,
+.ion-social-dropbox-outline,
+.ion-social-facebook,
+.ion-social-facebook-outline,
+.ion-social-freebsd-devil,
+.ion-social-github,
+.ion-social-github-outline,
+.ion-social-googleplus,
+.ion-social-googleplus-outline,
+.ion-social-hackernews,
+.ion-social-hackernews-outline,
+.ion-social-linkedin,
+.ion-social-linkedin-outline,
+.ion-social-pinterest,
+.ion-social-pinterest-outline,
+.ion-social-reddit,
+.ion-social-reddit-outline,
+.ion-social-rss,
+.ion-social-rss-outline,
+.ion-social-skype,
+.ion-social-skype-outline,
+.ion-social-tumblr,
+.ion-social-tumblr-outline,
+.ion-social-tux,
+.ion-social-twitter,
+.ion-social-twitter-outline,
+.ion-social-vimeo,
+.ion-social-vimeo-outline,
+.ion-social-windows,
+.ion-social-windows-outline,
+.ion-social-wordpress,
+.ion-social-wordpress-outline,
+.ion-social-yahoo,
+.ion-social-yahoo-outline,
+.ion-social-youtube,
+.ion-social-youtube-outline,
+.ion-speakerphone,
+.ion-speedometer,
+.ion-spoon,
+.ion-star,
+.ion-stats-bars,
+.ion-steam,
+.ion-stop,
+.ion-thermometer,
+.ion-thumbsdown,
+.ion-thumbsup,
+.ion-trash-a,
+.ion-trash-b,
+.ion-umbrella,
+.ion-unlocked,
+.ion-upload,
+.ion-usb,
+.ion-videocamera,
+.ion-volume-high,
+.ion-volume-low,
+.ion-volume-medium,
+.ion-volume-mute,
+.ion-waterdrop,
+.ion-wifi,
+.ion-wineglass,
+.ion-woman,
+.ion-wrench,
+.ion-xbox {
+  display: inline-block;
+  font-family: "Ionicons";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-rendering: auto;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.ion-spin, .ion-loading-a,
+.ion-loading-b,
+.ion-loading-c,
+.ion-loading-d,
+.ion-looping,
+.ion-refreshing,
+.ion-ios7-reloading {
+  -webkit-animation: spin 1s infinite linear;
+  -moz-animation: spin 1s infinite linear;
+  -o-animation: spin 1s infinite linear;
+  animation: spin 1s infinite linear; }
+
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg); }
+  100% {
+    -moz-transform: rotate(359deg); } }
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(359deg); } }
+@-o-keyframes spin {
+  0% {
+    -o-transform: rotate(0deg); }
+  100% {
+    -o-transform: rotate(359deg); } }
+@-ms-keyframes spin {
+  0% {
+    -ms-transform: rotate(0deg); }
+  100% {
+    -ms-transform: rotate(359deg); } }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(359deg); } }
+.ion-loading-a {
+  -webkit-animation-timing-function: steps(8, start);
+  -moz-animation-timing-function: steps(8, start);
+  animation-timing-function: steps(8, start); }
+
+.ion-alert:before {
+  content: ""; }
+
+.ion-alert-circled:before {
+  content: ""; }
+
+.ion-android-add:before {
+  content: ""; }
+
+.ion-android-add-contact:before {
+  content: ""; }
+
+.ion-android-alarm:before {
+  content: ""; }
+
+.ion-android-archive:before {
+  content: ""; }
+
+.ion-android-arrow-back:before {
+  content: ""; }
+
+.ion-android-arrow-down-left:before {
+  content: ""; }
+
+.ion-android-arrow-down-right:before {
+  content: ""; }
+
+.ion-android-arrow-up-left:before {
+  content: ""; }
+
+.ion-android-arrow-up-right:before {
+  content: ""; }
+
+.ion-android-battery:before {
+  content: ""; }
+
+.ion-android-book:before {
+  content: ""; }
+
+.ion-android-calendar:before {
+  content: ""; }
+
+.ion-android-call:before {
+  content: ""; }
+
+.ion-android-camera:before {
+  content: ""; }
+
+.ion-android-chat:before {
+  content: ""; }
+
+.ion-android-checkmark:before {
+  content: ""; }
+
+.ion-android-clock:before {
+  content: ""; }
+
+.ion-android-close:before {
+  content: ""; }
+
+.ion-android-contact:before {
+  content: ""; }
+
+.ion-android-contacts:before {
+  content: ""; }
+
+.ion-android-data:before {
+  content: ""; }
+
+.ion-android-developer:before {
+  content: ""; }
+
+.ion-android-display:before {
+  content: ""; }
+
+.ion-android-download:before {
+  content: ""; }
+
+.ion-android-dropdown:before {
+  content: ""; }
+
+.ion-android-earth:before {
+  content: ""; }
+
+.ion-android-folder:before {
+  content: ""; }
+
+.ion-android-forums:before {
+  content: ""; }
+
+.ion-android-friends:before {
+  content: ""; }
+
+.ion-android-hand:before {
+  content: ""; }
+
+.ion-android-image:before {
+  content: ""; }
+
+.ion-android-inbox:before {
+  content: ""; }
+
+.ion-android-information:before {
+  content: ""; }
+
+.ion-android-keypad:before {
+  content: ""; }
+
+.ion-android-lightbulb:before {
+  content: ""; }
+
+.ion-android-locate:before {
+  content: ""; }
+
+.ion-android-location:before {
+  content: ""; }
+
+.ion-android-mail:before {
+  content: ""; }
+
+.ion-android-microphone:before {
+  content: ""; }
+
+.ion-android-mixer:before {
+  content: ""; }
+
+.ion-android-more:before {
+  content: ""; }
+
+.ion-android-note:before {
+  content: ""; }
+
+.ion-android-playstore:before {
+  content: ""; }
+
+.ion-android-printer:before {
+  content: ""; }
+
+.ion-android-promotion:before {
+  content: ""; }
+
+.ion-android-reminder:before {
+  content: ""; }
+
+.ion-android-remove:before {
+  content: ""; }
+
+.ion-android-search:before {
+  content: ""; }
+
+.ion-android-send:before {
+  content: ""; }
+
+.ion-android-settings:before {
+  content: ""; }
+
+.ion-android-share:before {
+  content: ""; }
+
+.ion-android-social:before {
+  content: ""; }
+
+.ion-android-social-user:before {
+  content: ""; }
+
+.ion-android-sort:before {
+  content: ""; }
+
+.ion-android-star:before {
+  content: ""; }
+
+.ion-android-stopwatch:before {
+  content: ""; }
+
+.ion-android-storage:before {
+  content: ""; }
+
+.ion-android-system-back:before {
+  content: ""; }
+
+.ion-android-system-home:before {
+  content: ""; }
+
+.ion-android-system-windows:before {
+  content: ""; }
+
+.ion-android-timer:before {
+  content: ""; }
+
+.ion-android-trash:before {
+  content: ""; }
+
+.ion-android-volume:before {
+  content: ""; }
+
+.ion-android-wifi:before {
+  content: ""; }
+
+.ion-archive:before {
+  content: ""; }
+
+.ion-arrow-down-a:before {
+  content: ""; }
+
+.ion-arrow-down-b:before {
+  content: ""; }
+
+.ion-arrow-down-c:before {
+  content: ""; }
+
+.ion-arrow-expand:before {
+  content: ""; }
+
+.ion-arrow-graph-down-left:before {
+  content: ""; }
+
+.ion-arrow-graph-down-right:before {
+  content: ""; }
+
+.ion-arrow-graph-up-left:before {
+  content: ""; }
+
+.ion-arrow-graph-up-right:before {
+  content: ""; }
+
+.ion-arrow-left-a:before {
+  content: ""; }
+
+.ion-arrow-left-b:before {
+  content: ""; }
+
+.ion-arrow-left-c:before {
+  content: ""; }
+
+.ion-arrow-move:before {
+  content: ""; }
+
+.ion-arrow-resize:before {
+  content: ""; }
+
+.ion-arrow-return-left:before {
+  content: ""; }
+
+.ion-arrow-return-right:before {
+  content: ""; }
+
+.ion-arrow-right-a:before {
+  content: ""; }
+
+.ion-arrow-right-b:before {
+  content: ""; }
+
+.ion-arrow-right-c:before {
+  content: ""; }
+
+.ion-arrow-shrink:before {
+  content: ""; }
+
+.ion-arrow-swap:before {
+  content: ""; }
+
+.ion-arrow-up-a:before {
+  content: ""; }
+
+.ion-arrow-up-b:before {
+  content: ""; }
+
+.ion-arrow-up-c:before {
+  content: ""; }
+
+.ion-at:before {
+  content: ""; }
+
+.ion-bag:before {
+  content: ""; }
+
+.ion-battery-charging:before {
+  content: ""; }
+
+.ion-battery-empty:before {
+  content: ""; }
+
+.ion-battery-full:before {
+  content: ""; }
+
+.ion-battery-half:before {
+  content: ""; }
+
+.ion-battery-low:before {
+  content: ""; }
+
+.ion-beaker:before {
+  content: ""; }
+
+.ion-beer:before {
+  content: ""; }
+
+.ion-bluetooth:before {
+  content: ""; }
+
+.ion-bookmark:before {
+  content: ""; }
+
+.ion-briefcase:before {
+  content: ""; }
+
+.ion-bug:before {
+  content: ""; }
+
+.ion-calculator:before {
+  content: ""; }
+
+.ion-calendar:before {
+  content: ""; }
+
+.ion-camera:before {
+  content: ""; }
+
+.ion-card:before {
+  content: ""; }
+
+.ion-chatbox:before {
+  content: ""; }
+
+.ion-chatbox-working:before {
+  content: ""; }
+
+.ion-chatboxes:before {
+  content: ""; }
+
+.ion-chatbubble:before {
+  content: ""; }
+
+.ion-chatbubble-working:before {
+  content: ""; }
+
+.ion-chatbubbles:before {
+  content: ""; }
+
+.ion-checkmark:before {
+  content: ""; }
+
+.ion-checkmark-circled:before {
+  content: ""; }
+
+.ion-checkmark-round:before {
+  content: ""; }
+
+.ion-chevron-down:before {
+  content: ""; }
+
+.ion-chevron-left:before {
+  content: ""; }
+
+.ion-chevron-right:before {
+  content: ""; }
+
+.ion-chevron-up:before {
+  content: ""; }
+
+.ion-clipboard:before {
+  content: ""; }
+
+.ion-clock:before {
+  content: ""; }
+
+.ion-close:before {
+  content: ""; }
+
+.ion-close-circled:before {
+  content: ""; }
+
+.ion-close-round:before {
+  content: ""; }
+
+.ion-cloud:before {
+  content: ""; }
+
+.ion-code:before {
+  content: ""; }
+
+.ion-code-download:before {
+  content: ""; }
+
+.ion-code-working:before {
+  content: ""; }
+
+.ion-coffee:before {
+  content: ""; }
+
+.ion-compass:before {
+  content: ""; }
+
+.ion-compose:before {
+  content: ""; }
+
+.ion-connection-bars:before {
+  content: ""; }
+
+.ion-contrast:before {
+  content: ""; }
+
+.ion-disc:before {
+  content: ""; }
+
+.ion-document:before {
+  content: ""; }
+
+.ion-document-text:before {
+  content: ""; }
+
+.ion-drag:before {
+  content: ""; }
+
+.ion-earth:before {
+  content: ""; }
+
+.ion-edit:before {
+  content: ""; }
+
+.ion-egg:before {
+  content: ""; }
+
+.ion-eject:before {
+  content: ""; }
+
+.ion-email:before {
+  content: ""; }
+
+.ion-eye:before {
+  content: ""; }
+
+.ion-eye-disabled:before {
+  content: ""; }
+
+.ion-female:before {
+  content: ""; }
+
+.ion-filing:before {
+  content: ""; }
+
+.ion-film-marker:before {
+  content: ""; }
+
+.ion-flag:before {
+  content: ""; }
+
+.ion-flash:before {
+  content: ""; }
+
+.ion-flash-off:before {
+  content: ""; }
+
+.ion-flask:before {
+  content: ""; }
+
+.ion-folder:before {
+  content: ""; }
+
+.ion-fork:before {
+  content: ""; }
+
+.ion-fork-repo:before {
+  content: ""; }
+
+.ion-forward:before {
+  content: ""; }
+
+.ion-game-controller-a:before {
+  content: ""; }
+
+.ion-game-controller-b:before {
+  content: ""; }
+
+.ion-gear-a:before {
+  content: ""; }
+
+.ion-gear-b:before {
+  content: ""; }
+
+.ion-grid:before {
+  content: ""; }
+
+.ion-hammer:before {
+  content: ""; }
+
+.ion-headphone:before {
+  content: ""; }
+
+.ion-heart:before {
+  content: ""; }
+
+.ion-help:before {
+  content: ""; }
+
+.ion-help-buoy:before {
+  content: ""; }
+
+.ion-help-circled:before {
+  content: ""; }
+
+.ion-home:before {
+  content: ""; }
+
+.ion-icecream:before {
+  content: ""; }
+
+.ion-icon-social-google-plus:before {
+  content: ""; }
+
+.ion-icon-social-google-plus-outline:before {
+  content: ""; }
+
+.ion-image:before {
+  content: ""; }
+
+.ion-images:before {
+  content: ""; }
+
+.ion-information:before {
+  content: ""; }
+
+.ion-information-circled:before {
+  content: ""; }
+
+.ion-ionic:before {
+  content: ""; }
+
+.ion-ios7-alarm:before {
+  content: ""; }
+
+.ion-ios7-alarm-outline:before {
+  content: ""; }
+
+.ion-ios7-albums:before {
+  content: ""; }
+
+.ion-ios7-albums-outline:before {
+  content: ""; }
+
+.ion-ios7-arrow-back:before {
+  content: ""; }
+
+.ion-ios7-arrow-down:before {
+  content: ""; }
+
+.ion-ios7-arrow-forward:before {
+  content: ""; }
+
+.ion-ios7-arrow-left:before {
+  content: ""; }
+
+.ion-ios7-arrow-right:before {
+  content: ""; }
+
+.ion-ios7-arrow-thin-down:before {
+  content: ""; }
+
+.ion-ios7-arrow-thin-left:before {
+  content: ""; }
+
+.ion-ios7-arrow-thin-right:before {
+  content: ""; }
+
+.ion-ios7-arrow-thin-up:before {
+  content: ""; }
+
+.ion-ios7-arrow-up:before {
+  content: ""; }
+
+.ion-ios7-at:before {
+  content: ""; }
+
+.ion-ios7-at-outline:before {
+  content: ""; }
+
+.ion-ios7-bell:before {
+  content: ""; }
+
+.ion-ios7-bell-outline:before {
+  content: ""; }
+
+.ion-ios7-bolt:before {
+  content: ""; }
+
+.ion-ios7-bolt-outline:before {
+  content: ""; }
+
+.ion-ios7-bookmarks:before {
+  content: ""; }
+
+.ion-ios7-bookmarks-outline:before {
+  content: ""; }
+
+.ion-ios7-box:before {
+  content: ""; }
+
+.ion-ios7-box-outline:before {
+  content: ""; }
+
+.ion-ios7-briefcase:before {
+  content: ""; }
+
+.ion-ios7-briefcase-outline:before {
+  content: ""; }
+
+.ion-ios7-browsers:before {
+  content: ""; }
+
+.ion-ios7-browsers-outline:before {
+  content: ""; }
+
+.ion-ios7-calculator:before {
+  content: ""; }
+
+.ion-ios7-calculator-outline:before {
+  content: ""; }
+
+.ion-ios7-calendar:before {
+  content: ""; }
+
+.ion-ios7-calendar-outline:before {
+  content: ""; }
+
+.ion-ios7-camera:before {
+  content: ""; }
+
+.ion-ios7-camera-outline:before {
+  content: ""; }
+
+.ion-ios7-cart:before {
+  content: ""; }
+
+.ion-ios7-cart-outline:before {
+  content: ""; }
+
+.ion-ios7-chatboxes:before {
+  content: ""; }
+
+.ion-ios7-chatboxes-outline:before {
+  content: ""; }
+
+.ion-ios7-chatbubble:before {
+  content: ""; }
+
+.ion-ios7-chatbubble-outline:before {
+  content: ""; }
+
+.ion-ios7-checkmark:before {
+  content: ""; }
+
+.ion-ios7-checkmark-empty:before {
+  content: ""; }
+
+.ion-ios7-checkmark-outline:before {
+  content: ""; }
+
+.ion-ios7-circle-filled:before {
+  content: ""; }
+
+.ion-ios7-circle-outline:before {
+  content: ""; }
+
+.ion-ios7-clock:before {
+  content: ""; }
+
+.ion-ios7-clock-outline:before {
+  content: ""; }
+
+.ion-ios7-close:before {
+  content: ""; }
+
+.ion-ios7-close-empty:before {
+  content: ""; }
+
+.ion-ios7-close-outline:before {
+  content: ""; }
+
+.ion-ios7-cloud:before {
+  content: ""; }
+
+.ion-ios7-cloud-download:before {
+  content: ""; }
+
+.ion-ios7-cloud-download-outline:before {
+  content: ""; }
+
+.ion-ios7-cloud-outline:before {
+  content: ""; }
+
+.ion-ios7-cloud-upload:before {
+  content: ""; }
+
+.ion-ios7-cloud-upload-outline:before {
+  content: ""; }
+
+.ion-ios7-cloudy:before {
+  content: ""; }
+
+.ion-ios7-cloudy-night:before {
+  content: ""; }
+
+.ion-ios7-cloudy-night-outline:before {
+  content: ""; }
+
+.ion-ios7-cloudy-outline:before {
+  content: ""; }
+
+.ion-ios7-cog:before {
+  content: ""; }
+
+.ion-ios7-cog-outline:before {
+  content: ""; }
+
+.ion-ios7-compose:before {
+  content: ""; }
+
+.ion-ios7-compose-outline:before {
+  content: ""; }
+
+.ion-ios7-contact:before {
+  content: ""; }
+
+.ion-ios7-contact-outline:before {
+  content: ""; }
+
+.ion-ios7-copy:before {
+  content: ""; }
+
+.ion-ios7-copy-outline:before {
+  content: ""; }
+
+.ion-ios7-download:before {
+  content: ""; }
+
+.ion-ios7-download-outline:before {
+  content: ""; }
+
+.ion-ios7-drag:before {
+  content: ""; }
+
+.ion-ios7-email:before {
+  content: ""; }
+
+.ion-ios7-email-outline:before {
+  content: ""; }
+
+.ion-ios7-eye:before {
+  content: ""; }
+
+.ion-ios7-eye-outline:before {
+  content: ""; }
+
+.ion-ios7-fastforward:before {
+  content: ""; }
+
+.ion-ios7-fastforward-outline:before {
+  content: ""; }
+
+.ion-ios7-filing:before {
+  content: ""; }
+
+.ion-ios7-filing-outline:before {
+  content: ""; }
+
+.ion-ios7-film:before {
+  content: ""; }
+
+.ion-ios7-film-outline:before {
+  content: ""; }
+
+.ion-ios7-flag:before {
+  content: ""; }
+
+.ion-ios7-flag-outline:before {
+  content: ""; }
+
+.ion-ios7-folder:before {
+  content: ""; }
+
+.ion-ios7-folder-outline:before {
+  content: ""; }
+
+.ion-ios7-gear:before {
+  content: ""; }
+
+.ion-ios7-gear-outline:before {
+  content: ""; }
+
+.ion-ios7-glasses:before {
+  content: ""; }
+
+.ion-ios7-glasses-outline:before {
+  content: ""; }
+
+.ion-ios7-heart:before {
+  content: ""; }
+
+.ion-ios7-heart-outline:before {
+  content: ""; }
+
+.ion-ios7-help:before {
+  content: ""; }
+
+.ion-ios7-help-empty:before {
+  content: ""; }
+
+.ion-ios7-help-outline:before {
+  content: ""; }
+
+.ion-ios7-infinite:before {
+  content: ""; }
+
+.ion-ios7-infinite-outline:before {
+  content: ""; }
+
+.ion-ios7-information:before {
+  content: ""; }
+
+.ion-ios7-information-empty:before {
+  content: ""; }
+
+.ion-ios7-information-outline:before {
+  content: ""; }
+
+.ion-ios7-ionic-outline:before {
+  content: ""; }
+
+.ion-ios7-keypad:before {
+  content: ""; }
+
+.ion-ios7-keypad-outline:before {
+  content: ""; }
+
+.ion-ios7-lightbulb:before {
+  content: ""; }
+
+.ion-ios7-lightbulb-outline:before {
+  content: ""; }
+
+.ion-ios7-location:before {
+  content: ""; }
+
+.ion-ios7-location-outline:before {
+  content: ""; }
+
+.ion-ios7-locked:before {
+  content: ""; }
+
+.ion-ios7-locked-outline:before {
+  content: ""; }
+
+.ion-ios7-medkit:before {
+  content: ""; }
+
+.ion-ios7-medkit-outline:before {
+  content: ""; }
+
+.ion-ios7-mic:before {
+  content: ""; }
+
+.ion-ios7-mic-off:before {
+  content: ""; }
+
+.ion-ios7-mic-outline:before {
+  content: ""; }
+
+.ion-ios7-minus:before {
+  content: ""; }
+
+.ion-ios7-minus-empty:before {
+  content: ""; }
+
+.ion-ios7-minus-outline:before {
+  content: ""; }
+
+.ion-ios7-monitor:before {
+  content: ""; }
+
+.ion-ios7-monitor-outline:before {
+  content: ""; }
+
+.ion-ios7-moon:before {
+  content: ""; }
+
+.ion-ios7-moon-outline:before {
+  content: ""; }
+
+.ion-ios7-more:before {
+  content: ""; }
+
+.ion-ios7-more-outline:before {
+  content: ""; }
+
+.ion-ios7-musical-note:before {
+  content: ""; }
+
+.ion-ios7-musical-notes:before {
+  content: ""; }
+
+.ion-ios7-navigate:before {
+  content: ""; }
+
+.ion-ios7-navigate-outline:before {
+  content: ""; }
+
+.ion-ios7-paperplane:before {
+  content: ""; }
+
+.ion-ios7-paperplane-outline:before {
+  content: ""; }
+
+.ion-ios7-partlysunny:before {
+  content: ""; }
+
+.ion-ios7-partlysunny-outline:before {
+  content: ""; }
+
+.ion-ios7-pause:before {
+  content: ""; }
+
+.ion-ios7-pause-outline:before {
+  content: ""; }
+
+.ion-ios7-people:before {
+  content: ""; }
+
+.ion-ios7-people-outline:before {
+  content: ""; }
+
+.ion-ios7-person:before {
+  content: ""; }
+
+.ion-ios7-person-outline:before {
+  content: ""; }
+
+.ion-ios7-personadd:before {
+  content: ""; }
+
+.ion-ios7-personadd-outline:before {
+  content: ""; }
+
+.ion-ios7-photos:before {
+  content: ""; }
+
+.ion-ios7-photos-outline:before {
+  content: ""; }
+
+.ion-ios7-pie:before {
+  content: ""; }
+
+.ion-ios7-pie-outline:before {
+  content: ""; }
+
+.ion-ios7-play:before {
+  content: ""; }
+
+.ion-ios7-play-outline:before {
+  content: ""; }
+
+.ion-ios7-plus:before {
+  content: ""; }
+
+.ion-ios7-plus-empty:before {
+  content: ""; }
+
+.ion-ios7-plus-outline:before {
+  content: ""; }
+
+.ion-ios7-pricetag:before {
+  content: ""; }
+
+.ion-ios7-pricetag-outline:before {
+  content: ""; }
+
+.ion-ios7-printer:before {
+  content: ""; }
+
+.ion-ios7-printer-outline:before {
+  content: ""; }
+
+.ion-ios7-rainy:before {
+  content: ""; }
+
+.ion-ios7-rainy-outline:before {
+  content: ""; }
+
+.ion-ios7-recording:before {
+  content: ""; }
+
+.ion-ios7-recording-outline:before {
+  content: ""; }
+
+.ion-ios7-redo:before {
+  content: ""; }
+
+.ion-ios7-redo-outline:before {
+  content: ""; }
+
+.ion-ios7-refresh:before {
+  content: ""; }
+
+.ion-ios7-refresh-empty:before {
+  content: ""; }
+
+.ion-ios7-refresh-outline:before {
+  content: ""; }
+
+.ion-ios7-reload:before, .ion-ios7-reloading:before {
+  content: ""; }
+
+.ion-ios7-rewind:before {
+  content: ""; }
+
+.ion-ios7-rewind-outline:before {
+  content: ""; }
+
+.ion-ios7-search:before {
+  content: ""; }
+
+.ion-ios7-search-strong:before {
+  content: ""; }
+
+.ion-ios7-skipbackward:before {
+  content: ""; }
+
+.ion-ios7-skipbackward-outline:before {
+  content: ""; }
+
+.ion-ios7-skipforward:before {
+  content: ""; }
+
+.ion-ios7-skipforward-outline:before {
+  content: ""; }
+
+.ion-ios7-snowy:before {
+  content: ""; }
+
+.ion-ios7-speedometer:before {
+  content: ""; }
+
+.ion-ios7-speedometer-outline:before {
+  content: ""; }
+
+.ion-ios7-star:before {
+  content: ""; }
+
+.ion-ios7-star-outline:before {
+  content: ""; }
+
+.ion-ios7-stopwatch:before {
+  content: ""; }
+
+.ion-ios7-stopwatch-outline:before {
+  content: ""; }
+
+.ion-ios7-sunny:before {
+  content: ""; }
+
+.ion-ios7-sunny-outline:before {
+  content: ""; }
+
+.ion-ios7-telephone:before {
+  content: ""; }
+
+.ion-ios7-telephone-outline:before {
+  content: ""; }
+
+.ion-ios7-thunderstorm:before {
+  content: ""; }
+
+.ion-ios7-thunderstorm-outline:before {
+  content: ""; }
+
+.ion-ios7-time:before {
+  content: ""; }
+
+.ion-ios7-time-outline:before {
+  content: ""; }
+
+.ion-ios7-timer:before {
+  content: ""; }
+
+.ion-ios7-timer-outline:before {
+  content: ""; }
+
+.ion-ios7-trash:before {
+  content: ""; }
+
+.ion-ios7-trash-outline:before {
+  content: ""; }
+
+.ion-ios7-undo:before {
+  content: ""; }
+
+.ion-ios7-undo-outline:before {
+  content: ""; }
+
+.ion-ios7-unlocked:before {
+  content: ""; }
+
+.ion-ios7-unlocked-outline:before {
+  content: ""; }
+
+.ion-ios7-upload:before {
+  content: ""; }
+
+.ion-ios7-upload-outline:before {
+  content: ""; }
+
+.ion-ios7-videocam:before {
+  content: ""; }
+
+.ion-ios7-videocam-outline:before {
+  content: ""; }
+
+.ion-ios7-volume-high:before {
+  content: ""; }
+
+.ion-ios7-volume-low:before {
+  content: ""; }
+
+.ion-ios7-wineglass:before {
+  content: ""; }
+
+.ion-ios7-wineglass-outline:before {
+  content: ""; }
+
+.ion-ios7-world:before {
+  content: ""; }
+
+.ion-ios7-world-outline:before {
+  content: ""; }
+
+.ion-ipad:before {
+  content: ""; }
+
+.ion-iphone:before {
+  content: ""; }
+
+.ion-ipod:before {
+  content: ""; }
+
+.ion-jet:before {
+  content: ""; }
+
+.ion-key:before {
+  content: ""; }
+
+.ion-knife:before {
+  content: ""; }
+
+.ion-laptop:before {
+  content: ""; }
+
+.ion-leaf:before {
+  content: ""; }
+
+.ion-levels:before {
+  content: ""; }
+
+.ion-lightbulb:before {
+  content: ""; }
+
+.ion-link:before {
+  content: ""; }
+
+.ion-load-a:before, .ion-loading-a:before {
+  content: ""; }
+
+.ion-load-b:before, .ion-loading-b:before {
+  content: ""; }
+
+.ion-load-c:before, .ion-loading-c:before {
+  content: ""; }
+
+.ion-load-d:before, .ion-loading-d:before {
+  content: ""; }
+
+.ion-location:before {
+  content: ""; }
+
+.ion-locked:before {
+  content: ""; }
+
+.ion-log-in:before {
+  content: ""; }
+
+.ion-log-out:before {
+  content: ""; }
+
+.ion-loop:before, .ion-looping:before {
+  content: ""; }
+
+.ion-magnet:before {
+  content: ""; }
+
+.ion-male:before {
+  content: ""; }
+
+.ion-man:before {
+  content: ""; }
+
+.ion-map:before {
+  content: ""; }
+
+.ion-medkit:before {
+  content: ""; }
+
+.ion-mic-a:before {
+  content: ""; }
+
+.ion-mic-b:before {
+  content: ""; }
+
+.ion-mic-c:before {
+  content: ""; }
+
+.ion-minus:before {
+  content: ""; }
+
+.ion-minus-circled:before {
+  content: ""; }
+
+.ion-minus-round:before {
+  content: ""; }
+
+.ion-model-s:before {
+  content: ""; }
+
+.ion-monitor:before {
+  content: ""; }
+
+.ion-more:before {
+  content: ""; }
+
+.ion-music-note:before {
+  content: ""; }
+
+.ion-navicon:before {
+  content: ""; }
+
+.ion-navicon-round:before {
+  content: ""; }
+
+.ion-navigate:before {
+  content: ""; }
+
+.ion-no-smoking:before {
+  content: ""; }
+
+.ion-nuclear:before {
+  content: ""; }
+
+.ion-paper-airplane:before {
+  content: ""; }
+
+.ion-paperclip:before {
+  content: ""; }
+
+.ion-pause:before {
+  content: ""; }
+
+.ion-person:before {
+  content: ""; }
+
+.ion-person-add:before {
+  content: ""; }
+
+.ion-person-stalker:before {
+  content: ""; }
+
+.ion-pie-graph:before {
+  content: ""; }
+
+.ion-pin:before {
+  content: ""; }
+
+.ion-pinpoint:before {
+  content: ""; }
+
+.ion-pizza:before {
+  content: ""; }
+
+.ion-plane:before {
+  content: ""; }
+
+.ion-play:before {
+  content: ""; }
+
+.ion-playstation:before {
+  content: ""; }
+
+.ion-plus:before {
+  content: ""; }
+
+.ion-plus-circled:before {
+  content: ""; }
+
+.ion-plus-round:before {
+  content: ""; }
+
+.ion-pound:before {
+  content: ""; }
+
+.ion-power:before {
+  content: ""; }
+
+.ion-pricetag:before {
+  content: ""; }
+
+.ion-pricetags:before {
+  content: ""; }
+
+.ion-printer:before {
+  content: ""; }
+
+.ion-radio-waves:before {
+  content: ""; }
+
+.ion-record:before {
+  content: ""; }
+
+.ion-refresh:before, .ion-refreshing:before {
+  content: ""; }
+
+.ion-reply:before {
+  content: ""; }
+
+.ion-reply-all:before {
+  content: ""; }
+
+.ion-search:before {
+  content: ""; }
+
+.ion-settings:before {
+  content: ""; }
+
+.ion-share:before {
+  content: ""; }
+
+.ion-shuffle:before {
+  content: ""; }
+
+.ion-skip-backward:before {
+  content: ""; }
+
+.ion-skip-forward:before {
+  content: ""; }
+
+.ion-social-android:before {
+  content: ""; }
+
+.ion-social-android-outline:before {
+  content: ""; }
+
+.ion-social-apple:before {
+  content: ""; }
+
+.ion-social-apple-outline:before {
+  content: ""; }
+
+.ion-social-bitcoin:before {
+  content: ""; }
+
+.ion-social-bitcoin-outline:before {
+  content: ""; }
+
+.ion-social-buffer:before {
+  content: ""; }
+
+.ion-social-buffer-outline:before {
+  content: ""; }
+
+.ion-social-designernews:before {
+  content: ""; }
+
+.ion-social-designernews-outline:before {
+  content: ""; }
+
+.ion-social-dribbble:before {
+  content: ""; }
+
+.ion-social-dribbble-outline:before {
+  content: ""; }
+
+.ion-social-dropbox:before {
+  content: ""; }
+
+.ion-social-dropbox-outline:before {
+  content: ""; }
+
+.ion-social-facebook:before {
+  content: ""; }
+
+.ion-social-facebook-outline:before {
+  content: ""; }
+
+.ion-social-freebsd-devil:before {
+  content: ""; }
+
+.ion-social-github:before {
+  content: ""; }
+
+.ion-social-github-outline:before {
+  content: ""; }
+
+.ion-social-googleplus:before {
+  content: ""; }
+
+.ion-social-googleplus-outline:before {
+  content: ""; }
+
+.ion-social-hackernews:before {
+  content: ""; }
+
+.ion-social-hackernews-outline:before {
+  content: ""; }
+
+.ion-social-linkedin:before {
+  content: ""; }
+
+.ion-social-linkedin-outline:before {
+  content: ""; }
+
+.ion-social-pinterest:before {
+  content: ""; }
+
+.ion-social-pinterest-outline:before {
+  content: ""; }
+
+.ion-social-reddit:before {
+  content: ""; }
+
+.ion-social-reddit-outline:before {
+  content: ""; }
+
+.ion-social-rss:before {
+  content: ""; }
+
+.ion-social-rss-outline:before {
+  content: ""; }
+
+.ion-social-skype:before {
+  content: ""; }
+
+.ion-social-skype-outline:before {
+  content: ""; }
+
+.ion-social-tumblr:before {
+  content: ""; }
+
+.ion-social-tumblr-outline:before {
+  content: ""; }
+
+.ion-social-tux:before {
+  content: ""; }
+
+.ion-social-twitter:before {
+  content: ""; }
+
+.ion-social-twitter-outline:before {
+  content: ""; }
+
+.ion-social-vimeo:before {
+  content: ""; }
+
+.ion-social-vimeo-outline:before {
+  content: ""; }
+
+.ion-social-windows:before {
+  content: ""; }
+
+.ion-social-windows-outline:before {
+  content: ""; }
+
+.ion-social-wordpress:before {
+  content: ""; }
+
+.ion-social-wordpress-outline:before {
+  content: ""; }
+
+.ion-social-yahoo:before {
+  content: ""; }
+
+.ion-social-yahoo-outline:before {
+  content: ""; }
+
+.ion-social-youtube:before {
+  content: ""; }
+
+.ion-social-youtube-outline:before {
+  content: ""; }
+
+.ion-speakerphone:before {
+  content: ""; }
+
+.ion-speedometer:before {
+  content: ""; }
+
+.ion-spoon:before {
+  content: ""; }
+
+.ion-star:before {
+  content: ""; }
+
+.ion-stats-bars:before {
+  content: ""; }
+
+.ion-steam:before {
+  content: ""; }
+
+.ion-stop:before {
+  content: ""; }
+
+.ion-thermometer:before {
+  content: ""; }
+
+.ion-thumbsdown:before {
+  content: ""; }
+
+.ion-thumbsup:before {
+  content: ""; }
+
+.ion-trash-a:before {
+  content: ""; }
+
+.ion-trash-b:before {
+  content: ""; }
+
+.ion-umbrella:before {
+  content: ""; }
+
+.ion-unlocked:before {
+  content: ""; }
+
+.ion-upload:before {
+  content: ""; }
+
+.ion-usb:before {
+  content: ""; }
+
+.ion-videocamera:before {
+  content: ""; }
+
+.ion-volume-high:before {
+  content: ""; }
+
+.ion-volume-low:before {
+  content: ""; }
+
+.ion-volume-medium:before {
+  content: ""; }
+
+.ion-volume-mute:before {
+  content: ""; }
+
+.ion-waterdrop:before {
+  content: ""; }
+
+.ion-wifi:before {
+  content: ""; }
+
+.ion-wineglass:before {
+  content: ""; }
+
+.ion-woman:before {
+  content: ""; }
+
+.ion-wrench:before {
+  content: ""; }
+
+.ion-xbox:before {
+  content: ""; }
+
+/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10.
+ */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8+, and Opera
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+/* Transform */
+/* Box shadow */
+/* Remove box-shadow */
+/* Transition */
+/* Trasition transform */
+/* border radius */
+*, *:before, *:after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+/* Set the font size to 62.5% so 1rem = 10px */
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.6em;
+  color: #666;
+  overflow-x: hidden; }
+
+a {
+  text-decoration: none;
+  color: #17b;
+  -webkit-tap-highlight-color: #ffffff;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s; }
+
+a:hover {
+  color: #39e;
+  text-decoration: underline;
+  background-color: none;
+  outline: none;
+  color: #2d9fec; }
+
+.hide {
+  display: none; }
+
+.pull-left {
+  float: left; }
+
+.pull-right {
+  float: right; }
+
+.bold {
+  font-weight: bold; }
+
+.h-padded-1 {
+  padding: 1em; }
+
+.h-padded-2 {
+  padding: 2em; }
+
+.h-clear-fix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+.h-clear-fix {
+  zoom: 1; }
+
+.h-center {
+  text-align: center; }
+
+.h-width-10-em {
+  width: 10em; }
+
+.h-width-15-em {
+  width: 15em; }
+
+.h-width-1-4 {
+  width: 25%; }
+
+.h-width-1-5 {
+  width: 20%; }
+
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
+
+code {
+  font-family: 'Inconsolata', monospace, sans; }
+
+h1, h2, h3 {
+  font-weight: 300; }
+
+/* stolen from pure css */
+.h-button-base, .h-button-round, .h-button, .h-button-pimped, .h-button-border {
+  /* Structure */
+  display: inline-block;
+  *display: inline;
+  /*IE 6/7*/
+  zoom: 1;
+  line-height: normal;
+  white-space: nowrap;
+  vertical-align: baseline;
+  text-align: center;
+  cursor: pointer;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: inherit;
+  font-size: 100%;
+  *font-size: 90%;
+  /*IE 6/7 - To reduce IE's oversized button text*/
+  *overflow: visible;
+  /*IE 6/7 - Because of IE's overly large left/right padding on buttons */
+  padding: 0.5em 1em;
+  color: #444;
+  /* rgba not supported (IE 8) */
+  color: rgba(0, 0, 0, 0.8);
+  /* rgba supported */
+  *color: #444;
+  /* IE 6 & 7 */
+  border: 1px solid #999;
+  /*IE 6/7/8*/
+  border: none transparent;
+  /*IE9 + everything else*/
+  background-color: #E6E6E6;
+  text-decoration: none; }
+
+/* Firefox: Get rid of the inner focus border */
+.h-button-base::-moz-focus-inner, .h-button-round::-moz-focus-inner, .h-button::-moz-focus-inner, .h-button-pimped::-moz-focus-inner, .h-button-border::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+.h-button-hover,
+.h-button-base:hover,
+.h-button-round:hover,
+.h-button:hover,
+.h-button-pimped:hover,
+.h-button-border:hover,
+.h-button-base:focus,
+.h-button-round:focus,
+.h-button:focus,
+.h-button-pimped:focus,
+.h-button-border:focus {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000',GradientType=0);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(40%, rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.1)));
+  background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.1));
+  background-image: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1)); }
+
+.h-button-base:focus, .h-button-round:focus, .h-button:focus, .h-button-pimped:focus, .h-button-border:focus {
+  outline: 0; }
+
+.h-button-active,
+.h-button-base:active,
+.h-button-round:active,
+.h-button:active,
+.h-button-pimped:active,
+.h-button-border:active {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset; }
+
+.h-button-base[disabled], [disabled].h-button-round, [disabled].h-button, [disabled].h-button-pimped, [disabled].h-button-border,
+.h-button-disabled,
+.h-button-disabled:hover,
+.h-button-disabled:focus,
+.h-button-disabled:active {
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  filter: alpha(opacity=40);
+  -khtml-opacity: 0.40;
+  -moz-opacity: 0.40;
+  opacity: 0.40;
+  cursor: not-allowed;
+  box-shadow: none; }
+
+.h-button-round, .h-button, .h-button-pimped {
+  border-radius: 2px; }
+
+.h-button-border, .h-button, .h-button-pimped {
+  border-width: 1px;
+  border-style: solid; }
+
+.h-button, .h-button-pimped {
+  background: white;
+  color: rgba(0, 0, 0, 0.7);
+  border-color: #ddd; }
+  .h-button i, .h-button-pimped i {
+    color: rgba(0, 0, 0, 0.7); }
+  .h-button:hover, .h-button-pimped:hover {
+    background: #eee; }
+
+.h-button-pimped {
+  -webkit-box-shadow: inset 0 2px 0 -1px rgba(255, 255, 255, 0.4);
+  -moz-box-shadow: inset 0 2px 0 -1px rgba(255, 255, 255, 0.4);
+  box-shadow: inset 0 2px 0 -1px rgba(255, 255, 255, 0.4); }
+
+/* COLORS */
+.hb-primary {
+  background: #df7514;
+  color: rgba(255, 255, 255, 0.8);
+  border-color: #ba6111; }
+  .hb-primary i {
+    color: rgba(255, 255, 255, 0.8); }
+  .hb-primary:hover {
+    background: #c86912; }
+
+.hb-accept {
+  background: #02a637;
+  color: rgba(255, 255, 255, 0.8);
+  border-color: #027e2a; }
+  .hb-accept i {
+    color: rgba(255, 255, 255, 0.8); }
+  .hb-accept:hover {
+    background: #028d2f; }
+
+.hb-danger {
+  background: #df3214;
+  color: rgba(255, 255, 255, 0.8);
+  border-color: #ba2a11; }
+  .hb-danger i {
+    color: rgba(255, 255, 255, 0.8); }
+  .hb-danger:hover {
+    background: #c82d12; }
+
+.hb-hailo {
+  background: #FABB14;
+  color: rgba(0, 0, 0, 0.8);
+  border-color: #e0a405; }
+  .hb-hailo i {
+    color: rgba(0, 0, 0, 0.8); }
+  .hb-hailo:hover {
+    background: #efaf05; }
+
+.hb-enabled {
+  background: #4290dd;
+  color: rgba(255, 255, 255, 0.8);
+  border-color: #267cd1; }
+  .hb-enabled i {
+    color: rgba(255, 255, 255, 0.8); }
+  .hb-enabled:hover {
+    background: #2c83d9; }
+
+.hb-drained, .hb-inactive {
+  background: #c9c9c9;
+  color: rgba(0, 0, 0, 0.8);
+  border-color: #b5b5b5; }
+  .hb-drained i, .hb-inactive i {
+    color: rgba(0, 0, 0, 0.8); }
+  .hb-drained:hover, .hb-inactive:hover {
+    background: #bcbcbc; }
+
+.hb-inactive {
+  cursor: default; }
+  .hb-inactive:hover {
+    background: #c9c9c9; }
+
+.hb-xsmall {
+  font-size: 70%; }
+
+.hb-small {
+  font-size: 85%; }
+
+.hb-large {
+  font-size: 110%; }
+
+.hb-xlarge {
+  font-size: 125%; }
+
+.hb-xxx-large {
+  width: 300px;
+  height: 60px;
+  font-size: 30px;
+  line-height: 20px; }
+
+.hb-stuffed {
+  width: 100%;
+  height: 100%; }
+
+.hb-group {
+  position: relative;
+  display: inline-block; }
+  .hb-group .h-button-pimped,
+  .hb-group .h-button-round,
+  .hb-group .h-button,
+  .hb-group .h-button-pimped,
+  .hb-group .h-button,
+  .hb-group .h-button-pimped {
+    float: left; }
+    .hb-group .h-button-pimped:first-child:not(:last-of-type),
+    .hb-group .h-button-round:first-child:not(:last-of-type),
+    .hb-group .h-button:first-child:not(:last-of-type),
+    .hb-group .h-button-pimped:first-child:not(:last-of-type),
+    .hb-group .h-button:first-child:not(:last-of-type),
+    .hb-group .h-button-pimped:first-child:not(:last-of-type) {
+      -webkit-border-bottom-right-radius: 0;
+      border-bottom-right-radius: 0;
+      -webkit-border-top-right-radius: 0;
+      border-top-right-radius: 0;
+      background-clip: padding-box; }
+    .hb-group .h-button-pimped:last-of-type:not(:first-child),
+    .hb-group .h-button-round:last-of-type:not(:first-child),
+    .hb-group .h-button:last-of-type:not(:first-child),
+    .hb-group .h-button-pimped:last-of-type:not(:first-child),
+    .hb-group .h-button:last-of-type:not(:first-child),
+    .hb-group .h-button-pimped:last-of-type:not(:first-child) {
+      -webkit-border-bottom-left-radius: 0;
+      border-bottom-left-radius: 0;
+      -webkit-border-top-left-radius: 0;
+      border-top-left-radius: 0;
+      background-clip: padding-box; }
+    .hb-group .h-button-pimped:not(:first-child):not(:last-of-type),
+    .hb-group .h-button-round:not(:first-child):not(:last-of-type),
+    .hb-group .h-button:not(:first-child):not(:last-of-type),
+    .hb-group .h-button-pimped:not(:first-child):not(:last-of-type),
+    .hb-group .h-button:not(:first-child):not(:last-of-type),
+    .hb-group .h-button-pimped:not(:first-child):not(:last-of-type) {
+      border-radius: 0; }
+    .hb-group .h-button-pimped:not(:first-child),
+    .hb-group .h-button-round:not(:first-child),
+    .hb-group .h-button:not(:first-child),
+    .hb-group .h-button-pimped:not(:first-child),
+    .hb-group .h-button:not(:first-child),
+    .hb-group .h-button-pimped:not(:first-child) {
+      margin-left: -1px; }
+
+.h-table {
+  border: 1px solid #eee;
+  background-color: white;
+  width: 100%; }
+  .h-table thead {
+    background-color: #f4f4f4; }
+  .h-table th {
+    text-align: left;
+    color: #555; }
+  .h-table th, .h-table td {
+    border: 1px solid #eee;
+    padding: 1rem; }
+  .h-table caption {
+    color: #000;
+    font: italic 85%/1 arial, sans-serif;
+    padding: 1em 0;
+    text-align: center; }
+  .h-table.h-table-striped tr:nth-child(2n-1) td {
+    background-color: #fafafa; }
+  .h-table.h-table-horizontal td, .h-table.h-table-horizontal th {
+    border-width: 0 0 1px 0;
+    border-bottom: 1px solid #eee; }
+  .h-table.h-table-horizontal tbody > tr:last-child td {
+    border-bottom-width: 0; }
+  .h-table tbody:not(:last-child) {
+    border-bottom: 1px solid #eee; }
+
+/* Stolen from pure css */
+.h-g {
+  letter-spacing: -0.31em;
+  /* Webkit: collapse white-space between units */
+  *letter-spacing: normal;
+  /* reset IE < 8 */
+  *word-spacing: -0.43em;
+  /* IE < 8: collapse white-space between units */
+  text-rendering: optimizespeed;
+  /* Webkit: fixes text-rendering: optimizeLegibility */
+    /*
+    Sets the font stack to fonts known to work properly with the above letter
+    and word spacings. See: https://github.com/yui/pure/issues/41/
+
+    The following font stack makes Pure Grids work on all known environments.
+
+    * FreeSans: Ships with many Linux distros, including Ubuntu
+
+    * Arimo: Ships with Chrome OS. Arimo has to be defined before Helvetica and
+      Arial to get picked up by the browser, even though neither is available
+      in Chrome OS.
+
+    * Droid Sans: Ships with all versions of Android.
+
+    * Helvetica, Arial, sans-serif: Common font stack on OS X and Windows.
+    */
+  font-family: FreeSans, Arimo, "Droid Sans", Helvetica, Arial, sans-serif;
+    /*
+    Use flexbox when possible to avoid `letter-spacing` side-effects.
+
+    NOTE: Firefox (as of 25) does not currently support flex-wrap, so the
+    `-moz-` prefix version is omitted.
+    */
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+  /* IE10 uses display: flexbox */
+  display: -ms-flexbox;
+  -ms-flex-flow: row wrap; }
+
+/* Opera as of 12 on Windows needs word-spacing.
+   The ".opera-only" selector is used to prevent actual prefocus styling
+   and is not required in markup.
+*/
+.opera-only :-o-prefocus,
+.h-g {
+  word-spacing: -0.43em; }
+
+.h-u, .h-u-1,
+.h-u-1-1,
+.h-u-1-2,
+.h-u-1-3,
+.h-u-2-3,
+.h-u-1-4,
+.h-u-3-4,
+.h-u-1-5,
+.h-u-2-5,
+.h-u-3-5,
+.h-u-4-5,
+.h-u-5-5,
+.h-u-1-6,
+.h-u-5-6,
+.h-u-1-8,
+.h-u-3-8,
+.h-u-5-8,
+.h-u-7-8,
+.h-u-1-12,
+.h-u-5-12,
+.h-u-7-12,
+.h-u-11-12,
+.h-u-1-24,
+.h-u-2-24,
+.h-u-3-24,
+.h-u-4-24,
+.h-u-5-24,
+.h-u-6-24,
+.h-u-7-24,
+.h-u-8-24,
+.h-u-9-24,
+.h-u-10-24,
+.h-u-11-24,
+.h-u-12-24,
+.h-u-13-24,
+.h-u-14-24,
+.h-u-15-24,
+.h-u-16-24,
+.h-u-17-24,
+.h-u-18-24,
+.h-u-19-24,
+.h-u-20-24,
+.h-u-21-24,
+.h-u-22-24,
+.h-u-23-24,
+.h-u-24-24 {
+  display: inline-block;
+  *display: inline;
+  /* IE < 8: fake inline-block */
+  zoom: 1;
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  text-rendering: auto; }
+
+/*
+Resets the font family back to the OS/browser's default sans-serif font,
+this the same font stack that Normalize.css sets for the `body`.
+*/
+.h-g [class*="h-u"] {
+  font-family: sans-serif; }
+
+/* RESPONSIVE */
+.h-g-r {
+  letter-spacing: -0.31em;
+  *letter-spacing: normal;
+  *word-spacing: -0.43em;
+    /*
+    Sets the font stack to fonts known to work properly with the above letter
+    and word spacings. See: https://github.com/yui/pure/issues/41/
+
+    The following font stack makes Pure Grids work on all known environments.
+
+    * FreeSans: Ships with many Linux distros, including Ubuntu
+
+    * Arimo: Ships with Chrome OS. Arimo has to be defined before Helvetica and
+      Arial to get picked up by the browser, even though neither is available
+      in Chrome OS.
+
+    * Droid Sans: Ships with all versions of Android.
+
+    * Helvetica, Arial, sans-serif: Common font stack on OS X and Windows.
+    */
+  font-family: FreeSans, Arimo, "Droid Sans", Helvetica, Arial, sans-serif;
+    /*
+    Use flexbox when possible to avoid `letter-spacing` side-effects.
+
+    NOTE: Firefox (as of 25) does not currently support flex-wrap, so the
+    `-moz-` prefix version is omitted.
+    */
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+  /* IE10 uses display: flexbox */
+  display: -ms-flexbox;
+  -ms-flex-flow: row wrap; }
+
+/* Opera as of 12 on Windows needs word-spacing.
+   The ".opera-only" selector is used to prevent actual prefocus styling
+   and is not required in markup.
+*/
+.opera-only :-o-prefocus,
+.h-g-r {
+  word-spacing: -0.43em; }
+
+/*
+Resets the font family back to the OS/browser's default sans-serif font,
+this the same font stack that Normalize.css sets for the `body`.
+*/
+.h-g-r [class*="h-u"] {
+  font-family: sans-serif; }
+
+.h-g-r img {
+  max-width: 100%;
+  height: auto; }
+
+@media (min-width: 980px) {
+  .h-visible-phone {
+    display: none; }
+
+  .h-visible-tablet {
+    display: none; }
+
+  .h-hidden-desktop {
+    display: none; } }
+@media (max-width: 480px) {
+  .h-g-r > .h-u, .h-g-r > .h-u-1,
+  .h-g-r > .h-u-1-1,
+  .h-g-r > .h-u-1-2,
+  .h-g-r > .h-u-1-3,
+  .h-g-r > .h-u-2-3,
+  .h-g-r > .h-u-1-4,
+  .h-g-r > .h-u-3-4,
+  .h-g-r > .h-u-1-5,
+  .h-g-r > .h-u-2-5,
+  .h-g-r > .h-u-3-5,
+  .h-g-r > .h-u-4-5,
+  .h-g-r > .h-u-5-5,
+  .h-g-r > .h-u-1-6,
+  .h-g-r > .h-u-5-6,
+  .h-g-r > .h-u-1-8,
+  .h-g-r > .h-u-3-8,
+  .h-g-r > .h-u-5-8,
+  .h-g-r > .h-u-7-8,
+  .h-g-r > .h-u-1-12,
+  .h-g-r > .h-u-5-12,
+  .h-g-r > .h-u-7-12,
+  .h-g-r > .h-u-11-12,
+  .h-g-r > .h-u-1-24,
+  .h-g-r > .h-u-2-24,
+  .h-g-r > .h-u-3-24,
+  .h-g-r > .h-u-4-24,
+  .h-g-r > .h-u-5-24,
+  .h-g-r > .h-u-6-24,
+  .h-g-r > .h-u-7-24,
+  .h-g-r > .h-u-8-24,
+  .h-g-r > .h-u-9-24,
+  .h-g-r > .h-u-10-24,
+  .h-g-r > .h-u-11-24,
+  .h-g-r > .h-u-12-24,
+  .h-g-r > .h-u-13-24,
+  .h-g-r > .h-u-14-24,
+  .h-g-r > .h-u-15-24,
+  .h-g-r > .h-u-16-24,
+  .h-g-r > .h-u-17-24,
+  .h-g-r > .h-u-18-24,
+  .h-g-r > .h-u-19-24,
+  .h-g-r > .h-u-20-24,
+  .h-g-r > .h-u-21-24,
+  .h-g-r > .h-u-22-24,
+  .h-g-r > .h-u-23-24,
+  .h-g-r > .h-u-24-24,
+  .h-g-r > [class*="h-u-"] {
+    width: 100%; } }
+@media (max-width: 767px) {
+  .h-g-r > .h-u, .h-g-r > .h-u-1,
+  .h-g-r > .h-u-1-1,
+  .h-g-r > .h-u-1-2,
+  .h-g-r > .h-u-1-3,
+  .h-g-r > .h-u-2-3,
+  .h-g-r > .h-u-1-4,
+  .h-g-r > .h-u-3-4,
+  .h-g-r > .h-u-1-5,
+  .h-g-r > .h-u-2-5,
+  .h-g-r > .h-u-3-5,
+  .h-g-r > .h-u-4-5,
+  .h-g-r > .h-u-5-5,
+  .h-g-r > .h-u-1-6,
+  .h-g-r > .h-u-5-6,
+  .h-g-r > .h-u-1-8,
+  .h-g-r > .h-u-3-8,
+  .h-g-r > .h-u-5-8,
+  .h-g-r > .h-u-7-8,
+  .h-g-r > .h-u-1-12,
+  .h-g-r > .h-u-5-12,
+  .h-g-r > .h-u-7-12,
+  .h-g-r > .h-u-11-12,
+  .h-g-r > .h-u-1-24,
+  .h-g-r > .h-u-2-24,
+  .h-g-r > .h-u-3-24,
+  .h-g-r > .h-u-4-24,
+  .h-g-r > .h-u-5-24,
+  .h-g-r > .h-u-6-24,
+  .h-g-r > .h-u-7-24,
+  .h-g-r > .h-u-8-24,
+  .h-g-r > .h-u-9-24,
+  .h-g-r > .h-u-10-24,
+  .h-g-r > .h-u-11-24,
+  .h-g-r > .h-u-12-24,
+  .h-g-r > .h-u-13-24,
+  .h-g-r > .h-u-14-24,
+  .h-g-r > .h-u-15-24,
+  .h-g-r > .h-u-16-24,
+  .h-g-r > .h-u-17-24,
+  .h-g-r > .h-u-18-24,
+  .h-g-r > .h-u-19-24,
+  .h-g-r > .h-u-20-24,
+  .h-g-r > .h-u-21-24,
+  .h-g-r > .h-u-22-24,
+  .h-g-r > .h-u-23-24,
+  .h-g-r > .h-u-24-24,
+  .h-g-r > [class*="h-u-"] {
+    width: 100%; }
+
+  .h-hidden-phone {
+    display: none; }
+
+  .h-visible-desktop {
+    display: none; } }
+@media (min-width: 768px) and (max-width: 979px) {
+  .h-hidden-tablet {
+    display: none; }
+
+  .h-visible-desktop {
+    display: none; } }
+/* Specify the sizes */
+.h-u-1-24 {
+  width: 4.1667%;
+  *width: 4.1357%; }
+
+.h-u-1-12,
+.h-u-2-24 {
+  width: 8.3333%;
+  *width: 8.3023%; }
+
+.h-u-1-8,
+.h-u-3-24 {
+  width: 12.5000%;
+  *width: 12.4690%; }
+
+.h-u-1-6,
+.h-u-4-24 {
+  width: 16.6667%;
+  *width: 16.6357%; }
+
+.h-u-1-5 {
+  width: 20%;
+  *width: 19.9690%; }
+
+.h-u-5-24 {
+  width: 20.8333%;
+  *width: 20.8023%; }
+
+.h-u-1-4,
+.h-u-6-24 {
+  width: 25%;
+  *width: 24.9690%; }
+
+.h-u-7-24 {
+  width: 29.1667%;
+  *width: 29.1357%; }
+
+.h-u-1-3,
+.h-u-8-24 {
+  width: 33.3333%;
+  *width: 33.3023%; }
+
+.h-u-3-8,
+.h-u-9-24 {
+  width: 37.5000%;
+  *width: 37.4690%; }
+
+.h-u-2-5 {
+  width: 40%;
+  *width: 39.9690%; }
+
+.h-u-5-12,
+.h-u-10-24 {
+  width: 41.6667%;
+  *width: 41.6357%; }
+
+.h-u-11-24 {
+  width: 45.8333%;
+  *width: 45.8023%; }
+
+.h-u-1-2,
+.h-u-12-24 {
+  width: 50%;
+  *width: 49.9690%; }
+
+.h-u-13-24 {
+  width: 54.1667%;
+  *width: 54.1357%; }
+
+.h-u-7-12,
+.h-u-14-24 {
+  width: 58.3333%;
+  *width: 58.3023%; }
+
+.h-u-3-5 {
+  width: 60%;
+  *width: 59.9690%; }
+
+.h-u-5-8,
+.h-u-15-24 {
+  width: 62.5000%;
+  *width: 62.4690%; }
+
+.h-u-2-3,
+.h-u-16-24 {
+  width: 66.6667%;
+  *width: 66.6357%; }
+
+.h-u-17-24 {
+  width: 70.8333%;
+  *width: 70.8023%; }
+
+.h-u-3-4,
+.h-u-18-24 {
+  width: 75%;
+  *width: 74.9690%; }
+
+.h-u-19-24 {
+  width: 79.1667%;
+  *width: 79.1357%; }
+
+.h-u-4-5 {
+  width: 80%;
+  *width: 79.9690%; }
+
+.h-u-5-6,
+.h-u-20-24 {
+  width: 83.3333%;
+  *width: 83.3023%; }
+
+.h-u-7-8,
+.h-u-21-24 {
+  width: 87.5000%;
+  *width: 87.4690%; }
+
+.h-u-11-12,
+.h-u-22-24 {
+  width: 91.6667%;
+  *width: 91.6357%; }
+
+.h-u-23-24 {
+  width: 95.8333%;
+  *width: 95.8023%; }
+
+.h-u-1,
+.h-u-1-1,
+.h-u-5-5,
+.h-u-24-24 {
+  width: 100%; }
+
+.h-form input[type="text"],
+.h-form input[type="password"],
+.h-form input[type="email"],
+.h-form input[type="url"],
+.h-form input[type="date"],
+.h-form input[type="month"],
+.h-form input[type="time"],
+.h-form input[type="datetime"],
+.h-form input[type="datetime-local"],
+.h-form input[type="week"],
+.h-form input[type="number"],
+.h-form input[type="search"],
+.h-form input[type="tel"],
+.h-form input[type="color"],
+.h-form select,
+.h-form textarea {
+  padding: 0.5em 0.6em;
+  display: inline-block;
+  border: 1px solid #d0d0d0;
+  box-shadow: none;
+  border-radius: 2px;
+  -webkit-transition: border 0.3s linear;
+  -moz-transition: border 0.3s linear;
+  -ms-transition: border 0.3s linear;
+  -o-transition: border 0.3s linear;
+  transition: border 0.3s linear; }
+  .h-form input[type="text"]:focus,
+  .h-form input[type="password"]:focus,
+  .h-form input[type="email"]:focus,
+  .h-form input[type="url"]:focus,
+  .h-form input[type="date"]:focus,
+  .h-form input[type="month"]:focus,
+  .h-form input[type="time"]:focus,
+  .h-form input[type="datetime"]:focus,
+  .h-form input[type="datetime-local"]:focus,
+  .h-form input[type="week"]:focus,
+  .h-form input[type="number"]:focus,
+  .h-form input[type="search"]:focus,
+  .h-form input[type="tel"]:focus,
+  .h-form input[type="color"]:focus,
+  .h-form select:focus,
+  .h-form textarea:focus {
+    outline: 0;
+    outline: thin dotted \9;
+    /* IE6-9 */
+    border-color: #129FEA; }
+
+/*
+Need to separate out the :not() selector from the rest of the CSS 2.1 selectors
+since IE8 won't execute CSS that contains a CSS3 selector.
+*/
+.h-form input:not([type]) {
+  padding: 0.5em 0.6em;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px #ddd;
+  border-radius: 4px; }
+
+/* Chrome (as of v.32/34 on OS X) needs additional room for color to display. */
+/* May be able to remove this tweak as color inputs become more standardized across browsers. */
+.h-form input[type="color"] {
+  padding: 0.2em 0.5em; }
+
+/*
+Need to separate out the :not() selector from the rest of the CSS 2.1 selectors
+since IE8 won't execute CSS that contains a CSS3 selector.
+*/
+.h-form input:not([type]):focus {
+  outline: 0;
+  outline: thin dotted \9;
+  /* IE6-9 */
+  border-color: #129FEA; }
+
+.h-form input[type="file"]:focus,
+.h-form input[type="radio"]:focus,
+.h-form input[type="checkbox"]:focus {
+  outline: thin dotted #333;
+  outline: 1px auto #129FEA; }
+
+.h-form .h-checkbox,
+.h-form .h-radio {
+  margin: 0.5em 0;
+  display: block; }
+
+.h-form input[type="text"][disabled],
+.h-form input[type="password"][disabled],
+.h-form input[type="email"][disabled],
+.h-form input[type="url"][disabled],
+.h-form input[type="date"][disabled],
+.h-form input[type="month"][disabled],
+.h-form input[type="time"][disabled],
+.h-form input[type="datetime"][disabled],
+.h-form input[type="datetime-local"][disabled],
+.h-form input[type="week"][disabled],
+.h-form input[type="number"][disabled],
+.h-form input[type="search"][disabled],
+.h-form input[type="tel"][disabled],
+.h-form input[type="color"][disabled],
+.h-form select[disabled],
+.h-form textarea[disabled] {
+  cursor: not-allowed;
+  background-color: #eaeded;
+  color: #cad2d3; }
+
+/*
+Need to separate out the :not() selector from the rest of the CSS 2.1 selectors
+since IE8 won't execute CSS that contains a CSS3 selector.
+*/
+.h-form input:not([type])[disabled] {
+  cursor: not-allowed;
+  background-color: #eaeded;
+  color: #cad2d3; }
+
+.h-form input[readonly],
+.h-form select[readonly],
+.h-form textarea[readonly] {
+  background: #eee;
+  /* menu hover bg color */
+  color: #777;
+  /* menu text color */
+  border-color: #ccc; }
+
+.h-form input:focus:invalid,
+.h-form textarea:focus:invalid,
+.h-form select:focus:invalid {
+  color: #b94a48;
+  border-color: #ee5f5b; }
+
+.h-form input:focus:invalid:focus,
+.h-form textarea:focus:invalid:focus,
+.h-form select:focus:invalid:focus {
+  border-color: #e9322d; }
+
+.h-form input[type="file"]:focus:invalid:focus,
+.h-form input[type="radio"]:focus:invalid:focus,
+.h-form input[type="checkbox"]:focus:invalid:focus {
+  outline-color: #e9322d; }
+
+.h-form select {
+  border: 1px solid #ccc;
+  background-color: white; }
+
+.h-form select[multiple] {
+  height: auto; }
+
+.h-form label {
+  margin: 0.5em 0 0.2em; }
+
+.h-form fieldset {
+  margin: 0;
+  padding: 0.35em 0 0.75em;
+  border: 0; }
+
+.h-form legend {
+  display: block;
+  width: 100%;
+  padding: 0.3em 0;
+  margin-bottom: 0.3em;
+  color: #333;
+  border-bottom: 1px solid #e5e5e5; }
+
+.h-form-stacked input[type="text"],
+.h-form-stacked input[type="password"],
+.h-form-stacked input[type="email"],
+.h-form-stacked input[type="url"],
+.h-form-stacked input[type="date"],
+.h-form-stacked input[type="month"],
+.h-form-stacked input[type="time"],
+.h-form-stacked input[type="datetime"],
+.h-form-stacked input[type="datetime-local"],
+.h-form-stacked input[type="week"],
+.h-form-stacked input[type="number"],
+.h-form-stacked input[type="search"],
+.h-form-stacked input[type="tel"],
+.h-form-stacked input[type="color"],
+.h-form-stacked select,
+.h-form-stacked label,
+.h-form-stacked textarea {
+  display: block;
+  margin: 0.25em 0; }
+
+/*
+Need to separate out the :not() selector from the rest of the CSS 2.1 selectors
+since IE8 won't execute CSS that contains a CSS3 selector.
+*/
+.h-form-stacked input:not([type]) {
+  display: block;
+  margin: 0.25em 0; }
+
+.h-form-aligned input,
+.h-form-aligned textarea,
+.h-form-aligned select,
+.h-form-aligned .h-help-inline,
+.h-form-message-inline {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle; }
+
+.h-form-aligned textarea {
+  vertical-align: top; }
+
+/* Aligned Forms */
+.h-form-aligned .h-control-group {
+  margin-bottom: 0.5em; }
+
+.h-form-aligned .h-control-group label {
+  text-align: right;
+  display: inline-block;
+  vertical-align: middle;
+  width: 10em;
+  margin: 0 1em 0 0; }
+
+.h-form-aligned .h-controls {
+  margin: 1.5em 0 0 10em; }
+
+/* Rounded Inputs */
+.h-form input.h-input-rounded,
+.h-form .h-input-rounded {
+  border-radius: 2em;
+  padding: 0.5em 1em; }
+
+/* Grouped Inputs */
+.h-form .h-group fieldset {
+  margin-bottom: 10px; }
+
+.h-form .h-group input {
+  display: block;
+  padding: 10px;
+  margin: 0;
+  border-radius: 0;
+  position: relative;
+  top: -1px; }
+
+.h-form .h-group input:focus {
+  z-index: 2; }
+
+.h-form .h-group input:first-child {
+  top: 1px;
+  border-radius: 4px 4px 0 0; }
+
+.h-form .h-group input:last-child {
+  top: -2px;
+  border-radius: 0 0 4px 4px; }
+
+.h-form .h-group button {
+  margin: 0.35em 0; }
+
+.h-form .h-input-1 {
+  width: 100%; }
+
+.h-form .h-input-2-3 {
+  width: 66%; }
+
+.h-form .h-input-1-2 {
+  width: 50%; }
+
+.h-form .h-input-1-3 {
+  width: 33%; }
+
+.h-form .h-input-1-4 {
+  width: 25%; }
+
+/* Inline help for forms */
+/* NOTE: pure-help-inline is deprecated. Use .h-form-message-inline instead. */
+.h-form .h-help-inline,
+.h-form-message-inline {
+  display: inline-block;
+  padding-left: 0.3em;
+  color: #666;
+  vertical-align: middle;
+  font-size: 0.875em; }
+
+/* Block help for forms */
+.h-form-message {
+  display: block;
+  color: #666;
+  font-size: 0.875em; }
+
+.alert {
+  padding: 15px 35px 15px 15px;
+  margin-bottom: 20px;
+  color: #c09853;
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  border-radius: 4px; }
+
+.alert-heading {
+  color: inherit; }
+
+.alert-success {
+  color: #468847;
+  background-color: #dff0d8;
+  border-color: #d6e9c6; }
+
+.alert-danger, .alert-error {
+  color: #b94a48;
+  background-color: #f2dede;
+  border-color: #eed3d7; }
+
+.alert-info {
+  color: #3a87ad;
+  background-color: #d9edf7;
+  border-color: #bce8f1; }
+
+.alert-warning {
+  color: #c09853;
+  background-color: #fcf8e3;
+  border-color: #fbeed5; }
+
+.alert-block {
+  padding-top: 14px;
+  padding-bottom: 14px; }
+
+.alert-block > p,
+.alert-block > ul {
+  margin-top: 0.2em;
+  margin-bottom: 0; }
+
+.alert-block p + p {
+  margin-top: 5px; }
+
+.alert-block > h3 {
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 0.2em; }
+
+.alert-block .alert-icon {
+  float: left;
+  font-size: 2.4em;
+  margin: 0;
+  padding-right: 15px; }
+
+.h-status-box {
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: 75%;
+  font-weight: bold;
+  line-height: 1;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em; }
+
+.h-status-box[href]:hover,
+.h-status-box[href]:focus {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer; }
+
+.h-status-box:empty {
+  display: none; }
+
+.h-status-box-default {
+  background-color: #999999; }
+
+.h-status-box-default[href]:hover,
+.h-status-box-default[href]:focus {
+  background-color: #808080; }
+
+.h-status-box-primary {
+  background-color: #428bca; }
+
+.h-status-box-primary[href]:hover,
+.h-status-box-primary[href]:focus {
+  background-color: #3071a9; }
+
+.h-status-box-success {
+  background-color: #5cb85c; }
+
+.h-status-box-success[href]:hover,
+.h-status-box-success[href]:focus {
+  background-color: #449d44; }
+
+.h-status-box-info {
+  background-color: #5bc0de; }
+
+.h-status-box-info[href]:hover,
+.h-status-box-info[href]:focus {
+  background-color: #31b0d5; }
+
+.h-status-box-warning {
+  background-color: #f0ad4e; }
+
+.h-status-box-warning[href]:hover,
+.h-status-box-warning[href]:focus {
+  background-color: #ec971f; }
+
+.h-status-box-important {
+  background-color: #b94a48; }
+
+.h-status-box-important[href]:hover,
+.h-status-box-important[href]:focus {
+  background-color: #b94a48; }
+
+.h-status-box-danger {
+  background-color: #d9534f; }
+
+.h-status-box-danger[href]:hover,
+.h-status-box-danger[href]:focus {
+  background-color: #c9302c; }
+
+.h-status-box-inverse {
+  background-color: #333; }
+
+.h-status-box-inverse[href]:hover,
+.h-status-box-inverse[href]:focus {
+  background-color: #333; }
+
+/* drop-down menu */
+.h-dropdown-menu {
+  position: absolute;
+  z-index: 1;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  margin: 2px 0; }
+  .h-dropdown-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    /* Large options */ }
+    .h-dropdown-menu ul li {
+      font-size: 1.4rem; }
+    .h-dropdown-menu ul li:not(.no-action) {
+      cursor: pointer; }
+      .h-dropdown-menu ul li:not(.no-action):hover {
+        background-color: #f8f8f8; }
+    .h-dropdown-menu ul li:not(.no-padding) {
+      padding: 5px 15px; }
+    .h-dropdown-menu ul li:not(:last-child) {
+      border-bottom: 1px solid #eee; }
+    .h-dropdown-menu ul.no-padding li {
+      padding: 0; }
+    .h-dropdown-menu ul li.padding,
+    .h-dropdown-menu ul *.padding {
+      padding: 5px 15px;
+      display: block; }
+    .h-dropdown-menu ul.large li:not(.no-padding) {
+      padding: 10px 15px; }
+    .h-dropdown-menu ul.large li.padding,
+    .h-dropdown-menu ul.large *.padding {
+      padding: 10px 15px;
+      display: block; }
+    .h-dropdown-menu ul.large.no-padding li {
+      padding: 0; }
+  .h-dropdown-menu.h-dd-top {
+    top: auto;
+    bottom: 100%; }
+  .h-dropdown-menu.h-dd-full {
+    right: 0; }
+  .h-dropdown-menu.h-dd-right {
+    right: 0;
+    left: auto; }
+
+.h-tip:before, .h-tip-bottom:before {
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  display: block;
+  position: absolute;
+  top: -5px;
+  right: 50%;
+  margin-left: -4px;
+  content: "";
+  border-left: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  transform: translateX(4.59639px) rotate(45deg);
+  -moz-transform: translateX(4.59639px) rotate(45deg);
+  -webkit-transform: translateX(4.59639px) rotate(45deg);
+  -ms-transform: translateX(4.59639px) rotate(45deg);
+  -o-transform: translateX(4.59639px) rotate(45deg); }
+
+.h-tip-bottom:before {
+  top: auto;
+  bottom: -5px;
+  transform: translateX(4.59639px) rotate(225deg);
+  -moz-transform: translateX(4.59639px) rotate(225deg);
+  -webkit-transform: translateX(4.59639px) rotate(225deg);
+  -ms-transform: translateX(4.59639px) rotate(225deg);
+  -o-transform: translateX(4.59639px) rotate(225deg); }
+
+.h-tip.h-tip-p-right:before, .h-tip-p-right.h-tip-bottom:before {
+  right: 22px; }
+
+.h-tip.h-tip-p-left:before, .h-tip-p-left.h-tip-bottom:before {
+  right: auto;
+  left: 22px; }
+
+/*
+
+  PORTAL - Scaffolding to assemble basic responsive header, sidebar, container
+  The main difference is that it doesn't require classes on body
+  and components (header, sidebar, container) order in markup doesn't matter.
+  Also:
+    Portal components can be wrapped in other elements.
+    Header is always fixed.
+    Container is absolute and has overflow-y set to auto.
+
+  TODO: This definitions should not contain any visual styles (eg. borders, colors, font-sizes)
+*/
+#h-header {
+  transition: transform 0.25s ease-out;
+  -o-transition: -o-transform 0.25s ease-out;
+  -ms-transition: -ms-transform 0.25s ease-out;
+  -moz-transition: -moz-transform 0.25s ease-out;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  z-index: 30;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px; }
+  #h-header .h-header-inner {
+    height: 100%; }
+  .h-sidebar-open #h-header, #h-header.h-sidebar-open {
+    transform: translate(200px, 0);
+    -moz-transform: translate(200px, 0);
+    -webkit-transform: translate(200px, 0);
+    -ms-transform: translate(200px, 0);
+    -o-transform: translate(200px, 0); }
+  @media (min-width: 992px) {
+    #h-header {
+      height: 65px; }
+      #h-header .h-header-inner {
+        margin: 0 20px; }
+      .h-has-sidebar #h-header, .h-has-sidebar #h-header.h-sidebar-open, #h-header.h-has-sidebar, #h-header.h-has-sidebar.h-sidebar-open {
+        transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        -o-transform: translate(0, 0); } }
+
+#h-container {
+  transition: transform 0.25s ease-out;
+  -o-transition: -o-transform 0.25s ease-out;
+  -ms-transition: -ms-transform 0.25s ease-out;
+  -moz-transition: -moz-transform 0.25s ease-out;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  padding-top: 50px; }
+  .h-sidebar-open #h-container, #h-container.h-sidebar-open {
+    transform: translate(200px, 0);
+    -moz-transform: translate(200px, 0);
+    -webkit-transform: translate(200px, 0);
+    -ms-transform: translate(200px, 0);
+    -o-transform: translate(200px, 0); }
+  @media (min-width: 992px) {
+    #h-container {
+      padding-top: 65px; }
+    .h-has-sidebar #h-container, .h-has-sidebar #h-container.h-sidebar-open, #h-container.h-has-sidebar, #h-container.h-has-sidebar.h-sidebar-open {
+      transform: translate(0, 0);
+      -moz-transform: translate(0, 0);
+      -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+      -o-transform: translate(0, 0);
+      padding-top: 0;
+      position: absolute;
+      top: 65px;
+      right: 0;
+      bottom: 0;
+      left: 200px;
+      overflow-y: auto; } }
+
+#h-sidebar {
+  transition: transform 0.25s ease-out;
+  -o-transition: -o-transform 0.25s ease-out;
+  -ms-transition: -ms-transform 0.25s ease-out;
+  -moz-transition: -moz-transform 0.25s ease-out;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  z-index: 1;
+  width: 200px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  transform: translate(-200px, 0);
+  -moz-transform: translate(-200px, 0);
+  -webkit-transform: translate(-200px, 0);
+  -ms-transform: translate(-200px, 0);
+  -o-transform: translate(-200px, 0); }
+  .h-sidebar-open #h-sidebar, #h-sidebar.h-sidebar-open {
+    transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0); }
+  @media (min-width: 992px) {
+    #h-sidebar {
+      transform: translate(0, 0);
+      -moz-transform: translate(0, 0);
+      -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+      -o-transform: translate(0, 0);
+      top: 65px; } }
+
+/*
+    #h-header visual styles and sub-components
+
+    Layout specific styles are located in _h-portal.scss
+*/
+#h-header {
+  background-color: #fff;
+  border-bottom: 1px solid #eee; }
+  @media (min-width: 992px) {
+    #h-header .h-header-inner {
+      border-left: 1px solid #eee;
+      border-right: 1px solid #eee; } }
+
+.h-header-nav-button {
+  display: none;
+  float: left;
+  height: 100%;
+  cursor: pointer;
+  font-size: 3rem;
+  line-height: 50px;
+  margin-left: 1rem;
+  color: #888; }
+
+.h-has-sidebar .h-header-nav-button {
+  display: block; }
+  @media (min-width: 992px) {
+    .h-has-sidebar .h-header-nav-button {
+      display: none; } }
+
+.h-header-hailo-logo {
+  float: left;
+  height: 100%;
+  padding: 0 0 0 50px;
+  background: url("/bower/hailo-web-ui/src/img/hailo-transparent-bg.svg") no-repeat transparent;
+  background-size: auto 28px;
+  background-position: 15px 50%;
+  height: 50px;
+  line-height: 50px; }
+  .h-header-hailo-logo a {
+    font-size: 2rem;
+    outline: none;
+    text-decoration: none;
+    color: #333; }
+    .h-header-hailo-logo a:hover {
+      text-decoration: none; }
+  @media (min-width: 992px) {
+    .h-header-hailo-logo {
+      height: 65px;
+      line-height: 65px;
+      background-size: auto 36px;
+      padding: 0 0 0 60px; }
+      .h-header-hailo-logo a {
+        font-size: 2.5rem; } }
+  @media (max-width: 767px) {
+    .h-header-hailo-logo a {
+      display: none; } }
+
+/* Worth moving to its own file */
+.h-header-toolbar {
+  float: right;
+  width: auto;
+  height: 100%;
+  /* This should be getting obsolete */ }
+  .h-header-toolbar .menu {
+    float: left;
+    border-left: 1px solid #eee; }
+    .h-header-toolbar .menu ul {
+      padding: 0;
+      margin: 0; }
+      .h-header-toolbar .menu ul li {
+        padding: 0;
+        display: inline-block; }
+        .h-header-toolbar .menu ul li:not(:only-child) {
+          border-left: 1px solid #e6e6e6; }
+        .h-header-toolbar .menu ul li.dropit-open a {
+          background: #eee; }
+        .h-header-toolbar .menu ul li a {
+          display: block;
+          padding: 0 12px;
+          height: 50px;
+          line-height: 50px;
+          color: #17b;
+          -o-transition: none;
+          -ms-transition: none;
+          -moz-transition: none;
+          -webkit-transition: none;
+          transition: none; }
+          @media (min-width: 768px) {
+            .h-header-toolbar .menu ul li a {
+              padding: 0 20px; } }
+          @media (min-width: 992px) {
+            .h-header-toolbar .menu ul li a {
+              height: 65px;
+              line-height: 65px; } }
+          .h-header-toolbar .menu ul li a i {
+            color: #17b;
+            vertical-align: middle;
+            padding-right: 5px; }
+            .h-header-toolbar .menu ul li a i.icon-angle-down {
+              padding-right: 0;
+              font-size: 1em; }
+          .h-header-toolbar .menu ul li a:hover {
+            text-decoration: none;
+            background: #1981C9;
+            color: white; }
+            .h-header-toolbar .menu ul li a:hover i {
+              color: white; }
+        .h-header-toolbar .menu ul li > ul {
+          background: #eee; }
+          .h-header-toolbar .menu ul li > ul li {
+            width: 100%; }
+            .h-header-toolbar .menu ul li > ul li a {
+              height: 35px;
+              line-height: 35px; }
+  .h-header-toolbar .h-header-toolbar-item {
+    position: relative;
+    height: 100%;
+    float: left;
+    border-left: 1px solid #eee; }
+    .h-header-toolbar .h-header-toolbar-item i.icon {
+      margin-right: 1rem;
+      color: #ccc; }
+  .h-header-toolbar .h-header-toolbar-item-center {
+    display: block;
+    height: 100%;
+    padding: 0 1.5rem;
+    line-height: 50px; }
+    @media (min-width: 992px) {
+      .h-header-toolbar .h-header-toolbar-item-center {
+        line-height: 65px; } }
+
+/* I dropped it here for now */
+.dropit {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.dropit .dropit-trigger {
+  position: relative; }
+
+.dropit .dropit-submenu {
+  position: absolute;
+  top: 100%;
+  left: -100%;
+  z-index: 10000;
+  display: none;
+  min-width: 150px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: white; }
+
+.dropit .dropit-open .dropit-submenu {
+  display: block; }
+
+/* SIDEBAR */
+.h-sidebar-nav {
+  background-color: #404e66;
+  height: 100%;
+  padding-top: 50px;
+  -webkit-box-shadow: inset -20px 0px 20px -20px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: inset -20px 0px 20px -20px rgba(0, 0, 0, 0.4);
+  box-shadow: inset -20px 0px 20px -20px rgba(0, 0, 0, 0.4); }
+  .h-sidebar-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .h-sidebar-nav ul li {
+      position: relative;
+      -webkit-transition: background-color 0.3s ease-in-out;
+      -moz-transition: background-color 0.3s ease-in-out;
+      -ms-transition: background-color 0.3s ease-in-out;
+      -o-transition: background-color 0.3s ease-in-out;
+      transition: background-color 0.3s ease-in-out;
+      font-size: 2rem;
+      width: 100%; }
+      .h-sidebar-nav ul li a {
+        color: #cccccc;
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 1.2rem 2rem;
+        outline: none; }
+        .h-sidebar-nav ul li a i {
+          -webkit-transition: color 0.5s ease-in-out;
+          -moz-transition: color 0.5s ease-in-out;
+          -ms-transition: color 0.5s ease-in-out;
+          -o-transition: color 0.5s ease-in-out;
+          transition: color 0.5s ease-in-out;
+          width: 1.5rem;
+          color: #000;
+          opacity: 0.2;
+          margin-right: 10px; }
+        .h-sidebar-nav ul li a:hover {
+          text-decoration: none; }
+          .h-sidebar-nav ul li a:hover i {
+            color: #666; }
+      .h-sidebar-nav ul li:hover {
+        background-color: #2f3641; }
+      .h-sidebar-nav ul li.selected a {
+        background-color: #2f3641; }
+      .h-sidebar-nav ul li.selected:after {
+        position: absolute;
+        border-top: 2px solid #999;
+        border-right: 2px solid #999;
+        width: 10px;
+        height: 10px;
+        margin-top: -7px;
+        content: "";
+        right: 3rem;
+        top: 50%;
+        transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg); }
+  @media (min-width: 992px) {
+    .h-sidebar-nav {
+      background-color: transparent;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none; }
+      .h-sidebar-nav ul li.selected, .h-sidebar-nav ul li:hover {
+        background-color: transparent; }
+      .h-sidebar-nav ul li a {
+        color: #17b; }
+      .h-sidebar-nav ul li.selected a {
+        color: #000000;
+        background-color: transparent; } }
+
+/*
+  The box. Make a box with header and footer.
+  params:   headerHeight - the height of the header
+            footerHeight - the height of the footer
+            mobileHeaderTop  (optional) top offset of the header. On the mobile layout header becomes fixed, but you probably
+                             already have a main header in place so you can push this down with this value.
+            mobileHeaderHeight (optional) - if you wish to have different height of the mobile header
+
+*/
+.h-login-container {
+  margin: 10px;
+  background: white;
+  -moz-box-shadow: 1px 1px 2px 3px #f5f5f5;
+  -webkit-box-shadow: 1px 1px 2px 3px #f5f5f5;
+  box-shadow: 1px 1px 2px 3px #f5f5f5; }
+  @media (min-width: 768px) {
+    .h-login-container {
+      max-width: 600px;
+      margin: 25px auto 0 auto;
+      position: absolute;
+      top: 18%; } }
+  @media (min-width: 768px) and (min-width: 600px) {
+    .h-login-container {
+      left: 50%;
+      width: 600px;
+      margin-left: -300px; } }
+
+.h-login-header {
+  text-align: center;
+  padding-top: 15px; }
+  @media (min-width: 768px) {
+    .h-login-header {
+      padding-top: 30px; } }
+  .h-login-header h2 {
+    margin: 0;
+    color: text;
+    font-size: 1.6em; }
+    @media (min-width: 992px) {
+      .h-login-header h2 {
+        font-size: 2em; } }
+  .h-login-header h3 {
+    margin: 0;
+    color: #ccc;
+    font-size: 1.2em; }
+    @media (min-width: 992px) {
+      .h-login-header h3 {
+        font-size: 1.5em; } }
+
+.h-login-body {
+  padding: 15px; }
+  @media (min-width: 768px) {
+    .h-login-body {
+      padding-top: 30px;
+      max-width: 25em;
+      margin: 0 auto; } }
+  .h-login-body .alert.alert-error {
+    margin-bottom: 10px;
+    text-align: center; }
+  .h-login-body form {
+    padding-bottom: 15px; }
+    .h-login-body form input {
+      width: 100%;
+      margin-bottom: 10px; }
+    @media (min-width: 768px) {
+      .h-login-body form {
+        padding-bottom: 30px; } }
+    .h-login-body form button, .h-login-body form input {
+      font-size: 1.2em; }
+    @media (max-width: 767px) {
+      .h-login-body form .button-login {
+        width: 100%;
+        float: none; }
+        .h-login-body form .button-login button {
+          width: 100%; } }
+
+.h-login-footer {
+  border-top: 1px solid #e6e6e6;
+  padding: 15px; }
+
+/*
+ * Toastr
+ * Version 2.0.1
+ * Copyright 2012 John Papa and Hans Fjällemark.
+ * All Rights Reserved.
+ * Use, reproduction, distribution, and modification of this code is subject to the terms and
+ * conditions of the MIT license, available at http://www.opensource.org/licenses/mit-license.php
+ *
+ * Author: John Papa and Hans Fjällemark
+ * Project: https://github.com/CodeSeven/toastr
+ */
+.toast-title {
+  font-weight: bold; }
+
+.toast-message {
+  -ms-word-wrap: break-word;
+  word-wrap: break-word; }
+
+.toast-message a,
+.toast-message label {
+  color: #ffffff; }
+
+.toast-message a:hover {
+  color: #cccccc;
+  text-decoration: none; }
+
+.toast-close-button {
+  position: relative;
+  right: -0.3em;
+  top: -0.3em;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  -webkit-text-shadow: 0 1px 0 #ffffff;
+  text-shadow: 0 1px 0 #ffffff;
+  opacity: 0.8;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  filter: alpha(opacity=80); }
+
+.toast-close-button:hover,
+.toast-close-button:focus {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.4;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  filter: alpha(opacity=40); }
+
+/*Additional properties for button version
+ iOS requires the button element instead of an anchor tag.
+ If you want the anchor version, it requires `href="#"`.*/
+button.toast-close-button {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none; }
+
+.toast-top-full-width {
+  top: 0;
+  right: 0;
+  width: 100%; }
+
+.toast-bottom-full-width {
+  bottom: 0;
+  right: 0;
+  width: 100%; }
+
+.toast-top-left {
+  top: 12px;
+  left: 12px; }
+
+.toast-top-right {
+  top: 12px;
+  right: 12px; }
+
+.toast-bottom-right {
+  right: 12px;
+  bottom: 12px; }
+
+.toast-bottom-left {
+  bottom: 12px;
+  left: 12px; }
+
+#toast-container {
+  position: fixed;
+  z-index: 999999;
+  /*overrides*/ }
+
+#toast-container * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+#toast-container > div {
+  margin: 0 0 6px;
+  padding: 15px 15px 15px 50px;
+  width: 300px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  border-radius: 3px 3px 3px 3px;
+  background-position: 15px center;
+  background-repeat: no-repeat;
+  -moz-box-shadow: 0 0 12px #999999;
+  -webkit-box-shadow: 0 0 12px #999999;
+  box-shadow: 0 0 12px #999999;
+  color: #ffffff;
+  opacity: 0.8;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  filter: alpha(opacity=80); }
+
+#toast-container > :hover {
+  -moz-box-shadow: 0 0 12px #000000;
+  -webkit-box-shadow: 0 0 12px #000000;
+  box-shadow: 0 0 12px #000000;
+  opacity: 1;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  filter: alpha(opacity=100);
+  cursor: pointer; }
+
+#toast-container > .toast-info {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGwSURBVEhLtZa9SgNBEMc9sUxxRcoUKSzSWIhXpFMhhYWFhaBg4yPYiWCXZxBLERsLRS3EQkEfwCKdjWJAwSKCgoKCcudv4O5YLrt7EzgXhiU3/4+b2ckmwVjJSpKkQ6wAi4gwhT+z3wRBcEz0yjSseUTrcRyfsHsXmD0AmbHOC9Ii8VImnuXBPglHpQ5wwSVM7sNnTG7Za4JwDdCjxyAiH3nyA2mtaTJufiDZ5dCaqlItILh1NHatfN5skvjx9Z38m69CgzuXmZgVrPIGE763Jx9qKsRozWYw6xOHdER+nn2KkO+Bb+UV5CBN6WC6QtBgbRVozrahAbmm6HtUsgtPC19tFdxXZYBOfkbmFJ1VaHA1VAHjd0pp70oTZzvR+EVrx2Ygfdsq6eu55BHYR8hlcki+n+kERUFG8BrA0BwjeAv2M8WLQBtcy+SD6fNsmnB3AlBLrgTtVW1c2QN4bVWLATaIS60J2Du5y1TiJgjSBvFVZgTmwCU+dAZFoPxGEEs8nyHC9Bwe2GvEJv2WXZb0vjdyFT4Cxk3e/kIqlOGoVLwwPevpYHT+00T+hWwXDf4AJAOUqWcDhbwAAAAASUVORK5CYII=") !important; }
+
+#toast-container > .toast-error {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHOSURBVEhLrZa/SgNBEMZzh0WKCClSCKaIYOED+AAKeQQLG8HWztLCImBrYadgIdY+gIKNYkBFSwu7CAoqCgkkoGBI/E28PdbLZmeDLgzZzcx83/zZ2SSXC1j9fr+I1Hq93g2yxH4iwM1vkoBWAdxCmpzTxfkN2RcyZNaHFIkSo10+8kgxkXIURV5HGxTmFuc75B2RfQkpxHG8aAgaAFa0tAHqYFfQ7Iwe2yhODk8+J4C7yAoRTWI3w/4klGRgR4lO7Rpn9+gvMyWp+uxFh8+H+ARlgN1nJuJuQAYvNkEnwGFck18Er4q3egEc/oO+mhLdKgRyhdNFiacC0rlOCbhNVz4H9FnAYgDBvU3QIioZlJFLJtsoHYRDfiZoUyIxqCtRpVlANq0EU4dApjrtgezPFad5S19Wgjkc0hNVnuF4HjVA6C7QrSIbylB+oZe3aHgBsqlNqKYH48jXyJKMuAbiyVJ8KzaB3eRc0pg9VwQ4niFryI68qiOi3AbjwdsfnAtk0bCjTLJKr6mrD9g8iq/S/B81hguOMlQTnVyG40wAcjnmgsCNESDrjme7wfftP4P7SP4N3CJZdvzoNyGq2c/HWOXJGsvVg+RA/k2MC/wN6I2YA2Pt8GkAAAAASUVORK5CYII=") !important; }
+
+#toast-container > .toast-success {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADsSURBVEhLY2AYBfQMgf///3P8+/evAIgvA/FsIF+BavYDDWMBGroaSMMBiE8VC7AZDrIFaMFnii3AZTjUgsUUWUDA8OdAH6iQbQEhw4HyGsPEcKBXBIC4ARhex4G4BsjmweU1soIFaGg/WtoFZRIZdEvIMhxkCCjXIVsATV6gFGACs4Rsw0EGgIIH3QJYJgHSARQZDrWAB+jawzgs+Q2UO49D7jnRSRGoEFRILcdmEMWGI0cm0JJ2QpYA1RDvcmzJEWhABhD/pqrL0S0CWuABKgnRki9lLseS7g2AlqwHWQSKH4oKLrILpRGhEQCw2LiRUIa4lwAAAABJRU5ErkJggg==") !important; }
+
+#toast-container > .toast-warning {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGYSURBVEhL5ZSvTsNQFMbXZGICMYGYmJhAQIJAICYQPAACiSDB8AiICQQJT4CqQEwgJvYASAQCiZiYmJhAIBATCARJy+9rTsldd8sKu1M0+dLb057v6/lbq/2rK0mS/TRNj9cWNAKPYIJII7gIxCcQ51cvqID+GIEX8ASG4B1bK5gIZFeQfoJdEXOfgX4QAQg7kH2A65yQ87lyxb27sggkAzAuFhbbg1K2kgCkB1bVwyIR9m2L7PRPIhDUIXgGtyKw575yz3lTNs6X4JXnjV+LKM/m3MydnTbtOKIjtz6VhCBq4vSm3ncdrD2lk0VgUXSVKjVDJXJzijW1RQdsU7F77He8u68koNZTz8Oz5yGa6J3H3lZ0xYgXBK2QymlWWA+RWnYhskLBv2vmE+hBMCtbA7KX5drWyRT/2JsqZ2IvfB9Y4bWDNMFbJRFmC9E74SoS0CqulwjkC0+5bpcV1CZ8NMej4pjy0U+doDQsGyo1hzVJttIjhQ7GnBtRFN1UarUlH8F3xict+HY07rEzoUGPlWcjRFRr4/gChZgc3ZL2d8oAAAAASUVORK5CYII=") !important; }
+
+#toast-container.toast-top-full-width > div,
+#toast-container.toast-bottom-full-width > div {
+  width: 96%;
+  margin: auto; }
+
+.toast {
+  background-color: #030303; }
+
+.toast-success {
+  background-color: #51a351; }
+
+.toast-error {
+  background-color: #bd362f; }
+
+.toast-info {
+  background-color: #2f96b4; }
+
+.toast-warning {
+  background-color: #f89406; }
+
+/*Responsive Design*/
+@media all and (max-width: 239px) {
+  #toast-container > div {
+    padding: 8px 8px 8px 50px;
+    width: 11em; }
+
+  #toast-container .toast-close-button {
+    right: -0.2em;
+    top: -0.2em; } }
+@media all and (min-width: 240px) and (max-width: 479px) {
+  #toast-container > div {
+    padding: 8px 8px 8px 50px;
+    width: 18em; }
+
+  #toast-container .toast-close-button {
+    right: -0.2em;
+    top: -0.2em; } }
+@media all and (min-width: 480px) and (max-width: 767px) {
+  #toast-container > div {
+    padding: 15px 15px 15px 50px;
+    width: 25em; } }
+#toast-container.toast-top-full-width > div {
+  opacity: 1;
+  margin-top: 10px; }
+
+a i, button i {
+  font-size: 125%;
+  vertical-align: middle;
+  color: #333; }
+
+#h-container > #page {
+  min-height: 450px;
+  padding-bottom: 25px;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 992px) {
+    #h-container > #page {
+      padding-left: 20px;
+      padding-right: 20px; } }
+  #h-container > #page.loading {
+    text-align: center; }
+    #h-container > #page.loading i {
+      color: #ccc;
+      font-size: 3em;
+      margin-top: 200px; }
+
+#page.list button i {
+  color: #333;
+  font-size: 125%;
+  vertical-align: middle; }
+#page.list .applications {
+  margin: 15px 0; }
+  #page.list .applications form {
+    float: right; }
+#page.list .options form {
+  background: #7c7c7c; }
+  #page.list .options form p {
+    display: inline-block;
+    padding: 10px 15px;
+    vertical-align: middle;
+    margin: 0;
+    color: white;
+    font-size: 125%; }
+  #page.list .options form fieldset {
+    display: inline-block;
+    padding: 10px 15px; }
+    #page.list .options form fieldset label {
+      color: white;
+      font-weight: bold; }
+    #page.list .options form fieldset input {
+      margin-right: 10px;
+      padding: 5px 8px;
+      background: #eeeeee;
+      width: 12em; }
+      #page.list .options form fieldset input.small {
+        width: 6em; }
+    #page.list .options form fieldset button {
+      padding: 5px 12px; }
+#page.list table.loading {
+  opacity: 0.4; }
+#page.list table tbody tr:hover, #page.list table tbody td:hover {
+  cursor: pointer;
+  background-color: #F7F7F7; }
+#page.list table tbody td.roles {
+  font-family: monospace; }
+#page.list ul.paginator {
+  float: right;
+  list-style: none; }
+  #page.list ul.paginator li {
+    display: inline-block; }
+
+#page.user .edit {
+  float: right; }
+#page.user .h-panel.roles,
+#page.user .h-panel.ids,
+#page.user .h-panel.password {
+  margin-bottom: 10px; }
+  #page.user .h-panel.roles .content,
+  #page.user .h-panel.ids .content,
+  #page.user .h-panel.password .content {
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-bottom: 15px; }
+
+form p.help-block,
+form p.help-inline {
+  font-size: 90%;
+  font-style: italic;
+  margin: 0; }
+form p.help-inline {
+  display: inline-block;
+  padding-left: 10px; }
+form p.help-block {
+  margin-top: 0.5em;
+  margin-bottom: 1em; }
+  @media (min-width: 768px) {
+    form p.help-block {
+      margin-left: 13em; } }
+form.update-roles textarea {
+  font-family: monospace;
+  width: 100%;
+  min-height: 150px; }
+
+.h-panel {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); }
+  .h-panel > header {
+    padding: 15px;
+    display: block;
+    clear: both;
+    line-height: 1.5em; }
+    .h-panel > header h2 {
+      margin: 0;
+      font-size: 1.1em; }
+    .h-panel > header .toolbar {
+      float: right; }
+      .h-panel > header .toolbar a {
+        vertical-align: middle; }
+        .h-panel > header .toolbar a:hover {
+          text-decoration: none; }
+        .h-panel > header .toolbar a.roll-up i {
+          font-size: 18px;
+          color: #BBB; }
+      .h-panel > header .toolbar i {
+        font-size: 28px; }
+        .h-panel > header .toolbar i.loading {
+          color: #ccc; }
+  .h-panel > .content {
+    overflow: hidden;
+    clear: both; }
+    .h-panel > .content.disabled {
+      opacity: 0.4; }
+  .h-panel > footer {
+    padding: 8px;
+    text-align: right;
+    font-size: 0.9em; }
+    .h-panel > footer a:hover {
+      text-decoration: none; }
+
+.hidden {
+  display: none; }
+
+/*# sourceMappingURL=main.css.map */

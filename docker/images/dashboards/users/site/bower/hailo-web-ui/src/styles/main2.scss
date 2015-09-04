@@ -1,0 +1,24 @@
+// Hailo Web UI SCSS
+$hImagesBaseUrl: "/img";
+@import "hailo-style/application";
+
+// h-box demo page
+
+.h-box-demo {
+    @include h-box($headerHeight: 40px, $mobileHeaderTop: 50px, $footerHeight: 40px, $mobileHeaderHeight: 40px);
+    .h-box-demo-header,
+    .h-box-demo-content,
+    .h-box-demo-footer {
+        height: 100%;
+        padding: 10px;
+        background-color: white;
+    }
+
+    .h-box-demo-header {
+        border-bottom: 1px solid #eee;
+    }
+
+    .h-box-demo-footer {
+        border-top: 1px solid #eee;
+    }
+}

@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Web Hshell</title>
+    <link rel="stylesheet" type="text/css" href="static/css/jquery.terminal.css">
+    <style type="text/css">
+      .terminal {
+        overflow-y: auto;
+      }
+      .terminal, .cmd {
+          font-size: 18px;
+          line-height: 20px;
+      }
+      .terminal .terminal-output div div, .cmd .prompt {
+        line-height: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    
+<!-- Bugsnag -->
+<script src="//d2wy8f7a9ursnm.cloudfront.net/bugsnag-2.min.js" data-apikey="7cd7d1a456b50170dae0bd69a56496a8"></script>
+<script>Bugsnag.releaseStage = window.location.hostname;</script>
+
+<script src="bower/requirejs/require.js" data-main="app"></script>
+  </body>
+</html>
